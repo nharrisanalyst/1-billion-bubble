@@ -3,6 +3,7 @@ class Data{
 		this._rawdata= rawdata;
 		this._data = this.roll_up(this._rawdata, d => d.brand, d => d.device_cummulative_cnts );
 		
+		
 		console.log(this.data);
 	}
 	
@@ -25,6 +26,14 @@ class Data{
 			new_data.push({name:key, value:value});
 		});
 		return new_data;
+	}
+	
+	total(){
+		let total = 0;
+		this._data.forEach(d=>{
+			total += d.value;
+		})
+		return total;
 	}
 	
 	get data(){
@@ -58,7 +67,7 @@ class Bubble{
 		this.width = this.el.getBoundingClientRect().width;
 		this.height = this.el.getBoundingClientRect().height;
 		this.pack = this._makePack() ;
-		this._root =this.pack(this._data)
+		this._root =this.pack(this._data.data)
 		
 		console.log('======>',this._root);
 	}
@@ -74,14 +83,17 @@ class Bubble{
 	_makePack(){
         return (data) => d3.pack()
 		.size([this.width - 2, this.height - 2])
-		.padding(3)
-	    (d3.hierarchy({children: this._data})
+		.padding(1)
+	    (d3.hierarchy({children: this._data.data})
 		.sum(d => d.value));
 	}
 	
 	
 	
 	_makeBubbles(){
+		const total = this._data.total();
+		console.log('========>', this._root.leaves());
+		console.log('=======> total', total);
 		this.leaf = this.svg.selectAll("g")
 		               .data(this._root.leaves())
 		               .join("g")
@@ -92,6 +104,17 @@ class Bubble{
 		  .attr("r", d => d.r)
 		  .attr("fill-opacity", 0.7)
 		  .attr("fill", d => 'red');
+		  
+		  this.leaf.append("text")
+		    .attr('fill','rgb(250,250,250)')
+			.attr('font-size', '12px')
+			.attr("clip-path", d => d.clipUid)
+		    .selectAll("tspan")
+		    .data(d => [{text:d.data.name, r:d.r}, {text:d3.format('.2%')(d.data.value/total), r:d.r}])
+		    .join("tspan")
+			.attr("x", 0)
+			.attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.8}em`)
+			.text(d =>d.r>20? d.text: "");
 	}
 	
 	
@@ -113,7 +136,7 @@ class Bubble{
  
 
 const bubble = new Bubble({
-	data:data.data,
+	data:data,
 	el:document.querySelector('.d3-bubble-chart')
 })
 
