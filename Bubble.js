@@ -1,6 +1,7 @@
 class Data{
 	constructor({rawdata}){
 		this._rawdata= rawdata;
+	     console.log(this._rawdata);
 		this._data = this.roll_up(this._rawdata, d => d.brand, d => d.device_cummulative_cnts );
 		
 		
@@ -16,7 +17,9 @@ class Data{
 	}
 	
 	filter(filter){
-		this.data = this._rawdata.filter(filter);
+		this._data = this._rawdata.filter(filter);
+		console.log('========>', filter);
+		console.log('=======> data',this._data);
 	}
 	//@data raw data current data
 	//grouping is a function
@@ -28,6 +31,11 @@ class Data{
 		return new_data;
 	}
 	
+	 setData(grouping){
+		 console.log('=======> this is working', this.roll_up(this.data, d=>d[grouping], d=>d.device_cummulative_cnts));
+		this._data =  this.roll_up(this.data, d=>d[grouping], d=>d.device_cummulative_cnts)
+	}
+	
 	total(){
 		let total = 0;
 		this._data.forEach(d=>{
@@ -35,6 +43,19 @@ class Data{
 		})
 		return total;
 	}
+	 distinct(key){
+		 const distinct ={}
+		 const distinctArray =['All']
+		 this._rawdata.forEach(d=>{
+			 if(!distinct[d[key]]){
+				 distinct[d[key]] =true;
+				 distinctArray.push(d[key]);
+			 }
+		   }
+		 )
+		 
+		return distinctArray; 
+	 }
 	
 	get data(){
 		return this._data;
@@ -51,7 +72,7 @@ const data = new Data({
 
 
 
-
+const levels = ['brand', 'category']
 
 
 
@@ -68,6 +89,7 @@ class Bubble{
 		this.height = this.el.getBoundingClientRect().height;
 		this.pack = this._makePack() ;
 		this._root =this.pack(this._data.data)
+		this._level = 'brand';
 		
 		console.log('======>',this._root);
 	}
@@ -88,6 +110,29 @@ class Bubble{
 		.sum(d => d.value));
 	}
 	
+	setLevel(index){
+		this._level = levels[index];
+	}
+	
+	_setOnClick(){
+		const self = this;
+		function onClick(event,d){
+			if(self._level === 'brand'){
+		     const brand = d.data.name;
+		     self.setLevel(1);
+			 console.log('====>', data);
+			 self._data.filter(e => e.brand === brand);
+			 self._data.setData(self._level);
+			 self.rerender(self._data);
+			}	
+		}
+		
+		d3.selectAll('.circle-element').on('click', function(event, d) {
+			onClick(event,d);
+		  });
+		
+	}
+	
 	
 	
 	_makeBubbles(){
@@ -100,6 +145,7 @@ class Bubble{
 		               .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`);
 		
 	   this.leaf.append("circle")
+	      .attr('class', 'circle-element')
 		  .attr("id", (d,i) => (d.leafUid =i))
 		  .attr("r", d => d.r)
 		  .attr("fill-opacity", 0.7)
@@ -126,12 +172,80 @@ class Bubble{
 	  this._makeSVG();
 	  this._makePack()
 	  this._makeBubbles();
+	  this._setOnClick();
 	}
 	
 	rerender(data){
-		this._root = d3.pack(data);
+		this._data =data;
+		console.log('=======> crying', this._data.data);
+		this.pack = this._makePack();
+		console.log('=======> crying', this._data.data); 
+		this._root =this.pack(this._data.data);
 		this.render()
 	}
+}
+
+
+class Selector{
+	constructor({data, el, title, chart}){
+		console.log("=======> selector is here");
+		this._data = data;
+		this._el = el;
+		this._title = title;
+		this._chart = chart;
+		this._divElData =[{class:'filterLabel'}, {class:'filterSelect'}]
+	}
+	
+	makeMainDiv(){
+		this.mainDiv = d3.select(this._el).append('div')
+		                            .attr('class', 'filterLabel');
+	}
+	
+	makeInnerDiv(){
+		this._mainSelection = this.mainDiv.selectAll('div').data(this._divElData)
+		                                                   .join('div')
+					                                        .attr('class', d=> d.class);
+	}
+	
+	makeSelection(){
+		this._selection = d3.select('.filterSelect').append('select')
+		                                            .attr('class', 'filterSelect-select')
+		                                            .selectAll('options')
+													.data(this._data.distinct('category'))
+													.join('option')
+													.attr('value', d =>d)
+													.text(d=>d);
+		                                            
+	}
+	
+	_onChange(){
+		const self = this;
+	   const selection = d3.select('.filterSelect-select')
+	                        .on('change', function(event,d){
+								const value = event.target.value;
+								if(event.target.value ==='All'){
+									self._data.filter(d=> true);
+									self._data.setData('brand');
+									self._chart.rerender(data);
+									return;
+								}
+								
+								console.log('=====>', event.target.value);
+								self._data.filter(d=> d[self._title] === value );
+								self._data.setData('brand');
+								self._chart.rerender(data);
+								console.log('======> event', event);
+								console.log('======> d', d);
+							})
+	}
+	
+	render(){
+		this.makeMainDiv();
+		this.makeInnerDiv();
+		this.makeSelection();
+		this._onChange();
+	}
+	
 }
  
 
@@ -141,5 +255,14 @@ const bubble = new Bubble({
 })
 
 bubble.render();
+
+const selector = new Selector({
+	data:data,
+	el:document.querySelector('.d3-bubble-chart-left'),
+	title:"category",
+	chart:bubble,
+})
+
+selector.render();
 
 console.log('we got here ====>')
