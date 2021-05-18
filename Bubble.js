@@ -64,6 +64,7 @@ class Data{
 	}
 	
 	get length(){
+		console.log('=====> length',this._rawdata.length)
 		return this._rawdata.length;
 	}
 	
@@ -104,6 +105,20 @@ const data = new Data({
 
 
 const levels = ['brand', 'category']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -180,9 +195,11 @@ class Bubble{
 		  .attr("id", (d,i) => (d.leafUid =i))
 		  .attr("r", d => d.r)
 		  .attr("fill-opacity", 0.7)
-		  .attr("fill", d => 'red');
+		  .attr("fill", d => 'rgb(255, 59, 59)');
 		  
 		  this.leaf.append("text")
+		    .attr('class', 'circle-text')
+			.style('pointer-events', 'none')
 		    .attr('fill','rgb(250,250,250)')
 			.attr('font-size', '12px')
 			.attr("clip-path", d => d.clipUid)
@@ -194,7 +211,20 @@ class Bubble{
 			.text(d =>d.r>20? d.text: "");
 	}
 	
-	
+	_setOnHover(){
+		function mouseover(){
+			d3.selectAll('.circle-element')
+			          .attr("fill-opacity", 0.2)
+		    d3.select(this)
+			   .attr("fill-opacity", 0.8)
+		 }
+		function mouseout(){
+			d3.selectAll('.circle-element')
+			  .attr("fill-opacity", 0.7)
+		}
+		d3.selectAll('.circle-element').on('mouseover', mouseover);
+		d3.selectAll('.circle-element').on('mouseout',mouseout);
+	}
 	
 	render(){
 	 if(this.svg){
@@ -204,6 +234,7 @@ class Bubble{
 	  this._makePack()
 	  this._makeBubbles();
 	  this._setOnClick();
+	  this._setOnHover();
 	}
 	
 	rerender(data){
@@ -215,6 +246,22 @@ class Bubble{
 		this.render()
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 class Selector{
@@ -290,6 +337,19 @@ class Selector{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 class Menu{
 	constructor({data, el}){
 		this._data = data;
@@ -297,10 +357,10 @@ class Menu{
 		this._menuData = this._makeMenuData();
 	}
 		 _makeMenuData(){
-			return [{title:'Last 30-Day Active Devices', value:data.data.len}, 
+			return [{title:'Last 30-Day Active Devices', value:this._data.length}, 
 			        {title:'% of Devices identified',value:.99}, 
-			        {title:'Device Types', value:data.devicetypeLength},
-				     {title:'Brands', value:data.distinctBrands} ]
+			        {title:'Device Types', value:this._data.devicetypeLength},
+				     {title:'Brands', value:this._data.distinctBrands} ]
 		}
     _makeHeadlineStat(){
 		d3.select(this._el).selectAll('div')
