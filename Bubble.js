@@ -36,6 +36,38 @@ class Data{
 		this._data =  this.roll_up(this.data, d=>d[grouping], d=>d.device_cummulative_cnts)
 	}
 	
+	get devicetypeLength(){
+		const distinct ={}
+		 const distinctArray =[]
+		 this._rawdata.forEach(d=>{
+			 if(!distinct[d['idtype']]){
+				 distinct[d['idtype']] =true;
+				 distinctArray.push(d['idtype']);
+			 }
+		   }
+		 )
+		 
+		return distinctArray.length; 
+	}
+	
+	get distinctBrands(){
+		const distinct ={}
+		 const distinctArray =[]
+		 this._rawdata.forEach(d=>{
+			 if(!distinct[d['brand']]){
+				 distinct[d['brand']] =true;
+				 distinctArray.push(d['brand']);
+			 }
+		   }
+	    )
+		   return distinctArray.length;
+	}
+	
+	get length(){
+		console.log('=====> length',this._rawdata.length)
+		return this._rawdata.length;
+	}
+	
 	total(){
 		let total = 0;
 		this._data.forEach(d=>{
@@ -73,6 +105,20 @@ const data = new Data({
 
 
 const levels = ['brand', 'category']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -149,9 +195,11 @@ class Bubble{
 		  .attr("id", (d,i) => (d.leafUid =i))
 		  .attr("r", d => d.r)
 		  .attr("fill-opacity", 0.7)
-		  .attr("fill", d => 'red');
+		  .attr("fill", d => 'rgb(255, 59, 59)');
 		  
 		  this.leaf.append("text")
+		    .attr('class', 'circle-text')
+			.style('pointer-events', 'none')
 		    .attr('fill','rgb(250,250,250)')
 			.attr('font-size', '12px')
 			.attr("clip-path", d => d.clipUid)
@@ -163,7 +211,20 @@ class Bubble{
 			.text(d =>d.r>20? d.text: "");
 	}
 	
-	
+	_setOnHover(){
+		function mouseover(){
+			d3.selectAll('.circle-element')
+			          .attr("fill-opacity", 0.2)
+		    d3.select(this)
+			   .attr("fill-opacity", 0.8)
+		 }
+		function mouseout(){
+			d3.selectAll('.circle-element')
+			  .attr("fill-opacity", 0.7)
+		}
+		d3.selectAll('.circle-element').on('mouseover', mouseover);
+		d3.selectAll('.circle-element').on('mouseout',mouseout);
+	}
 	
 	render(){
 	 if(this.svg){
@@ -173,6 +234,7 @@ class Bubble{
 	  this._makePack()
 	  this._makeBubbles();
 	  this._setOnClick();
+	  this._setOnHover();
 	}
 	
 	rerender(data){
@@ -184,6 +246,22 @@ class Bubble{
 		this.render()
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 class Selector{
@@ -257,6 +335,53 @@ class Selector{
 	}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Menu{
+	constructor({data, el}){
+		this._data = data;
+		this._el = el;
+		this._menuData = this._makeMenuData();
+	}
+		 _makeMenuData(){
+			return [{title:'Last 30-Day Active Devices', value:this._data.length}, 
+			        {title:'% of Devices identified',value:.99}, 
+			        {title:'Device Types', value:this._data.devicetypeLength},
+				     {title:'Brands', value:this._data.distinctBrands} ]
+		}
+    _makeHeadlineStat(){
+		d3.select(this._el).selectAll('div')
+		                   .attr('class', 'chart-menu-inner-wrapper')
+		                    .data(this._makeMenuData())
+							.join('div')
+							.attr('class', 'menu-stat-wrapper')
+							.html(d=> this._makeStatHTML(d));
+							
+	}
+	
+	_makeStatHTML(d){
+		return `<div class='stat-title'>${d.title}</div>
+		        <div class='stat-value'>${d.value}</div>
+		       `
+	}
+	
+	render(){
+		this._makeHeadlineStat();
+	}
+}
  
 
 const bubble = new Bubble({
@@ -275,4 +400,11 @@ const selector = new Selector({
 
 selector.render();
 
-console.log('we got here ====>')
+const menu = new Menu({
+	data:data,
+	el:document.querySelector('.d3-bubble-chart-right'),
+})
+
+menu.render();
+console.log('we got here ====> device type length', data.devicetypeLength);
+console.log('we got here ====> device type length', data.length);

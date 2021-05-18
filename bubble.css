@@ -1,6 +1,9 @@
+
+
 body {
 	margin: 0;
 	text-align: center;
+	background: rgb(15,15,15);
 }
 
 .d3-bubble-chart-wrapper{
@@ -10,7 +13,7 @@ body {
 }
 
 .d3-bubble-chart-title{
-	color :red;
+	color :rgb(255, 79, 79);
 	height:48px;
 	width:100%;
 	padding-top:24px;
@@ -30,7 +33,7 @@ body {
 }
 
 .filterLabel{
-	color:red;
+	color:rgb(255, 79, 79);
 	display:inline-block;
 	margin-right:10px;
 	text-transform:capitalize;
@@ -38,10 +41,28 @@ body {
 
 .d3-bubble-chart-left-inner-wrapper{
 	
-	border:1px solid black;
+	border:1px solid white;
 	width:90%;
 	border-radius:10px;
 	padding: 5px;
 	
 	margin-left:10px;
 }
+
+.d3-bubble-chart-right{
+	text-align:right;
+	padding-right:15px;
+}
+
+.stat-title{
+	font-size:24px;
+	margin-bottom:0px;
+	color:rgb(235,235,235);
+}
+
+.stat-value{
+	font-size:48px;
+	margin-bottom:32px;
+	color:rgb(255,255,255);
+}
+
