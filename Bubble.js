@@ -198,7 +198,7 @@ class Selector{
 	
 	makeMainDiv(){
 		this.mainDiv = d3.select(this._el).append('div')
-		                            .attr('class', 'filterLabel');
+		                            .attr('class', 'filterLabel-wrapper');
 	}
 	
 	makeInnerDiv(){
@@ -207,8 +207,8 @@ class Selector{
 					                                        .attr('class', d=> d.class);
 	}
 	
-	makeSelection(){
-		this._selection = d3.select('.filterSelect').append('select')
+	_makeSelection(){
+		this._filter_selection = d3.select('.filterSelect').append('select')
 		                                            .attr('class', 'filterSelect-select')
 		                                            .selectAll('options')
 													.data(this._data.distinct('category'))
@@ -216,6 +216,15 @@ class Selector{
 													.attr('value', d =>d)
 													.text(d=>d);
 		                                            
+	}
+	
+	_makeTitle(){
+		console.log('===========> this is working');
+		this._title_selection = d3.select('.filterLabel')
+		console.log('=======> title selection', this._title_selection);
+		this._title_selection.append('div')
+		                      .attr('class','filterLabel-title')
+							  .text(this._title)
 	}
 	
 	_onChange(){
@@ -242,7 +251,8 @@ class Selector{
 	render(){
 		this.makeMainDiv();
 		this.makeInnerDiv();
-		this.makeSelection();
+		this._makeTitle();
+		this._makeSelection();
 		this._onChange();
 	}
 	
@@ -258,7 +268,7 @@ bubble.render();
 
 const selector = new Selector({
 	data:data,
-	el:document.querySelector('.d3-bubble-chart-left'),
+	el:document.querySelector('.d3-bubble-chart-left-inner-wrapper'),
 	title:"category",
 	chart:bubble,
 })
