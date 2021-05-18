@@ -36,6 +36,37 @@ class Data{
 		this._data =  this.roll_up(this.data, d=>d[grouping], d=>d.device_cummulative_cnts)
 	}
 	
+	get devicetypeLength(){
+		const distinct ={}
+		 const distinctArray =[]
+		 this._rawdata.forEach(d=>{
+			 if(!distinct[d['idtype']]){
+				 distinct[d['idtype']] =true;
+				 distinctArray.push(d['idtype']);
+			 }
+		   }
+		 )
+		 
+		return distinctArray.length; 
+	}
+	
+	get distinctBrands(){
+		const distinct ={}
+		 const distinctArray =[]
+		 this._rawdata.forEach(d=>{
+			 if(!distinct[d['brand']]){
+				 distinct[d['brand']] =true;
+				 distinctArray.push(d['brand']);
+			 }
+		   }
+	    )
+		   return distinctArray.length;
+	}
+	
+	get length(){
+		return this._rawdata.length;
+	}
+	
 	total(){
 		let total = 0;
 		this._data.forEach(d=>{
@@ -257,6 +288,40 @@ class Selector{
 	}
 	
 }
+
+
+class Menu{
+	constructor({data, el}){
+		this._data = data;
+		this._el = el;
+		this._menuData = this._makeMenuData();
+	}
+		 _makeMenuData(){
+			return [{title:'Last 30-Day Active Devices', value:data.data.len}, 
+			        {title:'% of Devices identified',value:.99}, 
+			        {title:'Device Types', value:data.devicetypeLength},
+				     {title:'Brands', value:data.distinctBrands} ]
+		}
+    _makeHeadlineStat(){
+		d3.select(this._el).selectAll('div')
+		                   .attr('class', 'chart-menu-inner-wrapper')
+		                    .data(this._makeMenuData())
+							.join('div')
+							.attr('class', 'menu-stat-wrapper')
+							.html(d=> this._makeStatHTML(d));
+							
+	}
+	
+	_makeStatHTML(d){
+		return `<div class='stat-title'>${d.title}</div>
+		        <div class='stat-value'>${d.value}</div>
+		       `
+	}
+	
+	render(){
+		this._makeHeadlineStat();
+	}
+}
  
 
 const bubble = new Bubble({
@@ -275,4 +340,11 @@ const selector = new Selector({
 
 selector.render();
 
-console.log('we got here ====>')
+const menu = new Menu({
+	data:data,
+	el:document.querySelector('.d3-bubble-chart-right'),
+})
+
+menu.render();
+console.log('we got here ====> device type length', data.devicetypeLength);
+console.log('we got here ====> device type length', data.length);

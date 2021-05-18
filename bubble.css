@@ -45,3 +45,20 @@ body {
 	
 	margin-left:10px;
 }
+
+.d3-bubble-chart-right{
+	text-align:right;
+	padding-right:10px;
+}
+
+.stat-title{
+	font-size:24px;
+	margin-bottom:0px;
+	color:rgb(35,35,35);
+}
+
+.stat-value{
+	font-size:48px;
+	margin-bottom:32px;
+	
+}
