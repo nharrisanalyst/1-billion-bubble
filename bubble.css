@@ -24,3 +24,24 @@ body {
 	display:grid;
 	grid-template-columns: 2fr 8fr 2fr;
 }
+
+.filterSelect{
+	display:inline-block;
+}
+
+.filterLabel{
+	color:red;
+	display:inline-block;
+	margin-right:10px;
+	text-transform:capitalize;
+}
+
+.d3-bubble-chart-left-inner-wrapper{
+	
+	border:1px solid black;
+	width:90%;
+	border-radius:10px;
+	padding: 5px;
+	
+	margin-left:10px;
+}
