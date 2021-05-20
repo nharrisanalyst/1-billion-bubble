@@ -129,10 +129,10 @@ class Bubble{
 		this._data =data;
 		console.log('=====>', this._data);
 		
-		this.el = el;
+		this._el = el;
 		this.margin ={l:20,t:20,r:20,b:20};
-		this.width = this.el.getBoundingClientRect().width;
-		this.height = this.el.getBoundingClientRect().height;
+		this.width = this._el.getBoundingClientRect().width;
+		this.height = this._el.getBoundingClientRect().height;
 		this.pack = this._makePack() ;
 		this._root =this.pack(this._data.data)
 		this._level = 'brand';
@@ -141,7 +141,7 @@ class Bubble{
 	}
 	
 	_makeSVG(){
-		this.svg = d3.select('.d3-bubble-chart').append('svg')
+		this.svg = d3.select(this._el).append('svg')
 		                                         .attr("viewBox", [0, 0, this.width, this.height])
 												 .attr("font-size", 10)
 												 .attr("text-anchor", "middle");
@@ -227,6 +227,7 @@ class Bubble{
 	}
 	
 	render(){
+		console.log('========>    we are rendering the svg')
 	 if(this.svg){
 	  this.svg.remove();
       }
@@ -386,25 +387,25 @@ class Menu{
 
 const bubble = new Bubble({
 	data:data,
-	el:document.querySelector('.d3-bubble-chart')
+	el:document.querySelector('.d3-bubble-chart-right')
 })
 
 bubble.render();
 
-const selector = new Selector({
-	data:data,
-	el:document.querySelector('.d3-bubble-chart-left-inner-wrapper'),
-	title:"category",
-	chart:bubble,
-})
-
-selector.render();
-
-const menu = new Menu({
-	data:data,
-	el:document.querySelector('.d3-bubble-chart-right'),
-})
-
-menu.render();
-console.log('we got here ====> device type length', data.devicetypeLength);
-console.log('we got here ====> device type length', data.length);
+// const selector = new Selector({
+// 	data:data,
+// 	el:document.querySelector('.d3-bubble-chart-left-inner-wrapper'),
+// 	title:"category",
+// 	chart:bubble,
+// })
+// 
+// selector.render();
+// 
+// const menu = new Menu({
+// 	data:data,
+// 	el:document.querySelector('.d3-bubble-chart-right'),
+// })
+// 
+// menu.render();
+// console.log('we got here ====> device type length', data.devicetypeLength);
+// console.log('we got here ====> device type length', data.length);
