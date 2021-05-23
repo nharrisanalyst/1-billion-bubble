@@ -129,10 +129,10 @@ class Bubble{
 		this._data =data;
 		console.log('=====>', this._data);
 		
-		this.el = el;
+		this._el = el;
 		this.margin ={l:20,t:20,r:20,b:20};
-		this.width = this.el.getBoundingClientRect().width;
-		this.height = this.el.getBoundingClientRect().height;
+		this.width = this._el.getBoundingClientRect().width;
+		this.height = this._el.getBoundingClientRect().height;
 		this.pack = this._makePack() ;
 		this._root =this.pack(this._data.data)
 		this._level = 'brand';
@@ -141,7 +141,7 @@ class Bubble{
 	}
 	
 	_makeSVG(){
-		this.svg = d3.select('.d3-bubble-chart').append('svg')
+		this.svg = d3.select(this._el).append('svg')
 		                                         .attr("viewBox", [0, 0, this.width, this.height])
 												 .attr("font-size", 10)
 												 .attr("text-anchor", "middle");
@@ -227,6 +227,7 @@ class Bubble{
 	}
 	
 	render(){
+		console.log('========>    we are rendering the svg')
 	 if(this.svg){
 	  this.svg.remove();
       }
@@ -297,9 +298,7 @@ class Selector{
 	}
 	
 	_makeTitle(){
-		console.log('===========> this is working');
 		this._title_selection = d3.select('.filterLabel')
-		console.log('=======> title selection', this._title_selection);
 		this._title_selection.append('div')
 		                      .attr('class','filterLabel-title')
 							  .text(this._title)
@@ -329,7 +328,7 @@ class Selector{
 	render(){
 		this.makeMainDiv();
 		this.makeInnerDiv();
-		this._makeTitle();
+		//this._makeTitle();
 		this._makeSelection();
 		this._onChange();
 	}
@@ -357,17 +356,17 @@ class Menu{
 		this._menuData = this._makeMenuData();
 	}
 		 _makeMenuData(){
-			return [{title:'Last 30-Day Active Devices', value:this._data.length}, 
-			        {title:'% of Devices identified',value:.99}, 
-			        {title:'Device Types', value:this._data.devicetypeLength},
-				     {title:'Brands', value:this._data.distinctBrands} ]
+			return [{title:'Brands', value:this._data.distinctBrands},
+			        {title:'Device Types', value:this._data.devicetypeLength}]
 		}
     _makeHeadlineStat(){
-		d3.select(this._el).selectAll('div')
-		                   .attr('class', 'chart-menu-inner-wrapper')
+		this._mainDiv = d3.select(this._el).append('div')
+		                                   .attr('class', 'chart-menu-inner-wrapper')
+		                    
+			  this._mainDiv.selectAll('div')
 		                    .data(this._makeMenuData())
 							.join('div')
-							.attr('class', 'menu-stat-wrapper')
+							.attr('class', d => `menu-stat-wrapper ${d.title}-menu-stat`)
 							.html(d=> this._makeStatHTML(d));
 							
 	}
@@ -381,19 +380,23 @@ class Menu{
 	render(){
 		this._makeHeadlineStat();
 	}
+	
+	rerender(){
+		d3.select()
+	}
 }
  
 
 const bubble = new Bubble({
 	data:data,
-	el:document.querySelector('.d3-bubble-chart')
+	el:document.querySelector('.d3-bubble-chart-right')
 })
 
 bubble.render();
 
 const selector = new Selector({
 	data:data,
-	el:document.querySelector('.d3-bubble-chart-left-inner-wrapper'),
+	el:document.querySelector('.d3-bubble-chart-selector-selector'),
 	title:"category",
 	chart:bubble,
 })
@@ -402,7 +405,7 @@ selector.render();
 
 const menu = new Menu({
 	data:data,
-	el:document.querySelector('.d3-bubble-chart-right'),
+	el:document.querySelector('.d3-bubble-chart-menu-menu'),
 })
 
 menu.render();

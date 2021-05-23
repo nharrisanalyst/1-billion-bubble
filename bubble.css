@@ -2,67 +2,116 @@
 
 body {
 	margin: 0;
-	text-align: center;
 	background: rgb(15,15,15);
 }
 
 .d3-bubble-chart-wrapper{
-	height:100vh;
+	height:calc(100vh - 79px);
 	width:100vw;
-	/* background-color:rgb(0,0,0); */
 }
 
-.d3-bubble-chart-title{
-	color :rgb(255, 79, 79);
-	height:48px;
+.d3-bubble-chart-left{
+	height:100%;
+	width:calc(50% - 5px);
+    display:inline-block;
+}
+.d3-bubble-chart-leftinner-wrapper{
 	width:100%;
-	padding-top:24px;
-	font-size:24px;
+	height:66%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 	
-}
-
-.d3-bubble-chart-content-wrapper{
-	width:100%;
-	height:calc(100% - 72px);
-	display:grid;
-	grid-template-columns: 2fr 8fr 2fr;
-}
-
-.filterSelect{
-	display:inline-block;
-}
-
-.filterLabel{
-	color:rgb(255, 79, 79);
-	display:inline-block;
-	margin-right:10px;
-	text-transform:capitalize;
-}
-
-.d3-bubble-chart-left-inner-wrapper{
-	
-	border:1px solid white;
-	width:90%;
-	border-radius:10px;
-	padding: 5px;
-	
-	margin-left:10px;
 }
 
 .d3-bubble-chart-right{
-	text-align:right;
-	padding-right:15px;
+	height:100%;
+	width:calc(50% - 5px);
+	display:inline-block;
+	float:right;
+}
+
+.d3-bubble-chart-title{
+	height:50%;
+	width:90%;
+	text-align:center;
+	color: white;
+	font-size:5em;
+	text-align: left;
+	display: table;
+	padding-left:10%;
+}
+
+.d3-bubble-chart-menu-selector{
+	height:50%;
+	vertical-align: middle;
+	
+}
+
+.d3-bubble-chart-title-span{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.d3-bubble-chart-selector{
+	height:33%;
+	width:90%;
+	padding-left:10%;
+	color:white;
+	font-size:18px;
+	text-align: left;
+	display: table;
+	
+}
+
+.d3-bubble-chart-selector-inner-wrapper{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.d3-bubble-chart-selector-title{
+	display: inline-block;
+	width:160px;
+	margin-right:68px;
+	
+}
+
+.d3-bubble-chart-selector-selector{
+	display:inline-block;
+	
+}
+
+.d3-bubble-chart-menu{
+	height:66%;
+	width:90%;
+	padding-left:10%;
+}
+
+.d3-bubble-chart-menu{
+	display: table;
+}
+
+.d3-bubble-chart-menu-menu{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.menu-stat-wrapper{
+	display:inline-block;
+	width:160px;
 }
 
 .stat-title{
-	font-size:24px;
-	margin-bottom:0px;
-	color:rgb(235,235,235);
+	color: rgba(255,255,255,0.5);
+	font-size:18px;
+	font-weight: 100;
 }
 
 .stat-value{
-	font-size:48px;
-	margin-bottom:32px;
-	color:rgb(255,255,255);
+	color:white;
+	font-size: 48px;
 }
 
+.Brands-menu-stat{
+	margin-right:68px;
+}
