@@ -130,6 +130,10 @@ class Bubble{
 		this._level = 'brand';
 	}
 	
+	set extraButton(button){
+		this._extraButton = button;
+	}
+	
 	_makeSVG(){
 		this.svg = d3.select(this._el).append('svg')
 		                                         .attr("viewBox", [0, 0, this.width, this.height])
@@ -169,12 +173,14 @@ class Bubble{
 	_setOnClick(){
 		const self = this;
 		function onClick(event,d){
+			console.log('=======> here cdhjkafhd',self._level);
 			if(self._level === 'brand'){
 		     const brand = d.data.name;
 		     self.setLevel(1);
 			 self._data.filter(e => e.brand === brand);
 			 self._data.setData(self._level);
 			 self.rerender(self._data);
+			 self._extraButton.setOnClick()
 			}	
 		}
 		
@@ -322,7 +328,7 @@ class Selector{
 								if(event.target.value ==='All'){
 									self._data.filter(d=> true);
 									self._data.setData('brand');
-									self._chart.rerender(data);
+									self._chart.rerender(self._data);
 									self._menu.rerender();
 									self._back.unrender();
 									return;
@@ -449,6 +455,31 @@ class Back{
         this._offClick();
 	}
 }
+
+class ChartFull{
+	constructor({el,chart, data}){
+		this._el = el;
+		this._chart = chart;
+		this._data = data;
+	}
+	
+	setOnClick(){
+		const self = this;
+		function onClick(){
+			console.log('we are here')
+			console.log('======> minutes',self);
+			self._data.filter(d=>true);
+			self._data.setData('brand');
+			self._chart.rerender(self._data);
+			self._chart.setLevel(0);
+			d3.select(this).remove();
+		}
+		
+	   const button = d3.select(this._el).append('button')
+	                                      .text('Reset Chart')
+		button.on('click', onClick);
+	}
+}
  
 
 const bubble = new Bubble({
@@ -456,7 +487,13 @@ const bubble = new Bubble({
 	el:document.querySelector('.d3-bubble-chart-right')
 })
 
+const chart_back_button = new ChartFull({
+	el:document.querySelector('.d3-bubble-chart-right'),
+	data:data,
+	chart:bubble,
+})
 
+bubble.extraButton = chart_back_button;
 
 bubble.render();
 
