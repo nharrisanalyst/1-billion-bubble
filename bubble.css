@@ -40,6 +40,7 @@ body {
 	text-align: left;
 	display: table;
 	padding-left:10%;
+	line-height: 90px;
 }
 
 .d3-bubble-chart-menu-selector{
@@ -121,3 +122,8 @@ body {
 	cursor:pointer;
 }
 
+@media only screen and (max-width: 768px) {
+	  body {
+		background-color: lightblue;
+	  }
+	}
