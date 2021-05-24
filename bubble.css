@@ -115,3 +115,8 @@ body {
 .Brands-menu-stat{
 	margin-right:68px;
 }
+
+.title-active{
+	color: rgba(98, 105, 255, 1);
+	cursor:pointer;
+}

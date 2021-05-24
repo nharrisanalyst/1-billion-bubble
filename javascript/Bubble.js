@@ -250,13 +250,14 @@ class Bubble{
 
 
 class Selector{
-	constructor({data, el, menu, title, chart}){
+	constructor({back,data, el, menu, title, chart}){
 		this._data = data;
 		this._el = el;
 		this._title = title;
 		this._chart = chart;
 		this._menu = menu
 		this._divElData =[{class:'filterLabel'}, {class:'filterSelect'}]
+		this._back = back;
 	}
 	
 	makeMainDiv(){
@@ -298,14 +299,25 @@ class Selector{
 									self._data.setData('brand');
 									self._chart.rerender(data);
 									self._menu.rerender();
+									self._back.unrender();
 									return;
 								}
 								self._data.filter(d=> d[self._title] === value );
 								self._data.setData('brand');
 								self._chart.rerender(data);
 								self._menu.rerender();
+								self._back.render();
 							})
 		
+	}
+	
+	allRender(){
+		this._data.filter(d=> true);
+		this._data.setData('brand');
+		this._chart.rerender(data);
+		this._menu.rerender();
+		this._back.unrender();
+		this.rerender();
 	}
 	
 	render(){
@@ -314,6 +326,11 @@ class Selector{
 		//this._makeTitle();
 		this._makeSelection();
 		this._onChange();
+	}
+	
+	rerender(){
+		this.mainDiv.remove();
+		this.render();
 	}
 	
 }
@@ -359,7 +376,7 @@ class Menu{
 		        <div class='stat-value'>${d.value}</div>
 		       `
 	}
-	
+		
 	render(){
 		this._makeHeadlineStat();
 	}
@@ -372,12 +389,49 @@ class Menu{
 		this.render();	
 	}
 }
+
+
+class Back{
+	constructor({el, menu}){
+		this._el = el;
+		this._seelector = null;
+	}
+	_onClick(){
+		const self = this;
+		d3.select('.d3-bubble-chart-selector-title').on('click',function(){
+			self.unrender()
+			self._selector.allRender();
+		})
+	}
+	
+	_offClick(){
+		
+	}
+	
+	set selector(selector){
+		this._selector = selector;
+	}
+	
+	
+	render(){
+		d3.select(this._el).attr('class', 'd3-bubble-chart-selector-title title-active')
+		              .text('Back to all devices');
+		this._onClick();
+	}
+	unrender(){
+		d3.select(this._el).attr('class', 'd3-bubble-chart-selector-title')
+		  .text('Take a closer look');
+        this._offClick();
+	}
+}
  
 
 const bubble = new Bubble({
 	data:data,
 	el:document.querySelector('.d3-bubble-chart-right')
 })
+
+
 
 bubble.render();
 
@@ -386,17 +440,22 @@ const menu = new Menu({
 	el:document.querySelector('.d3-bubble-chart-menu-menu'),
 })
 
+const back = new Back({
+	el:document.querySelector('.d3-bubble-chart-selector-title'),
+	menu:menu
+})
+
 const selector = new Selector({
 	data:data,
 	el:document.querySelector('.d3-bubble-chart-selector-selector'),
 	title:"category",
 	chart:bubble,
 	menu:menu,
+	back:back
 })
 
+back.selector = selector;
+
 selector.render();
-
-
-
 menu.render();
 
