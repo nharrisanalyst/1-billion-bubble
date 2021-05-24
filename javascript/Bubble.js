@@ -71,7 +71,7 @@ class Data{
 	}
 	 distinct(key){
 		 const distinct ={}
-		 const distinctArray =['All']
+		 const distinctArray =[];
 		 this._rawdata.forEach(d=>{
 			 if(!distinct[d[key]]){
 				 distinct[d[key]] =true;
@@ -80,7 +80,7 @@ class Data{
 		   }
 		 )
 		 
-		return distinctArray; 
+		return ['All'].concat(distinctArray.sort()); 
 	 }
 	
 	get data(){
