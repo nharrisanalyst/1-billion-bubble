@@ -138,6 +138,22 @@ class Bubble{
 		
 	}
 	
+	_makeGradient(){
+		const lg =this.svg.append('defs')
+		        .append('linearGradient')
+				.attr('id', 'circleGradient')
+				.attr('gradientTransform', 'rotate(90)')
+				
+	    lg.append('stop')
+		         .attr('offset','0%')
+				 .attr('stop-color','#DB6EA3')
+		
+		lg.append('stop')
+		 .attr('offset','100%')
+		 .attr('stop-color','#8884FF')
+				
+	}
+	
 	_makePack(){
         return (data) => d3.pack()
 		.size([this.width - 2, this.height - 2])
@@ -181,8 +197,8 @@ class Bubble{
 	      .attr('class', 'circle-element')
 		  .attr("id", (d,i) => (d.leafUid =i))
 		  .attr("r", d => d.r)
-		  .attr("fill-opacity", 0.7)
-		  .attr("fill", d => 'rgb(255, 59, 59)');
+		  .attr("fill-opacity", 1)
+		  .attr("fill", "url('#circleGradient')");
 		  
 		  this.leaf.append("text")
 		    .attr('class', 'circle-text')
@@ -202,12 +218,20 @@ class Bubble{
 		function mouseover(){
 			d3.selectAll('.circle-element')
 			          .attr("fill-opacity", 0.2)
+					  
+		    d3.selectAll('.circle-text')
+			  .attr("opacity", 0.2);
+			  
 		    d3.select(this)
-			   .attr("fill-opacity", 0.8)
+			   .attr("fill-opacity", 1)
+			d3.select(this.parentNode).selectAll('.circle-text')
+			                .attr("opacity", 1)
 		 }
 		function mouseout(){
 			d3.selectAll('.circle-element')
-			  .attr("fill-opacity", 0.7)
+			  .attr("fill-opacity", 1)
+			d3.selectAll('.circle-text')
+			  .attr("opacity", 1);
 		}
 		d3.selectAll('.circle-element').on('mouseover', mouseover);
 		d3.selectAll('.circle-element').on('mouseout',mouseout);
@@ -218,6 +242,7 @@ class Bubble{
 	  this.svg.remove();
       }
 	  this._makeSVG();
+	  this._makeGradient();
 	  this._makePack()
 	  this._makeBubbles();
 	  this._setOnClick();
