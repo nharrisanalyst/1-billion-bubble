@@ -124,14 +124,14 @@ body {
 
 @media only screen and (max-width: 768px) {
 	  .d3-bubble-chart-wrapper{
-		  
+		  margin-top:20px;
 		  width:100vw;
 	  }  
 	  
 	  .d3-bubble-chart-left{
 		  width:100%;
 		  display:block;
-		  height:400px;
+		  height: 250px
 	  }
 	  
 	  .d3-bubble-chart-leftinner-wrapper{
@@ -147,6 +147,8 @@ body {
 		  font-size:40px;
 		  text-align: left;
 		  line-height: 48px;
+		  margin-bottom:55px;
+		  
 	  }
 	  
 	  .d3-bubble-chart-right{
@@ -154,8 +156,12 @@ body {
 		  display:block;
 	  }
 	  
+	  .d3-bubble-chart-menu-selector{
+		  
+	  }
 	  .d3-bubble-chart-selector{
 		  text-align: left;
+		  margin-bottom: 35px;
 	  }
 	  .d3-bubble-chart-selector-selector{
 		  width:100%;
