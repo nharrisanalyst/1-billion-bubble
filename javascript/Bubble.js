@@ -1,11 +1,8 @@
 class Data{
 	constructor({rawdata}){
 		this._rawdata= rawdata;
-	     console.log(this._rawdata);
+		this._filtered_data = this._rawdata;
 		this._data = this.roll_up(this._rawdata, d => d.brand, d => d.device_cummulative_cnts );
-		
-		
-		console.log(this.data);
 	}
 	
 	make_hierarchy_data(){
@@ -18,8 +15,7 @@ class Data{
 	
 	filter(filter){
 		this._data = this._rawdata.filter(filter);
-		console.log('========>', filter);
-		console.log('=======> data',this._data);
+		this._filtered_data =this._data;
 	}
 	//@data raw data current data
 	//grouping is a function
@@ -32,14 +28,13 @@ class Data{
 	}
 	
 	 setData(grouping){
-		 console.log('=======> this is working', this.roll_up(this.data, d=>d[grouping], d=>d.device_cummulative_cnts));
 		this._data =  this.roll_up(this.data, d=>d[grouping], d=>d.device_cummulative_cnts)
 	}
 	
 	get devicetypeLength(){
 		const distinct ={}
 		 const distinctArray =[]
-		 this._rawdata.forEach(d=>{
+		 this._filtered_data.forEach(d=>{
 			 if(!distinct[d['idtype']]){
 				 distinct[d['idtype']] =true;
 				 distinctArray.push(d['idtype']);
@@ -53,7 +48,7 @@ class Data{
 	get distinctBrands(){
 		const distinct ={}
 		 const distinctArray =[]
-		 this._rawdata.forEach(d=>{
+		 this._filtered_data.forEach(d=>{
 			 if(!distinct[d['brand']]){
 				 distinct[d['brand']] =true;
 				 distinctArray.push(d['brand']);
@@ -64,7 +59,6 @@ class Data{
 	}
 	
 	get length(){
-		console.log('=====> length',this._rawdata.length)
 		return this._rawdata.length;
 	}
 	
@@ -127,8 +121,6 @@ const levels = ['brand', 'category']
 class Bubble{
 	constructor({data, el}){
 		this._data =data;
-		console.log('=====>', this._data);
-		
 		this._el = el;
 		this.margin ={l:20,t:20,r:20,b:20};
 		this.width = this._el.getBoundingClientRect().width;
@@ -136,8 +128,6 @@ class Bubble{
 		this.pack = this._makePack() ;
 		this._root =this.pack(this._data.data)
 		this._level = 'brand';
-		
-		console.log('======>',this._root);
 	}
 	
 	_makeSVG(){
@@ -166,7 +156,6 @@ class Bubble{
 			if(self._level === 'brand'){
 		     const brand = d.data.name;
 		     self.setLevel(1);
-			 console.log('====>', data);
 			 self._data.filter(e => e.brand === brand);
 			 self._data.setData(self._level);
 			 self.rerender(self._data);
@@ -183,8 +172,6 @@ class Bubble{
 	
 	_makeBubbles(){
 		const total = this._data.total();
-		console.log('========>', this._root.leaves());
-		console.log('=======> total', total);
 		this.leaf = this.svg.selectAll("g")
 		               .data(this._root.leaves())
 		               .join("g")
@@ -227,7 +214,6 @@ class Bubble{
 	}
 	
 	render(){
-		console.log('========>    we are rendering the svg')
 	 if(this.svg){
 	  this.svg.remove();
       }
@@ -240,9 +226,7 @@ class Bubble{
 	
 	rerender(data){
 		this._data =data;
-		console.log('=======> crying', this._data.data);
-		this.pack = this._makePack();
-		console.log('=======> crying', this._data.data); 
+		this.pack = this._makePack(); 
 		this._root =this.pack(this._data.data);
 		this.render()
 	}
@@ -266,12 +250,12 @@ class Bubble{
 
 
 class Selector{
-	constructor({data, el, title, chart}){
-		console.log("=======> selector is here");
+	constructor({data, el, menu, title, chart}){
 		this._data = data;
 		this._el = el;
 		this._title = title;
 		this._chart = chart;
+		this._menu = menu
 		this._divElData =[{class:'filterLabel'}, {class:'filterSelect'}]
 	}
 	
@@ -306,23 +290,22 @@ class Selector{
 	
 	_onChange(){
 		const self = this;
-	   const selection = d3.select('.filterSelect-select')
+	    const selection = d3.select('.filterSelect-select')
 	                        .on('change', function(event,d){
 								const value = event.target.value;
 								if(event.target.value ==='All'){
 									self._data.filter(d=> true);
 									self._data.setData('brand');
 									self._chart.rerender(data);
+									self._menu.rerender();
 									return;
 								}
-								
-								console.log('=====>', event.target.value);
 								self._data.filter(d=> d[self._title] === value );
 								self._data.setData('brand');
 								self._chart.rerender(data);
-								console.log('======> event', event);
-								console.log('======> d', d);
+								self._menu.rerender();
 							})
+		
 	}
 	
 	render(){
@@ -382,7 +365,11 @@ class Menu{
 	}
 	
 	rerender(){
-		d3.select()
+		if(this._mainDiv){
+			  this._mainDiv.remove();
+			  }
+		this._menuData = this._makeMenuData();
+		this.render();	
 	}
 }
  
@@ -394,20 +381,22 @@ const bubble = new Bubble({
 
 bubble.render();
 
-const selector = new Selector({
-	data:data,
-	el:document.querySelector('.d3-bubble-chart-selector-selector'),
-	title:"category",
-	chart:bubble,
-})
-
-selector.render();
-
 const menu = new Menu({
 	data:data,
 	el:document.querySelector('.d3-bubble-chart-menu-menu'),
 })
 
+const selector = new Selector({
+	data:data,
+	el:document.querySelector('.d3-bubble-chart-selector-selector'),
+	title:"category",
+	chart:bubble,
+	menu:menu,
+})
+
+selector.render();
+
+
+
 menu.render();
-console.log('we got here ====> device type length', data.devicetypeLength);
-console.log('we got here ====> device type length', data.length);
+
