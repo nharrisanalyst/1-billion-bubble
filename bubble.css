@@ -40,6 +40,7 @@ body {
 	text-align: left;
 	display: table;
 	padding-left:10%;
+	line-height: 90px;
 }
 
 .d3-bubble-chart-menu-selector{
@@ -121,3 +122,70 @@ body {
 	cursor:pointer;
 }
 
+@media only screen and (max-width: 768px) {
+	  .d3-bubble-chart-wrapper{
+		  margin-top:20px;
+		  width:100vw;
+	  }  
+	  
+	  .d3-bubble-chart-left{
+		  width:100%;
+		  display:block;
+		  height: 250px
+	  }
+	  
+	  .d3-bubble-chart-leftinner-wrapper{
+		  width:100%;
+		  top: 0%;
+		  transform: translateY(0%);
+	  }
+	  
+	  .d3-bubble-chart-title{
+		  width:100%;
+		  text-align:center;
+		  color: white;
+		  font-size:40px;
+		  text-align: left;
+		  line-height: 48px;
+		  margin-bottom:55px;
+		  
+	  }
+	  
+	  .d3-bubble-chart-right{
+		  width:100%;
+		  display:block;
+	  }
+	  
+	  .d3-bubble-chart-menu-selector{
+		  
+	  }
+	  .d3-bubble-chart-selector{
+		  text-align: left;
+		  margin-bottom: 35px;
+	  }
+	  .d3-bubble-chart-selector-selector{
+		  width:100%;
+	  }
+	  .filterSelect{
+		  width:100%;
+	  }
+	  .filterSelect-select{
+		  width:90%;
+	  }
+	  .d3-bubble-chart-menu{
+		  margin-top:15px;
+	  }
+	  .menu-stat-wrapper{
+		  display:inline-block;
+		  width:120px;
+	  }
+	  .stat-title{
+		  font-size:14px;
+	  }
+	  .stat-value{
+		  font-size:40px;
+	  }
+	  .Brands-menu-stat{
+		  margin-right:46px;
+	  }
+	}
