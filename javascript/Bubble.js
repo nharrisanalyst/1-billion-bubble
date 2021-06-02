@@ -371,8 +371,106 @@ class Selector{
 
 
 
+class SelectionMenu{
+	constructor({data,el}){
+		this._data = data;
+		this._el = el;
+		this.rendered = false;
+	}
+    _makeMenu(){
+		this._main_el = d3.select(this._el)
+		                   .append('div')
+						   .attr('class', 'selection-menu-custom');
+	}
+	
+	_makeSelections(){
+		 this._main_el.selectAll('.selection-menu-custom-divs')
+		.data(this._data.distinct('category'))
+		.join('div')
+		.attr('class', 'selection-menu-custom-divs')
+		.attr('value', d =>d)
+		.text(d=>d);
+	}
+	
+	_setOnClick(){
+		const self = this;
+		d3.selectAll('.selection-menu-custom-divs')
+		   .on('click', function(event,d){
+			   const value = event.target.value;
+			   if(event.target.value ==='All'){
+				   self._data.filter(d=> true);
+				   self._data.setData('brand');
+				   self._chart.rerender(self._data);
+				   self._menu.rerender();
+				   self._back.unrender();
+				   return;
+			   }
+			   self._data.filter(d=> d[self._title] === value );
+			   self._data.setData('brand');
+			   self._chart.rerender(data);
+			   self._menu.rerender();
+			   self._back.render();
+		   })	 
+	}
+	set button(button){
+		this._button = button;
+	}
+	render(){
+		this.rendered = true;
+		this._makeMenu();
+		this._makeSelections();
+		this._setOnClick();	
+	}
+	destroy(){
+		this.rendered = false;
+		this._main_el.remove();
+	}
+}
 
 
+
+
+
+
+
+
+
+
+class SelectionButton{
+	constructor({name, el, menu}){
+		this._name = name;
+		this._el = el;
+	}
+	
+	_makeName(){
+		d3.select(this._el).selectAll('.selection-button-text').remove();
+		
+		d3.select(this._el).append('div')
+		                    .attr('class', 'selection-button-text')
+							.text(this._name);
+	}
+	
+	set name(name){
+		this._name = name;
+		this._makename();
+	}
+	
+	_onClick(){
+	    const self = this;
+		
+		d3.select(this._el).on('click', function(){
+			if(self._menu.rendered){
+			 self._menu.destroy();	
+			}else{
+			 self._menu.render();	
+			}
+		})
+	}
+	
+	render(){
+		this._makeName();
+	}
+}
 
 
 
