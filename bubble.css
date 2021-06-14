@@ -132,6 +132,30 @@ body {
 	cursor:pointer;
 }
 
+.selection-menu-custom-divs{
+	height:40px;
+	border-radius:2px;
+	background: rgba(17,17,17,1);
+    cursor:pointer;
+	line-height:48px;
+	padding-left:16px;
+}
+
+.selection-menu-custom-divs:hover{
+	background: rgba(41, 41, 41, 1);
+
+}
+.selection-menu-custom{
+	padding:8px;
+	border: 1px solid #8F9397;
+	width: 270px;
+	height:351px;
+	overflow-y: scroll;
+	z-index: 1000;
+	border-radius: 12px;
+	background: background: rgba(17, 17, 17, 1); 
+}
+
 @media only screen and (max-width: 768px) {
 	  .d3-bubble-chart-wrapper{
 		  margin-top:20px;
