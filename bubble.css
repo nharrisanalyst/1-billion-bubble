@@ -43,6 +43,16 @@ body {
 	line-height: 90px;
 }
 
+.d3-bubble-chart-selector-menu{
+	height:0px;
+	width:0px;
+	position:relative;	
+}
+
+.filterSelect-select-button{
+	cursor:pointer;
+}
+
 .d3-bubble-chart-menu-selector{
 	height:50%;
 	vertical-align: middle;
@@ -188,4 +198,8 @@ body {
 	  .Brands-menu-stat{
 		  margin-right:46px;
 	  }
+	}
+	
+	.display-none{
+		display: none;
 	}

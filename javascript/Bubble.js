@@ -282,7 +282,7 @@ class Bubble{
 
 
 class Selector{
-	constructor({back,data, el, menu, title, chart}){
+	constructor({back,data, el, menu, title, chart, selectionMenu}){
 		this._data = data;
 		this._el = el;
 		this._title = title;
@@ -290,6 +290,8 @@ class Selector{
 		this._menu = menu
 		this._divElData =[{class:'filterLabel'}, {class:'filterSelect'}]
 		this._back = back;
+		this._selection ='All'
+		this._selectionMenu = selectionMenu;
 	}
 	
 	makeMainDiv(){
@@ -303,42 +305,59 @@ class Selector{
 					                                        .attr('class', d=> d.class);
 	}
 	
-	_makeSelection(){
-		this._filter_selection = d3.select('.filterSelect').append('select')
-		                                            .attr('class', 'filterSelect-select')
-		                                            .selectAll('options')
-													.data(this._data.distinct('category'))
-													.join('option')
-													.attr('value', d =>d)
-													.text(d=>d);
+	_makeSelectionButton(){
+		const self = this;
+		this._filter_selection = d3.select('.filterSelect').append('div')
+		                                            .attr('class', 'filterSelect-select-button')
+													.attr('value', this._selection)
+													.text(this._selection);
+													
+	    d3.select('.filterSelect-select-button').on('click', function(){
+			if(self._selectionMenu.rendered){
+				self._destroySelectionMenu();
+			}else{
+				self._renderSelectionMenu();
+			}
+		})
+													
 		                                            
 	}
+	//this._data.distinct('category')
 	
-	_makeTitle(){
-		this._title_selection = d3.select('.filterLabel')
-		this._title_selection.append('div')
-		                      .attr('class','filterLabel-title')
-							  .text(this._title)
+	_renderSelectionMenu(){
+		console.log('====> here');
+		this._selectionMenu.render()
+		this._onChange();
+	}
+	_destroySelectionMenu(){
+		console.log('======> destroy');
+		this._selectionMenu.destroy();
 	}
 	
 	_onChange(){
 		const self = this;
-	    const selection = d3.select('.filterSelect-select')
-	                        .on('change', function(event,d){
+	    const selection = d3.selectAll('.selection-menu-custom-divs')
+	                        .on('click', function(event,d){
 								const value = event.target.value;
-								if(event.target.value ==='All'){
+								if(value ==='All'){
+									this._selection = value;
 									self._data.filter(d=> true);
 									self._data.setData('brand');
 									self._chart.rerender(self._data);
+									self._selectionMenu.destroy();
 									self._menu.rerender();
 									self._back.unrender();
+									self._makeSelectionButton();
 									return;
 								}
 								self._data.filter(d=> d[self._title] === value );
+								this._selection = value;
 								self._data.setData('brand');
+								self._selectionMenu.destroy();
 								self._chart.rerender(data);
 								self._menu.rerender();
 								self._back.render();
+								self._makeSelectionButton();
 							})
 		
 	}
@@ -355,9 +374,7 @@ class Selector{
 	render(){
 		this.makeMainDiv();
 		this.makeInnerDiv();
-		//this._makeTitle();
-		this._makeSelection();
-		this._onChange();
+		this._makeSelectionButton();
 	}
 	
 	rerender(){
@@ -391,91 +408,19 @@ class SelectionMenu{
 		.attr('value', d =>d)
 		.text(d=>d);
 	}
-	
-	_setOnClick(){
-		const self = this;
-		d3.selectAll('.selection-menu-custom-divs')
-		   .on('click', function(event,d){
-			   const value = event.target.value;
-			   if(event.target.value ==='All'){
-				   self._data.filter(d=> true);
-				   self._data.setData('brand');
-				   self._chart.rerender(self._data);
-				   self._menu.rerender();
-				   self._back.unrender();
-				   return;
-			   }
-			   self._data.filter(d=> d[self._title] === value );
-			   self._data.setData('brand');
-			   self._chart.rerender(data);
-			   self._menu.rerender();
-			   self._back.render();
-		   })	 
-	}
-	set button(button){
-		this._button = button;
-	}
+
 	render(){
+		d3.select(this._el).style('display','block')
 		this.rendered = true;
 		this._makeMenu();
 		this._makeSelections();
-		this._setOnClick();	
 	}
 	destroy(){
+		d3.select(this._el).style('display','none')
 		this.rendered = false;
 		this._main_el.remove();
 	}
 }
-
-
-
-
-
-
-
-
-
-
-class SelectionButton{
-	constructor({name, el, menu}){
-		this._name = name;
-		this._el = el;
-	}
-	
-	_makeName(){
-		d3.select(this._el).selectAll('.selection-button-text').remove();
-		
-		d3.select(this._el).append('div')
-		                    .attr('class', 'selection-button-text')
-							.text(this._name);
-	}
-	
-	set name(name){
-		this._name = name;
-		this._makename();
-	}
-	
-	_onClick(){
-	    const self = this;
-		
-		d3.select(this._el).on('click', function(){
-			if(self._menu.rendered){
-			 self._menu.destroy();	
-			}else{
-			 self._menu.render();	
-			}
-		})
-	}
-	
-	render(){
-		this._makeName();
-	}
-}
-
-
-
-
-
 
 
 
@@ -581,42 +526,53 @@ class ChartFull{
 }
  
 
-const bubble = new Bubble({
-	data:data,
-	el:document.querySelector('.d3-bubble-chart-right')
-})
 
-const chart_back_button = new ChartFull({
-	el:document.querySelector('.d3-bubble-chart-right'),
-	data:data,
-	chart:bubble,
-})
 
-bubble.extraButton = chart_back_button;
+function main(){
+	
+	const bubble = new Bubble({
+		data:data,
+		el:document.querySelector('.d3-bubble-chart-right')
+	})
+	
+	const chart_back_button = new ChartFull({
+		el:document.querySelector('.d3-bubble-chart-right'),
+		data:data,
+		chart:bubble,
+	})
+	
+	bubble.extraButton = chart_back_button;
+	
+	bubble.render();
+	
+	const menu = new Menu({
+		data:data,
+		el:document.querySelector('.d3-bubble-chart-menu-menu'),
+	})
+	
+	const back = new Back({
+		el:document.querySelector('.d3-bubble-chart-selector-title'),
+		menu:menu
+	})
+	const selectionMenu = new SelectionMenu({
+		data:data,
+		el:document.querySelector('.d3-bubble-chart-selector-menu')
+	})
+	const selector = new Selector({
+		data:data,
+		el:document.querySelector('.d3-bubble-chart-selector-selector'),
+		chart:bubble,
+		menu:menu,
+		back:back,
+		selectionMenu:selectionMenu,
+		
+	})
+	
+	back.selector = selector;
+	
+	selector.render();
+	menu.render();
+}
 
-bubble.render();
-
-const menu = new Menu({
-	data:data,
-	el:document.querySelector('.d3-bubble-chart-menu-menu'),
-})
-
-const back = new Back({
-	el:document.querySelector('.d3-bubble-chart-selector-title'),
-	menu:menu
-})
-
-const selector = new Selector({
-	data:data,
-	el:document.querySelector('.d3-bubble-chart-selector-selector'),
-	title:"category",
-	chart:bubble,
-	menu:menu,
-	back:back
-})
-
-back.selector = selector;
-
-selector.render();
-menu.render();
+main();
 
