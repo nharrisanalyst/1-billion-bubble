@@ -43,6 +43,17 @@ body {
 	line-height: 90px;
 }
 
+.d3-bubble-chart-selector-menu{
+	height:0px;
+	width:0px;
+	position:relative;
+	left:228px;	
+}
+
+.filterSelect-select-button{
+	cursor:pointer;
+}
+
 .d3-bubble-chart-menu-selector{
 	height:50%;
 	vertical-align: middle;
@@ -122,6 +133,32 @@ body {
 	cursor:pointer;
 }
 
+.selection-menu-custom-divs{
+	height:40px;
+	border-radius:2px;
+	background: rgba(17,17,17,1);
+    cursor:pointer;
+	line-height:48px;
+	padding-left:16px;
+}
+
+.selection-menu-custom-divs:hover{
+	background: rgba(41, 41, 41, 1);
+}
+.selection-menu-custom{
+	padding:8px;
+	border: 1px solid #8F9397;
+	width: 270px;
+	height:335px;
+	overflow-y: scroll;
+	z-index: 1000;
+	border-radius: 12px;
+	background: rgba(17, 17, 17, 1);
+	box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.25);
+	
+ 
+}
+
 @media only screen and (max-width: 768px) {
 	  .d3-bubble-chart-wrapper{
 		  margin-top:20px;
@@ -188,4 +225,8 @@ body {
 	  .Brands-menu-stat{
 		  margin-right:46px;
 	  }
+	}
+	
+	.display-none{
+		display: none;
 	}
