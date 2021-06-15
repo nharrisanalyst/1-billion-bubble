@@ -181,6 +181,7 @@ class Bubble{
 			 self._data.setData(self._level);
 			 self.rerender(self._data);
 			 self._extraButton.setOnClick()
+			 self._back.render();
 			}	
 		}
 		
@@ -190,6 +191,9 @@ class Bubble{
 		
 	}
 	
+	set level(level){
+		this._level = level;
+	}
 	
 	
 	_makeBubbles(){
@@ -265,6 +269,10 @@ class Bubble{
 		}
 		d3.selectAll('.circle-element').on('mouseover', mouseover);
 		d3.selectAll('.circle-element').on('mouseout',mouseout);
+	}
+	
+	set back(back){
+		this._back = back;
 	}
 	
 	render(){
@@ -391,6 +399,7 @@ class Selector{
 		this._data.filter(d=> true);
 		this._data.setData('brand');
 		this._chart.rerender(data);
+		this._chart.level = 'brand';
 		this._menu.rerender();
 		this._back.unrender();
 		this.rerender();
@@ -492,9 +501,10 @@ class Menu{
 
 
 class Back{
-	constructor({el, menu}){
+	constructor({chart,el, menu}){
 		this._el = el;
 		this._selector = null;
+		
 	}
 	_onClick(){
 		const self = this;
@@ -578,7 +588,7 @@ function main(){
 	
 	const back = new Back({
 		el:document.querySelector('.d3-bubble-chart-selector-title'),
-		menu:menu
+		menu:menu,
 	})
 	const selectionMenu = new SelectionMenu({
 		data:data,
@@ -596,7 +606,7 @@ function main(){
 	})
 	
 	back.selector = selector;
-	
+	bubble.back = back;
 	selector.render();
 	menu.render();
 }
