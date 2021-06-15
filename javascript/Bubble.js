@@ -210,14 +210,27 @@ class Bubble{
 		    .attr('class', 'circle-text')
 			.style('pointer-events', 'none')
 		    .attr('fill','rgb(250,250,250)')
-			.attr('font-size', '12px')
+			.attr('font-size',d =>d.r>40?'24px':'12px')
 			.attr("clip-path", d => d.clipUid)
 		    .selectAll("tspan")
-		    .data(d => [{text:d.data.name, r:d.r}, {text:d3.format('.2%')(d.data.value/total), r:d.r}])
+		    .data(d => [{text:d.data.name, r:d.r}] )
 		    .join("tspan")
 			.attr("x", 0)
-			.attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.8}em`)
+			.attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.4}em`)
 			.text(d =>d.r>20? d.text: "");
+		   
+		   this.leaf.append("text")
+		   .attr('class', 'circle-text')
+		   .style('pointer-events', 'none')
+		   .attr('fill','rgb(250,250,250)')
+		   .attr('font-size',d =>d.r>40?'20px':'10px')
+		   .attr("clip-path", d => d.clipUid)
+		   .selectAll("tspan")
+		   .data(d => [{text:d3.format('.2%')(d.data.value/total), r:d.r}])
+		   .join("tspan")
+		   .attr("x", 0)
+		   .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 1.6}em`)
+		   .text(d =>d.r>20? d.text: "");
 	}
 	
 	_setOnHover(){
