@@ -289,7 +289,7 @@ class Selector{
 		this._menu = menu
 		this._divElData =[{class:'filterLabel'}, {class:'filterSelect'}]
 		this._back = back;
-		this._selection ='All'
+		this.selection ='All'
 		this._selectionMenu = selectionMenu;
 	}
 	
@@ -304,14 +304,14 @@ class Selector{
 					                                        .attr('class', d=> d.class);
 	}
 	
-	_makeSelectionButton(){
+	makeSelectionButton(){
 		const self = this;
 		d3.select('.filterSelect-select-button').remove();
 		console.log('we are here djkhkjdsbcnkdjcnk');
 		this._filter_selection = d3.select('.filterSelect').append('div')
 		                                            .attr('class', 'filterSelect-select-button')
-													.attr('value', this._selection)
-													.text(this._selection);
+													.attr('value', this.selection)
+													.text(this.selection);
 													
 	    d3.select('.filterSelect-select-button').on('click', function(){
 			if(self._selectionMenu.rendered){
@@ -341,24 +341,24 @@ class Selector{
 	                        .on('click', function(event,d){
 								const value = event.target.__data__;
 								if(value ==='All'){
-									self._selection = value;
+									self.selection = value;
 									self._data.filter(d=> true);
 									self._data.setData('brand');
 									self._chart.rerender(self._data);
 									self._selectionMenu.destroy();
 									self._menu.rerender();
 									self._back.unrender();
-									self._makeSelectionButton();
+									self.makeSelectionButton();
 									return;
 								}
 								self._data.filter(d=> d[self._dataCategory] === value );
-								self._selection = value;
+								self.selection = value;
 								self._data.setData('brand');
 								self._selectionMenu.destroy();
 								self._chart.rerender(data);
 								self._menu.rerender();
 								self._back.render();
-								self._makeSelectionButton();
+								self.makeSelectionButton();
 							})
 		
 	}
@@ -375,7 +375,7 @@ class Selector{
 	render(){
 		this.makeMainDiv();
 		this.makeInnerDiv();
-		this._makeSelectionButton();
+		this.makeSelectionButton();
 	}
 	
 	rerender(){
@@ -470,7 +470,7 @@ class Menu{
 class Back{
 	constructor({el, menu}){
 		this._el = el;
-		this._seelector = null;
+		this._selector = null;
 	}
 	_onClick(){
 		const self = this;
@@ -481,7 +481,8 @@ class Back{
 	}
 	
 	_offClick(){
-		
+		this._selector.selection = 'All';
+		this._selector.makeSelectionButton();
 	}
 	
 	set selector(selector){
