@@ -207,7 +207,7 @@ class Bubble{
 		  .attr("fill", "url('#circleGradient')");
 		  
 		  this.leaf.append("text")
-		    .attr('class', 'circle-text')
+		    .attr('class', 'circle-text-text')
 			.style('pointer-events', 'none')
 		    .attr('fill','rgb(250,250,250)')
 			.attr('font-size',d =>d.r>40?'24px':'12px')
@@ -220,7 +220,7 @@ class Bubble{
 			.text(d =>d.r>20? d.text: "");
 		   
 		   this.leaf.append("text")
-		   .attr('class', 'circle-text')
+		   .attr('class', 'circle-text-text circle-text-text-perc')
 		   .style('pointer-events', 'none')
 		   .attr('fill','rgb(250,250,250)')
 		   .attr('font-size',d =>d.r>40?'20px':'10px')
@@ -238,19 +238,30 @@ class Bubble{
 			d3.selectAll('.circle-element')
 			          .attr("fill-opacity", 0.2)
 					  
-		    d3.selectAll('.circle-text')
+		    d3.selectAll('.circle-text-text')
 			  .attr("opacity", 0.2);
 			  
 		    d3.select(this)
 			   .attr("fill-opacity", 1)
-			d3.select(this.parentNode).selectAll('.circle-text')
+			d3.select(this.parentNode).selectAll('.circle-text-text')
 			                .attr("opacity", 1)
+							
+							
+		    d3.selectAll('.circle-text-text').style('display', 'none');
+			
+			d3.select(this.parentNode).selectAll('.circle-text-text').style('display', 'block');
+			d3.select(this.parentNode).selectAll('.circle-text-text').attr('clip-path', 'null');
+			d3.select(this.parentNode).selectAll('.circle-text-text').attr('font-size','28px').selectAll('tspan').text(d=>d.text);
 		 }
 		function mouseout(){
 			d3.selectAll('.circle-element')
 			  .attr("fill-opacity", 1)
-			d3.selectAll('.circle-text')
+			d3.selectAll('.circle-text-text')
 			  .attr("opacity", 1);
+			  d3.selectAll('.circle-text-text').style('display', 'block');
+			  d3.select(this.parentNode).selectAll('.circle-text-text').attr('clip-path', d => d.clipUid);
+			  d3.select(this.parentNode).selectAll('.circle-text-text').attr('font-size',d =>d.r>40?'24px':'12px').selectAll('tspan').text(d =>d.r>20? d.text: "");
+			  d3.select(this.parentNode).selectAll('.circle-text-text-perc').attr('font-size',d =>d.r>40?'20px':'10px')
 		}
 		d3.selectAll('.circle-element').on('mouseover', mouseover);
 		d3.selectAll('.circle-element').on('mouseout',mouseout);
