@@ -46,7 +46,8 @@ body {
 .d3-bubble-chart-selector-menu{
 	height:0px;
 	width:0px;
-	position:relative;	
+	position:relative;
+	left:228px;	
 }
 
 .filterSelect-select-button{
@@ -143,7 +144,6 @@ body {
 
 .selection-menu-custom-divs:hover{
 	background: rgba(41, 41, 41, 1);
-
 }
 .selection-menu-custom{
 	padding:8px;
@@ -153,8 +153,9 @@ body {
 	overflow-y: scroll;
 	z-index: 1000;
 	border-radius: 12px;
-	background: background: rgba(17, 17, 17, 1);
+	background: rgba(17, 17, 17, 1);
 	box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.25);
+	
  
 }
 

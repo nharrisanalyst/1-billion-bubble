@@ -128,7 +128,6 @@ class Bubble{
 		this.pack = this._makePack() ;
 		this._root =this.pack(this._data.data)
 		this._level = 'brand';
-		console.log('======> working')
 	}
 	
 	set extraButton(button){
@@ -282,10 +281,10 @@ class Bubble{
 
 
 class Selector{
-	constructor({back,data, el, menu, title, chart, selectionMenu}){
+	constructor({back,data, el, menu, dataCategory, chart, selectionMenu}){
 		this._data = data;
 		this._el = el;
-		this._title = title;
+		this._dataCategory = dataCategory;
 		this._chart = chart;
 		this._menu = menu
 		this._divElData =[{class:'filterLabel'}, {class:'filterSelect'}]
@@ -307,6 +306,8 @@ class Selector{
 	
 	_makeSelectionButton(){
 		const self = this;
+		d3.select('.filterSelect-select-button').remove();
+		console.log('we are here djkhkjdsbcnkdjcnk');
 		this._filter_selection = d3.select('.filterSelect').append('div')
 		                                            .attr('class', 'filterSelect-select-button')
 													.attr('value', this._selection)
@@ -338,9 +339,9 @@ class Selector{
 		const self = this;
 	    const selection = d3.selectAll('.selection-menu-custom-divs')
 	                        .on('click', function(event,d){
-								const value = event.target.value;
+								const value = event.target.__data__;
 								if(value ==='All'){
-									this._selection = value;
+									self._selection = value;
 									self._data.filter(d=> true);
 									self._data.setData('brand');
 									self._chart.rerender(self._data);
@@ -350,8 +351,8 @@ class Selector{
 									self._makeSelectionButton();
 									return;
 								}
-								self._data.filter(d=> d[self._title] === value );
-								this._selection = value;
+								self._data.filter(d=> d[self._dataCategory] === value );
+								self._selection = value;
 								self._data.setData('brand');
 								self._selectionMenu.destroy();
 								self._chart.rerender(data);
@@ -565,6 +566,7 @@ function main(){
 		menu:menu,
 		back:back,
 		selectionMenu:selectionMenu,
+		dataCategory:'category',
 		
 	})
 	
