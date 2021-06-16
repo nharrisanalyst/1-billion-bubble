@@ -477,8 +477,8 @@ class Menu{
 		this._menuData = this._makeMenuData();
 	}
 		 _makeMenuData(){
-			return [{title:'Brands', value:this._data.distinctBrands},
-			        {title:'Device Types', value:this._data.devicetypeLength}]
+			return [{title:'Brands', value:d3.format(",")(this._data.distinctBrands)},
+			        {title:'Device Types', value:d3.format(",")(this._data.devicetypeLength)}]
 		}
     _makeHeadlineStat(){
 		this._mainDiv = d3.select(this._el).append('div')
