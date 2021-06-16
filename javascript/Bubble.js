@@ -235,7 +235,8 @@ class Bubble{
 	}
 	
 	_textUpdate(update){
-		return update.attr('font-size','0px').call(update=>update.transition(this._t).attr('font-size',d =>d.r>40?'24px':'12px'));
+		return update.attr('font-size','0px').call(update=>update.transition(this._t).attr('font-size',d =>d.r>40?'24px':'12px')
+																					  .text(d =>d.r>20? d.text: ""));
 	}
 	_textEnterTitle(enter){
 		return enter.append('tspan').attr('font-size', '0px')
