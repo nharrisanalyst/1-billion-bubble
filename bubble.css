@@ -39,6 +39,12 @@ body {
 	
 }
 
+.d3-bubble-chart-selector-title-svg{
+	margin-right:17px;
+	position: relative;
+	top:7px;
+}
+
 .d3-bubble-chart-right{
 	height:100%;
 	width:calc(50% - 5px);
@@ -108,8 +114,8 @@ body {
 
 .d3-bubble-chart-selector-title{
 	display: inline-block;
-	width:160px;
-	margin-right:68px;
+	width: 220px;
+	margin-right: 28px;
 	height:48px;
 	line-height: 48px;
 	

@@ -3,6 +3,10 @@ const svgDown =`<svg class='filterSelect-select-svg' width="12" height="9" viewB
 </svg>
 `
 
+const svgBack =`<svg class='d3-bubble-chart-selector-title-svg' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.6319 3.62132L20.5106 1.5L10 12.0106L10.0768 12.0873L10.0732 12.0909L20.5838 22.6015L22.7051 20.4802L14.2391 12.0141L22.6319 3.62132Z" fill="#6269FF"/>
+</svg>
+`
 
 
 
@@ -534,7 +538,7 @@ class Back{
 	
 	render(){
 		d3.select(this._el).attr('class', 'd3-bubble-chart-selector-title title-active')
-		              .text('Back to all devices');
+		              .html(`<div>${svgBack} <span>${"Back to all devices"} </span> </div>`);
 		this._onClick();
 	}
 	unrender(){
