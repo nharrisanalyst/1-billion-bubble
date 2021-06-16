@@ -67,10 +67,16 @@ body {
 	width:0px;
 	position:relative;
 	left:228px;	
+	top:3px;
 }
 
 .filterSelect-select-button{
 	cursor:pointer;
+	background: rgba(255,255,255,0.1);
+	border-radius: 29px;
+	padding-left:24px;
+	width:273px;
+	height:48px;
 }
 
 .d3-bubble-chart-menu-selector{
@@ -104,6 +110,8 @@ body {
 	display: inline-block;
 	width:160px;
 	margin-right:68px;
+	height:48px;
+	line-height: 48px;
 	
 }
 
@@ -127,6 +135,10 @@ body {
 	vertical-align: middle;
 }
 
+.filterSelect-select-div{
+	height: 48px;
+	line-height: 48px;
+}
 .menu-stat-wrapper{
 	display:inline-block;
 	width:160px;
@@ -150,6 +162,13 @@ body {
 .title-active{
 	color: rgba(98, 105, 255, 1);
 	cursor:pointer;
+}
+
+.filterSelect-select-svg{
+	position:relative;
+	position: relative;
+	bottom: 1px;
+	margin-right: 16px;
 }
 
 .selection-menu-custom-divs{

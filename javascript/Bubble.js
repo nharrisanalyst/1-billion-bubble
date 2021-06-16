@@ -1,3 +1,11 @@
+const svgDown =`<svg class='filterSelect-select-svg' width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 9L0.803847 2.51244e-08L11.1962 -8.834e-07L6 9Z" fill="#C4C4C4"/>
+</svg>
+`
+
+
+
+
 class Data{
 	constructor({rawdata}){
 		this._rawdata= rawdata;
@@ -339,11 +347,11 @@ class Selector{
 	makeSelectionButton(){
 		const self = this;
 		d3.select('.filterSelect-select-button').remove();
-		console.log('we are here djkhkjdsbcnkdjcnk');
+		const text = this.selection === 'All'? 'Select category':this.selection;
 		this._filter_selection = d3.select('.filterSelect').append('div')
 		                                            .attr('class', 'filterSelect-select-button')
 													.attr('value', this.selection)
-													.text(this.selection);
+													.html(`<div class='filterSelect-select-div' >${svgDown} <span>${text} </span> </div>`);
 													
 	    d3.select('.filterSelect-select-button').on('click', function(){
 			if(self._selectionMenu.rendered){
