@@ -207,6 +207,36 @@ class Bubble{
 		this._level = level;
 	}
 	
+	_getRandomRingCoords = radius => {
+		const angle = Math.random() * Math.PI * 2;
+		const x = Math.cos(angle) * radius + window.innerWidth / 2;
+		const y = Math.sin(angle) * radius + window.innerHeight / 2;
+		return [x, y];
+	  };
+	  
+	  
+	_bubbleExit(exit){
+		return exit.remove();
+	}
+	
+	_bubbleEnter(enter){
+		enter.append('circle').attr('class', 'circle-element')
+		                       .attr("id", (d,i) => (d.leafUid =i))
+							   .attr("fill", "url('#circleGradient')")
+							   .attr("fill-opacity", 1)
+		                       .attr("r", d => 0)
+							   .attr('class', 'circle-element')
+							   .call(enter=> enter.transition(this._t).attr('r', d=>d.r));
+	}
+	
+	_bubbleUpdate(update){
+		return update.attr("id", (d,i) => (d.leafUid =i))
+		               .call(update=>update.transition(this._t).attr('r',d=>d.r));
+	}
+	
+	_transition(){
+		return d3.transition().duration(750);
+	}
 	
 	_makeBubbles(){
 		const total = this._data.total();
@@ -214,16 +244,14 @@ class Bubble{
 		               .data(this._root.leaves())
 		               .join("g")
 		               .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`);
-		
-	   this.leaf.append("circle")
-	      .attr('class', 'circle-element')
-		  .attr("id", (d,i) => (d.leafUid =i))
-		  .attr("r", d => d.r)
-		  .attr("fill-opacity", 1)
-		  .attr("fill", "url('#circleGradient')");
+		this._t = this._transition();
+	   this.leaf.selectAll("circle").data(d=>d).join(enter => this._bubbleEnter(enter),
+	                                                 update => this._bubbleUpdate(update),
+													 exit  => this._bubbleExit(exit) 
+           )
 		  
-		  this.leaf.append("text")
-		    .attr('class', 'circle-text-text')
+		  this.leaf.selectAll(".circle-text-name").data(d=>d).join("text")
+		    .attr('class', 'circle-text-text circle-text-name')
 			.style('pointer-events', 'none')
 		    .attr('fill','rgb(250,250,250)')
 			.attr('font-size',d =>d.r>40?'24px':'12px')
@@ -235,7 +263,7 @@ class Bubble{
 			.attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.4}em`)
 			.text(d =>d.r>20? d.text: "");
 		   
-		   this.leaf.append("text")
+		   this.leaf.selectAll(".circle-text-text-perc").data(d=>d).join("text")
 		   .attr('class', 'circle-text-text circle-text-text-perc')
 		   .style('pointer-events', 'none')
 		   .attr('fill','rgb(250,250,250)')
@@ -288,11 +316,11 @@ class Bubble{
 	}
 	
 	render(){
-	 if(this.svg){
-	  this.svg.remove();
-      }
+	 if(!this.svg){
 	  this._makeSVG();
-	  this._makeGradient();
+	  this._makeGradient(); 
+       }
+	  
 	  this._makePack()
 	  this._makeBubbles();
 	  this._setOnClick();
