@@ -207,6 +207,64 @@ class Bubble{
 		this._level = level;
 	}
 	
+	_getRandomRingCoords = radius => {
+		const angle = Math.random() * Math.PI * 2;
+		const x = Math.cos(angle) * radius + window.innerWidth / 2;
+		const y = Math.sin(angle) * radius + window.innerHeight / 2;
+		return [x, y];
+	  };
+	  
+	  
+	_bubbleExit(exit){
+		return exit.remove();
+	}
+	
+	_bubbleEnter(enter){
+		enter.append('circle').attr('class', 'circle-element')
+		                       .attr("id", (d,i) => (d.leafUid =i))
+							   .attr("fill", "url('#circleGradient')")
+							   .attr("fill-opacity", 1)
+		                       .attr("r", d => 0)
+							   .attr('class', 'circle-element')
+							   .call(enter=> enter.transition(this._t).attr('r', d=>d.r));
+	}
+	
+	_bubbleUpdate(update){
+		return update.attr("id", (d,i) => (d.leafUid =i))
+		               .call(update=>update.transition(this._t).attr('r',d=>d.r));
+	}
+	
+	_textUpdate(update){
+		return update.attr('font-size','0px').call(update=>update.transition(this._t).attr('font-size',d =>d.r>40?'24px':'12px')
+																					  .text(d =>d.r>20? d.text: ""));
+	}
+	_textEnterTitle(enter){
+		return enter.append('tspan').attr('font-size', '0px')
+		                      .attr("x", 0)
+							  .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.4}em`)
+							  .call(enter => enter.transition(this._t)
+							                       .attr('font-size', d =>d.r>40?'24px':'12px')
+												   .text(d =>d.r>20? d.text: "")
+						              )
+	}
+	_textEnterPerc(enter){
+		return enter.append('tspan').attr('font-size', '0px')
+							  .attr("x", 0)
+							  .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 1.6}em`)
+							  .call(enter => enter.transition(this._t)
+												   .attr('font-size', d =>d.r>40?'24px':'12px')
+												   .text(d =>d.r>20? d.text: "")
+									  )
+	}
+	
+	_textExit(exit){
+		return exit.remove();
+	}
+	
+	
+	_transition(){
+		return d3.transition().duration(750);
+	}
 	
 	_makeBubbles(){
 		const total = this._data.total();
@@ -214,39 +272,34 @@ class Bubble{
 		               .data(this._root.leaves())
 		               .join("g")
 		               .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`);
-		
-	   this.leaf.append("circle")
-	      .attr('class', 'circle-element')
-		  .attr("id", (d,i) => (d.leafUid =i))
-		  .attr("r", d => d.r)
-		  .attr("fill-opacity", 1)
-		  .attr("fill", "url('#circleGradient')");
+		this._t = this._transition();
+	   this.leaf.selectAll("circle").data(d=>d).join(enter => this._bubbleEnter(enter),
+	                                                 update => this._bubbleUpdate(update),
+													 exit  => this._bubbleExit(exit) 
+           )
 		  
-		  this.leaf.append("text")
-		    .attr('class', 'circle-text-text')
+		  this.leaf.selectAll(".circle-text-name").data(d=>d).join("text")
+		    .attr('class', 'circle-text-text circle-text-name')
 			.style('pointer-events', 'none')
 		    .attr('fill','rgb(250,250,250)')
-			.attr('font-size',d =>d.r>40?'24px':'12px')
 			.attr("clip-path", d => d.clipUid)
 		    .selectAll("tspan")
 		    .data(d => [{text:d.data.name, r:d.r}] )
-		    .join("tspan")
-			.attr("x", 0)
-			.attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.4}em`)
-			.text(d =>d.r>20? d.text: "");
+		    .join(enter => this._textEnterTitle(enter),
+			 update => this._textUpdate(update),
+			 exit => this._textExit(exit))
 		   
-		   this.leaf.append("text")
+		   this.leaf.selectAll(".circle-text-text-perc").data(d=>d).join("text")
 		   .attr('class', 'circle-text-text circle-text-text-perc')
 		   .style('pointer-events', 'none')
 		   .attr('fill','rgb(250,250,250)')
-		   .attr('font-size',d =>d.r>40?'20px':'10px')
 		   .attr("clip-path", d => d.clipUid)
 		   .selectAll("tspan")
 		   .data(d => [{text:d3.format('.2%')(d.data.value/total), r:d.r}])
-		   .join("tspan")
-		   .attr("x", 0)
-		   .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 1.6}em`)
-		   .text(d =>d.r>20? d.text: "");
+		   .join(enter => this._textEnterPerc(enter),
+	             update => this._textUpdate(update),
+			     exit => this._textExit(exit))
+		   
 	}
 	
 	_setOnHover(){
@@ -288,11 +341,11 @@ class Bubble{
 	}
 	
 	render(){
-	 if(this.svg){
-	  this.svg.remove();
-      }
+	 if(!this.svg){
 	  this._makeSVG();
-	  this._makeGradient();
+	  this._makeGradient(); 
+       }
+	  
 	  this._makePack()
 	  this._makeBubbles();
 	  this._setOnClick();
