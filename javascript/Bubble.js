@@ -234,6 +234,33 @@ class Bubble{
 		               .call(update=>update.transition(this._t).attr('r',d=>d.r));
 	}
 	
+	_textUpdate(update){
+		return update.attr('font-size','0px').call(update=>update.transition(this._t).attr('font-size',d =>d.r>40?'24px':'12px'));
+	}
+	_textEnterTitle(enter){
+		return enter.append('tspan').attr('font-size', '0px')
+		                      .attr("x", 0)
+							  .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.4}em`)
+							  .call(enter => enter.transition(this._t)
+							                       .attr('font-size', d =>d.r>40?'24px':'12px')
+												   .text(d =>d.r>20? d.text: "")
+						              )
+	}
+	_textEnterPerc(enter){
+		return enter.append('tspan').attr('font-size', '0px')
+							  .attr("x", 0)
+							  .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 1.6}em`)
+							  .call(enter => enter.transition(this._t)
+												   .attr('font-size', d =>d.r>40?'24px':'12px')
+												   .text(d =>d.r>20? d.text: "")
+									  )
+	}
+	
+	_textExit(exit){
+		return exit.remove();
+	}
+	
+	
 	_transition(){
 		return d3.transition().duration(750);
 	}
@@ -254,27 +281,24 @@ class Bubble{
 		    .attr('class', 'circle-text-text circle-text-name')
 			.style('pointer-events', 'none')
 		    .attr('fill','rgb(250,250,250)')
-			.attr('font-size',d =>d.r>40?'24px':'12px')
 			.attr("clip-path", d => d.clipUid)
 		    .selectAll("tspan")
 		    .data(d => [{text:d.data.name, r:d.r}] )
-		    .join("tspan")
-			.attr("x", 0)
-			.attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.4}em`)
-			.text(d =>d.r>20? d.text: "");
+		    .join(enter => this._textEnterTitle(enter),
+			 update => this._textUpdate(update),
+			 exit => this._textExit(exit))
 		   
 		   this.leaf.selectAll(".circle-text-text-perc").data(d=>d).join("text")
 		   .attr('class', 'circle-text-text circle-text-text-perc')
 		   .style('pointer-events', 'none')
 		   .attr('fill','rgb(250,250,250)')
-		   .attr('font-size',d =>d.r>40?'20px':'10px')
 		   .attr("clip-path", d => d.clipUid)
 		   .selectAll("tspan")
 		   .data(d => [{text:d3.format('.2%')(d.data.value/total), r:d.r}])
-		   .join("tspan")
-		   .attr("x", 0)
-		   .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 1.6}em`)
-		   .text(d =>d.r>20? d.text: "");
+		   .join(enter => this._textEnterPerc(enter),
+	             update => this._textUpdate(update),
+			     exit => this._textExit(exit))
+		   
 	}
 	
 	_setOnHover(){
