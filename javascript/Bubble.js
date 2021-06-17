@@ -271,15 +271,15 @@ class Bubble{
 	
 	_setOnHover(){
 		function mouseover(){
-			d3.selectAll('.circle-element')
-			          .attr("fill-opacity", 0.2)
+			// d3.selectAll('.circle-element').transition(1000)
+			//           .attr("fill-opacity", 0.2)
 					  
-		    d3.selectAll('.circle-text-text')
+		    d3.selectAll('.circle-text-text').transition(1000)
 			  .attr("opacity", 0.2);
 			  
-		    d3.select(this)
+		    d3.select(this).transition(1000)
 			   .attr("fill-opacity", 1)
-			d3.select(this.parentNode).selectAll('.circle-text-text')
+			d3.select(this.parentNode).selectAll('.circle-text-text').transition(1000)
 			                .attr("opacity", 1)
 							
 							
@@ -287,20 +287,23 @@ class Bubble{
 			
 			d3.select(this.parentNode).selectAll('.circle-text-text').style('display', 'block');
 			d3.select(this.parentNode).selectAll('.circle-text-text').attr('clip-path', 'null');
-			d3.select(this.parentNode).selectAll('.circle-text-text').attr('font-size','28px').selectAll('tspan').text(d=>d.text);
+			d3.select(this.parentNode).selectAll('.circle-text-text').selectAll('tspan').transition(1000).attr('font-size','28px').text(d =>d.r>5? d.text: "");
 		 }
 		function mouseout(){
-			d3.selectAll('.circle-element')
+			d3.selectAll('.circle-element').transition(1000)
 			  .attr("fill-opacity", 1)
-			d3.selectAll('.circle-text-text')
+			  
+			d3.selectAll('.circle-text-text').transition(1000)
 			  .attr("opacity", 1);
+			  
 			  d3.selectAll('.circle-text-text').style('display', 'block');
 			  d3.select(this.parentNode).selectAll('.circle-text-text').attr('clip-path', d => d.clipUid);
-			  d3.select(this.parentNode).selectAll('.circle-text-text').attr('font-size',d =>d.r>40?'24px':'12px').selectAll('tspan').text(d =>d.r>20? d.text: "");
-			  d3.select(this.parentNode).selectAll('.circle-text-text-perc').attr('font-size',d =>d.r>40?'20px':'10px')
-		}
-		d3.selectAll('.circle-element').on('mouseover', mouseover);
-		d3.selectAll('.circle-element').on('mouseout',mouseout);
+			  d3.select(this.parentNode).selectAll('.circle-text-text').selectAll('tspan').transition(1000).attr('font-size',d =>d.r>40?'24px':'12px').text(d =>d.r>20? d.text: "");
+			}
+			
+		    d3.selectAll('.circle-element').on('mouseover', mouseover);
+		    d3.selectAll('.circle-element').on('mouseout',mouseout);
+	    
 	}
 	
 	set back(back){
@@ -598,6 +601,8 @@ function main(raw_data){
 	const data = new Data({
 		rawdata:raw_data
 	})
+	
+
 	const levels = ['brand', 'category']
 	
 	const bubble = new Bubble({
