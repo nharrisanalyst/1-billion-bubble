@@ -108,6 +108,7 @@ class Bubble{
 		this.pack = this._makePack() ;
 		this._root =this.pack(this._data.data)
 		this._level = 'brand';
+		this._levels = ['brand', 'category']
 	}
 	
 	set extraButton(button){
@@ -147,20 +148,22 @@ class Bubble{
 	}
 	
 	setLevel(index){
-		this._level = levels[index];
+		this._level = this._levels[index];
 	}
 	
 	_setOnClick(){
 		const self = this;
 		function onClick(event,d){
+			console.log(self._level)
 			if(self._level === 'brand'){
 		     const brand = d.data.name;
 		     self.setLevel(1);
 			 self._data.filter(e => e.brand === brand);
 			 self._data.setData(self._level);
 			 self.rerender(self._data);
-			 self._extraButton.setOnClick()
+			 //self._extraButton.setOnClick()
 			 self._back.render();
+			 self._menu.rerender();
 			}	
 		}
 		
@@ -174,6 +177,11 @@ class Bubble{
 		this._level = level;
 	}
 	
+	set menu (menu){
+		console.log('rub me the right way ======>', menu);
+		this._menu = menu;
+		console.log(this._menu)
+	}
 	_getRandomRingCoords = radius => {
 		const angle = Math.random() * Math.PI * 2;
 		const x = Math.cos(angle) * radius + window.innerWidth / 2;
@@ -271,15 +279,15 @@ class Bubble{
 	
 	_setOnHover(){
 		function mouseover(){
-			d3.selectAll('.circle-element')
-			          .attr("fill-opacity", 0.2)
+			// d3.selectAll('.circle-element').transition(1000)
+			//           .attr("fill-opacity", 0.2)
 					  
-		    d3.selectAll('.circle-text-text')
+		    d3.selectAll('.circle-text-text').transition(1000)
 			  .attr("opacity", 0.2);
 			  
-		    d3.select(this)
+		    d3.select(this).transition(1000)
 			   .attr("fill-opacity", 1)
-			d3.select(this.parentNode).selectAll('.circle-text-text')
+			d3.select(this.parentNode).selectAll('.circle-text-text').transition(1000)
 			                .attr("opacity", 1)
 							
 							
@@ -287,20 +295,23 @@ class Bubble{
 			
 			d3.select(this.parentNode).selectAll('.circle-text-text').style('display', 'block');
 			d3.select(this.parentNode).selectAll('.circle-text-text').attr('clip-path', 'null');
-			d3.select(this.parentNode).selectAll('.circle-text-text').attr('font-size','28px').selectAll('tspan').text(d=>d.text);
+			d3.select(this.parentNode).selectAll('.circle-text-text').selectAll('tspan').transition(1000).attr('font-size','28px').text(d =>d.r>5? d.text: "");
 		 }
 		function mouseout(){
-			d3.selectAll('.circle-element')
+			d3.selectAll('.circle-element').transition(1000)
 			  .attr("fill-opacity", 1)
-			d3.selectAll('.circle-text-text')
+			  
+			d3.selectAll('.circle-text-text').transition(1000)
 			  .attr("opacity", 1);
+			  
 			  d3.selectAll('.circle-text-text').style('display', 'block');
 			  d3.select(this.parentNode).selectAll('.circle-text-text').attr('clip-path', d => d.clipUid);
-			  d3.select(this.parentNode).selectAll('.circle-text-text').attr('font-size',d =>d.r>40?'24px':'12px').selectAll('tspan').text(d =>d.r>20? d.text: "");
-			  d3.select(this.parentNode).selectAll('.circle-text-text-perc').attr('font-size',d =>d.r>40?'20px':'10px')
-		}
-		d3.selectAll('.circle-element').on('mouseover', mouseover);
-		d3.selectAll('.circle-element').on('mouseout',mouseout);
+			  d3.select(this.parentNode).selectAll('.circle-text-text').selectAll('tspan').transition(1000).attr('font-size',d =>d.r>40?'24px':'12px').text(d =>d.r>20? d.text: "");
+			}
+			
+		    d3.selectAll('.circle-element').on('mouseover', mouseover);
+		    d3.selectAll('.circle-element').on('mouseout',mouseout);
+	    
 	}
 	
 	set back(back){
@@ -429,7 +440,7 @@ class Selector{
 	allRender(){
 		this._data.filter(d=> true);
 		this._data.setData('brand');
-		this._chart.rerender(data);
+		this._chart.rerender(this._data);
 		this._chart.level = 'brand';
 		this._menu.rerender();
 		this._back.unrender();
@@ -598,7 +609,6 @@ function main(raw_data){
 	const data = new Data({
 		rawdata:raw_data
 	})
-	const levels = ['brand', 'category']
 	
 	const bubble = new Bubble({
 		data:data,
@@ -641,6 +651,7 @@ function main(raw_data){
 	
 	back.selector = selector;
 	bubble.back = back;
+	bubble.menu = menu;
 	selector.render();
 	menu.render();
 }
