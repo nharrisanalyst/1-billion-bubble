@@ -101,34 +101,6 @@ class Data{
 	
 }
 
-const data = new Data({
-	rawdata:data_raw.map(d=>{
-		d.device_cummulative_cnts = parseInt(d.device_cummulative_cnts);
-		return d;
-	}),
-})
-
-
-
-const levels = ['brand', 'category']
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 class Bubble{
 	constructor({data, el}){
@@ -629,7 +601,15 @@ class ChartFull{
 
 
 
-function main(){
+function main(raw_data){
+	
+	const data = new Data({
+		rawdata:raw_data
+	})
+	
+	
+	console.log(' =======> raw_data',data_raw);
+	const levels = ['brand', 'category']
 	
 	const bubble = new Bubble({
 		data:data,
@@ -676,5 +656,17 @@ function main(){
 	menu.render();
 }
 
-main();
+
+
+d3.csv('/data/1B.csv', d=>{
+	return {
+		ts:d.ts,
+		brand:d.brand,
+		category:d.category,
+		device_cummulative_cnts:parseInt(d.device_cummulative_cnts),
+		idtype_count:parseInt(d.idtype_count),
+	}
+}).then(data=>{
+	main(data);
+});
 

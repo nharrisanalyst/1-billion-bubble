@@ -1,0 +1,2486 @@
+ts,brand,category,idtype_count,device_cummulative_cnts
+6/14/2021,Cololight,Light Bulb,1,12
+6/14/2021,Amazon,Voice Assistant,11,169952
+6/14/2021,Apple,Set Top Box,5,30981
+6/14/2021,Apple,Smart Phone,36,1447736
+6/14/2021,TP-Link,Light Bulb,3,2507
+6/14/2021,Amazon,Camera,6,38846
+6/14/2021,Apple,Tablet,30,344719
+6/14/2021,Logitech,Smart Appliance,1,267
+6/14/2021,Samsung,Smart Phone,904,351415
+6/14/2021,Sonos,Speaker,27,28328
+6/14/2021,Apple,Watch,7,225365
+6/14/2021,Samsung,Speaker,15,297
+6/14/2021,TP-Link,Light Switch,1,7170
+6/14/2021,Microsoft,Game Console,8,77578
+6/14/2021,Google,Smoke Alarm,1,5671
+6/14/2021,Ring,Doorbell,1,121
+6/14/2021,TP-Link,Plug,7,12922
+6/14/2021,Samsung,Tablet,264,64704
+6/14/2021,Vizio,TV,11,57172
+6/14/2021,Wiz,Light Bulb,1,8731
+6/14/2021,Roku,Set Top Box,24,96300
+6/14/2021,Netgear,Router,69,1401
+6/14/2021,Nixplay,Picture Frame,12,864
+6/14/2021,LG,Smart Phone,606,70667
+6/14/2021,Lenovo,Laptop & Computer,53,958
+6/14/2021,Dish,Set Top Box,8,10049
+6/14/2021,Sony,Smart Phone,289,48340
+6/14/2021,Motorola,Smart Phone,258,40965
+6/14/2021,BroadLink,Hub,5,414
+6/14/2021,Dyson,Air Purifier,19,2285
+6/14/2021,Sharp,Smart Phone,126,33294
+6/14/2021,Rinnai,Smart Appliance,1,37
+6/14/2021,Google,Smart Phone,60,32247
+6/14/2021,Bond,Hub,1,266
+6/14/2021,Whirlpool,Smart Appliance,3,307
+6/14/2021,JVC,TV,10,447
+6/14/2021,Philips,Set Top Box,1,219
+6/14/2021,Huawei,Smart Phone,515,24686
+6/14/2021,Kyocera,Smart Phone,91,12346
+6/14/2021,Myx Fitness,Fitness Trainer & Bike,1,78
+6/14/2021,Fujitsu,Smart Phone,39,10389
+6/14/2021,Delphin,Tablet,1,68
+6/14/2021,Netgear,Range Extender,11,88
+6/14/2021,Ultraloq,Doorlock,1,179
+6/14/2021,SHARP,Smart Phone,1,9971
+6/14/2021,Amazon,Tablet,31,76493
+6/14/2021,OnePlus,Smart Phone,20,6387
+6/14/2021,Samsung,TV,437,101847
+6/14/2021,Arlo,Camera,5,1769
+6/14/2021,Sharp,TV,27,10983
+6/14/2021,TP-Link,Camera,7,1203
+6/14/2021,Xiaomi,Smart Phone,198,6281
+6/14/2021,Kodak,Printer,5,96
+6/14/2021,Alcatel,Smart Phone,176,5823
+6/14/2021,Apple,Media Player,9,13648
+6/14/2021,Ford,Car,2,1316
+6/14/2021,Google,Tablet,7,2105
+6/14/2021,Hisense,TV,30,21046
+6/14/2021,HTC,Tablet,1,77
+6/14/2021,Beautyrest,Smart Appliance,1,106
+6/14/2021,iDevices,Light Switch,3,270
+6/14/2021,Lifx,Light Bulb,10,5626
+6/14/2021,ZTE,Smart Phone,153,4793
+6/14/2021,Sricam,Camera,1,82
+6/14/2021,Dell,Tablet,6,24
+6/14/2021,D-Link,Plug,1,38
+6/14/2021,Arris,Set Top Box,5,239
+6/14/2021,Android,Laptop & Computer,1,16
+6/14/2021,Oppo,Smart Phone,92,4721
+6/14/2021,Ulefone,Smart Phone,7,3886
+6/14/2021,Philips,Smart Phone,66,2645
+6/14/2021,Lenovo,Smart Phone,137,2429
+6/14/2021,Harman Kardon,Speaker,8,131
+6/14/2021,Honeywell,Home Security,3,550
+6/14/2021,Jungo,Router,1,20
+6/14/2021,Acer,Smart Phone,17,2273
+6/14/2021,Asus,Smart Phone,73,2253
+6/14/2021,Lenovo,Tablet,58,1852
+6/14/2021,Panasonic,Hub,1,135
+6/14/2021,Wahoo,WiFi Tracker,2,230
+6/14/2021,Nokia,Smart Phone,122,1877
+6/14/2021,Unimax,Smart Phone,4,1514
+6/14/2021,Panasonic,Media Player,123,5517
+6/14/2021,OPPO,Smart Phone,81,1481
+6/14/2021,Control4,Hub,9,168
+6/14/2021,Sony,Media Player,9,5044
+6/14/2021,EZVIZ,Camera,2,54
+6/14/2021,Sanyo,TV,8,802
+6/14/2021,P80X,Tablet,2,9
+6/14/2021,SZJ,Smart Phone,3,1401
+6/14/2021,Meteobridge,Weather Monitor,1,4
+6/14/2021,RabbitAir,Air Purifier,1,29
+6/14/2021,F,Smart Phone,19,1305
+6/14/2021,SH,Smart Phone,22,1209
+6/14/2021,Bissell,Robot Vacuum Cleaner,1,283
+6/14/2021,TP-LINK,Router,13,21
+6/14/2021,Compaq,Laptop & Computer,2,18
+6/14/2021,LG,Tablet,9,448
+6/14/2021,Samsung,Camera,5,1462
+6/14/2021,NETGEAR,Router,48,112
+6/14/2021,SHV45,Smart Phone,1,1201
+6/14/2021,Oppo,Watch,1,7
+6/14/2021,Eve,Camera,1,11
+6/14/2021,Wiko,Smart Phone,16,1005
+6/14/2021,Vivo,Smart Phone,146,996
+6/14/2021,HTC,Smart Phone,153,837
+6/14/2021,EPSON,Printer,55,502
+6/14/2021,Zolo,Speaker,1,5
+6/14/2021,iSmartgate,Garage Opener,1,26
+6/14/2021,TCL,Smart Phone,43,812
+6/14/2021,Nexsmart,Tablet,1,1
+6/14/2021,Coolpad,Smart Phone,14,709
+6/14/2021,Bosch,Fridge,9,88
+6/14/2021,Mimosa,Router,1,3
+6/14/2021,T-Mobile,Smart Phone,8,672
+6/14/2021,XPL,Tablet,2,11
+6/14/2021,Garmin,WiFi Tracker,11,326
+6/14/2021,Flair,Thermostat,1,26
+6/14/2021,Kangaroo,Hub,1,43
+6/14/2021,ZWO,Smart Appliance,1,7
+6/14/2021,Percee,Set Top Box,1,3
+6/14/2021,Samsung,Media Player,4,1203
+6/14/2021,CAT,Smart Phone,34,630
+6/14/2021,Nextbook,Tablet,3,25
+6/14/2021,Johns,TV,1,1
+6/14/2021,Xiaomi,Plug,1,15
+6/14/2021,DoCoMo,Smart Phone,26,520
+6/14/2021,Simple,Smart Phone,1,514
+6/14/2021,Barnes and Noble,Tablet,1,7
+6/14/2021,Samsung,Router,1,22
+6/14/2021,Aosp,Smart Phone,9,506
+6/14/2021,L,Smart Phone,10,472
+6/14/2021,Yealink,VoIP Gateway,33,634
+6/14/2021,Savant,Smart Remote,2,36
+6/14/2021,Ilive,Speaker,1,67
+6/14/2021,Coby Kyros,Tablet,1,1
+6/14/2021,JSW,Camera,1,16
+6/14/2021,8227L,Smart Phone,1,461
+6/14/2021,KYV47,Smart Phone,2,451
+6/14/2021,Amazon,Smart Phone,9,440
+6/14/2021,CAT,Tablet,9,140
+6/14/2021,AT&T,Router,1,3
+6/14/2021,Toybox,Printer,1,22
+6/14/2021,A6,Smart Phone,1,390
+6/14/2021,ATT,Smart Phone,2,372
+6/14/2021,Bang & Olufsen,Speaker,12,527
+6/14/2021,S900,Tablet,1,2
+6/14/2021,Toshiba,Media Player,20,307
+6/14/2021,Lg,Smart Phone,1,364
+6/14/2021,Tone,Smart Phone,5,349
+6/14/2021,Toshiba,Smart Phone,38,328
+6/14/2021,Honda,Smart Phone,1,318
+6/14/2021,Zidoo,Tablet,1,1
+6/14/2021,Nuvo,Media Player,1,248
+6/14/2021,Motorola,Tablet,8,35
+6/14/2021,100015685,Smart Phone,2,314
+6/14/2021,Linksys,Range Extender,2,3
+6/14/2021,PicassoTab,Tablet,1,4
+6/14/2021,Play,Laptop & Computer,1,3
+6/14/2021,LeakBot,Sensor,1,2
+6/14/2021,KYV43,Smart Phone,1,312
+6/14/2021,JT10,Tablet,2,5
+6/14/2021,Popin,Smart Phone,3,310
+6/14/2021,Tolino,Smart Appliance,1,3
+6/14/2021,Verizon,Smart Phone,1,278
+6/14/2021,EM,Smart Phone,2,230
+6/14/2021,LG Android TV,TV,1,1
+6/14/2021,RIM,Smart Phone,12,217
+6/14/2021,Realme,Smart Phone,29,216
+6/14/2021,BX,Tablet,1,1
+6/14/2021,Marantz,Set Top Box,23,392
+6/14/2021,Nuki,Hub,1,5
+6/14/2021,Araknis,Router,9,120
+6/14/2021,inch,TV,1,1
+6/14/2021,Rikomagic,TV,2,9
+6/14/2021,Ubiquiti,Network Controller,2,12
+6/14/2021,Energy Sistem,Tablet,2,4
+6/14/2021,Pyxis,Smart Phone,5,211
+6/14/2021,Audiovox,Smart Phone,7,182
+6/14/2021,TAB,Smart Phone,8,178
+6/14/2021,HN,Smart Phone,4,171
+6/14/2021,Oneplus,Smart Phone,55,169
+6/14/2021,Blu,Smart Phone,39,166
+6/14/2021,XQ,Smart Phone,11,164
+6/14/2021,Azpen,Tablet,2,112
+6/14/2021,Hismart,Smart Phone,3,164
+6/14/2021,Ulephone,Smart Phone,21,152
+6/14/2021,Sony,Set Top Box,3,18
+6/14/2021,VK Mobile,Smart Phone,16,152
+6/14/2021,ASUS,Tablet,3,5
+6/14/2021,LM,Smart Phone,2,148
+6/14/2021,Lavie,Tablet,5,23
+6/14/2021,SuperSonic,Tablet,23,324
+6/14/2021,AT&T,Smart Phone,3,130
+6/14/2021,Ezze,Smart Phone,29,127
+6/14/2021,Apartment,TV,1,1
+6/14/2021,Microsoft,Smart Phone,13,123
+6/14/2021,Notepad,Smart Phone,2,123
+6/14/2021,BLU,Smart Phone,1,121
+6/14/2021,Meizu,Smart Phone,39,120
+6/14/2021,Freetel,Smart Phone,9,120
+6/14/2021,VinSmart,Smart Phone,1,118
+6/14/2021,Sandman,Clock,1,4
+6/14/2021,Classic,Smart Phone,5,116
+6/14/2021,SDPF1095,Smart Phone,2,104
+6/14/2021,KingPad,Tablet,3,3
+6/14/2021,Generac,Network Controller,1,5
+6/14/2021,PVT,Tablet,1,1
+6/14/2021,Essential,Smart Phone,1,102
+6/14/2021,Mobile,Smart Phone,1,101
+6/14/2021,Hot Pepper,Smart Phone,1,100
+6/14/2021,PlayRoom,TV,1,1
+6/14/2021,IO Data,Router,12,30
+6/14/2021,D,Smart Phone,2,91
+6/14/2021,Garmin,Wearable & Virtual Reality,5,2005
+6/14/2021,Quad,Smart Phone,13,90
+6/14/2021,Pantech,Smart Phone,15,89
+6/14/2021,Kingbox,Media Player,1,136
+6/14/2021,Medion,Tablet,11,44
+6/14/2021,DD-WRT,Router,3,3
+6/14/2021,ELEMENT,TV,1,6
+6/14/2021,Evpad,Smart Phone,13,85
+6/14/2021,HUB6,Home Security,1,2
+6/14/2021,P,Smart Phone,8,83
+6/14/2021,LC,Smart Phone,12,82
+6/14/2021,Sabresd,Smart Phone,2,81
+6/14/2021,Elemnt,Smart Phone,1,80
+6/14/2021,Tone,Tablet,1,1
+6/14/2021,jazmos,TV,1,1
+6/14/2021,BSL,Tablet,1,1
+6/14/2021,Transpeed,Tablet,3,5
+6/14/2021,Orro,Light Switch,1,2
+6/14/2021,Xiaomi,Light Bulb,6,707
+6/14/2021,A3,Smart Phone,2,78
+6/14/2021,Medion,Smart Phone,15,77
+6/14/2021,Crestron,Smart Remote,1,1
+6/14/2021,LeEco,Smart Phone,11,77
+6/14/2021,Sanyo,Smart Phone,4,76
+6/14/2021,Dragon,Tablet,1,1
+6/14/2021,Fujitsu,Tablet,9,1277
+6/14/2021,Lutron,Light Switch,2,1131
+6/14/2021,Sony,Game Console,8,104214
+6/14/2021,Phone,Smart Phone,1,73
+6/14/2021,BEST8167,Smart Phone,1,73
+6/14/2021,CM201,Tablet,1,1
+6/14/2021,Midea,Air Conditioner,1,773
+6/14/2021,Bosstv,Smart Phone,4,72
+6/14/2021,Devialet,Speaker,4,15
+6/14/2021,SEC,Smart Phone,1,71
+6/14/2021,A94GT,Tablet,2,9
+6/14/2021,AudioCodes,VoIP Gateway,1,3
+6/14/2021,HLQ,Tablet,2,2
+6/14/2021,Kazuna,Smart Phone,2,70
+6/14/2021,Arris,Router,7,41
+6/14/2021,X5,Smart Phone,1,69
+6/14/2021,Sonim,Smart Phone,3,68
+6/14/2021,MaxiSys,Tablet,2,2
+6/14/2021,Samsung,Air Purifier,1,121
+6/14/2021,Swann,Camera,3,337
+6/14/2021,VW,Tablet,1,1
+6/14/2021,Volkswagen,Car,1,17
+6/14/2021,Cricket,Smart Phone,3,68
+6/14/2021,Android,Smart Phone,9,67
+6/14/2021,Panasonic,Smart Phone,13,63
+6/14/2021,John Deere,Camera,1,7
+6/14/2021,Samsung,Watch,9,14832
+6/14/2021,Ticwatch,Watch,4,6
+6/14/2021,Titan,Set Top Box,1,3
+6/14/2021,HUMAX,Set Top Box,9,2146
+6/14/2021,Haier,Smart Appliance,1,3
+6/14/2021,ProScan,Tablet,7,308
+6/14/2021,GOCLEVER,Smart Phone,1,62
+6/14/2021,Trane,Thermostat,1,1164
+6/14/2021,Clova,Voice Assistant,1,29
+6/14/2021,Sony Ericsson,Smart Phone,8,60
+6/14/2021,W,Smart Phone,4,60
+6/14/2021,Aqara,Hub,1,33
+6/14/2021,P80,Tablet,2,7
+6/14/2021,Konke,Plug,1,3
+6/14/2021,J:COM,Set Top Box,2,33245
+6/14/2021,Popin,Tablet,3,111
+6/14/2021,Lavietab,Smart Phone,4,59
+6/14/2021,BlackBerry,Smart Phone,12,56
+6/14/2021,Google,Set Top Box,7,55187
+6/14/2021,Philips,TV,29,5244
+6/14/2021,Panasonic,VoIP Gateway,2,24
+6/14/2021,Douzhanggui,Tablet,1,1
+6/14/2021,Amazon,Doorbell,5,20362
+6/14/2021,Plum,Light Switch,1,36
+6/14/2021,HismartTv,Smart Phone,1,56
+6/14/2021,Wopad,Tablet,1,1
+6/14/2021,Actiontec,Range Extender,2,9
+6/14/2021,Infinix,Smart Phone,19,55
+6/14/2021,Hisense,Tablet,4,6
+6/14/2021,Abox,Tablet,1,1
+6/14/2021,Xiaomi,Set Top Box,11,470
+6/14/2021,SuperBox,Smart Phone,2,55
+6/14/2021,Kyocera,Printer,1,21
+6/14/2021,THE,Tablet,1,1
+6/14/2021,Teckin,Camera,1,207
+6/14/2021,CP,Smart Phone,13,54
+6/14/2021,Konka,Smart Phone,6,53
+6/14/2021,Facebook,Tablet,3,2618
+6/14/2021,PORTRAIT01,Smart Phone,2,53
+6/14/2021,Tecno Mobile,Smart Phone,27,50
+6/14/2021,Western,Smart Phone,3,50
+6/14/2021,Apple,Router,4,1220
+6/14/2021,Intel,Tablet,1,63
+6/14/2021,Smartak,Tablet,1,200
+6/14/2021,Dell Inc.,Laptop & Computer,5,5
+6/14/2021,NEC,Tablet,2,689
+6/14/2021,nVent,Thermostat,1,214
+6/14/2021,Kingston,NAS Storage,1,13
+6/14/2021,Tesla,Solar,2,111
+6/14/2021,Cable Plus,Set Top Box,1,426
+6/14/2021,BYT,Smart Phone,1,50
+6/14/2021,Foenix,Smart Phone,1,50
+6/14/2021,Alcatel,Router,1,1
+6/14/2021,onn,TV,15,5748
+6/14/2021,Lohas,Light Bulb,1,91
+6/14/2021,Control4,Tablet,2,11
+6/14/2021,Revvl,Smart Phone,2,49
+6/14/2021,Belkin,Light Switch,2,2146
+6/14/2021,Tado,Air Conditioner,2,19
+6/14/2021,iLive,Speaker,2,10
+6/14/2021,Nicolas,TV,1,1
+6/14/2021,iDevices,Smart Appliance,1,11
+6/14/2021,Onkyo,Set Top Box,13,697
+6/14/2021,DM,Smart Phone,1,48
+6/14/2021,Nftm,Smart Phone,4,46
+6/14/2021,Victure,Camera,1,99
+6/14/2021,Oukitel,Smart Phone,3,45
+6/14/2021,Palm,Smart Phone,2,43
+6/14/2021,Belkin,Router,9,22
+6/14/2021,Neabot,Robot Vacuum Cleaner,1,17
+6/14/2021,ViewSonic,Tablet,2,2
+6/14/2021,Tivo,Smart Phone,1,43
+6/14/2021,Global,Tablet,1,1
+6/14/2021,TCT Mobile Limited (Alcatel),Tablet,1,37
+6/14/2021,BlackBerry,TV,1,2
+6/14/2021,TAB,Tablet,7,451
+6/14/2021,ARROWSM04,Smart Phone,1,43
+6/14/2021,Onelink,Smoke Alarm,2,124
+6/14/2021,Generic,Smart Phone,2,41
+6/14/2021,Denon,Media Player,8,129
+6/14/2021,Bowers & Wilkins,Speaker,5,25
+6/14/2021,Leviton,Light Switch,2,1985
+6/14/2021,HP,Smart Phone,8,40
+6/14/2021,SmartEye,Camera,1,11
+6/14/2021,Tank,Smart Phone,2,40
+6/14/2021,Panasonic,TV,20,7734
+6/14/2021,Gravity,Smart Phone,2,40
+6/14/2021,Mygica,Tablet,2,2
+6/14/2021,XPL,Smart Phone,3,39
+6/14/2021,Dmtab,Tablet,3,5
+6/14/2021,Insignia,TV,12,1890
+6/14/2021,2T,Smart Phone,3,39
+6/14/2021,EV,Tablet,3,3
+6/14/2021,Mitsubishi,Smart Phone,2,39
+6/14/2021,Melnor,Sprinkler,1,15
+6/14/2021,4K,Smart Phone,1,39
+6/14/2021,Verizon,Router,3,9
+6/14/2021,TCC893X,Smart Phone,2,36
+6/14/2021,Vava,Smart Phone,1,36
+6/14/2021,A5,Smart Phone,1,35
+6/14/2021,2K,Smart Phone,1,34
+6/14/2021,Denon,Speaker,9,186
+6/14/2021,Q201,Smart Phone,1,33
+6/14/2021,Amazon,Media Player,2,56
+6/14/2021,Sugar,Smart Phone,15,31
+6/14/2021,X6,Tablet,1,3
+6/14/2021,Lorex,Smart Monitor,1,3
+6/14/2021,NS,Tablet,4,7
+6/14/2021,Red,Smart Phone,1,31
+6/14/2021,Fujitsu,Air Conditioner,1,29
+6/14/2021,Meross,Hub,1,5
+6/14/2021,kenslies,TV,1,1
+6/14/2021,Momentum,Garage Opener,1,28
+6/14/2021,MaxiSys,Smart Phone,7,30
+6/14/2021,LC,Tablet,2,2
+6/14/2021,Digicel,Smart Phone,3,30
+6/14/2021,Brid,Air Purifier,1,5
+6/14/2021,WAC Lighting,Smart Appliance,1,13
+6/14/2021,KDDI,Router,2,7
+6/14/2021,ARRIS,Router,14,114
+6/14/2021,Nanit,Baby Camera,1,502
+6/14/2021,Blackberry,Smart Phone,1,30
+6/14/2021,X2,Smart Phone,1,30
+6/14/2021,Panasonic,Camera,3,216
+6/14/2021,Samsung,Dishwasher,1,264
+6/14/2021,Koogeek,Light Bulb,2,19
+6/14/2021,Hisense,Smart Phone,17,29
+6/14/2021,Lorex,Camera,3,19
+6/14/2021,BDF,Tablet,1,419
+6/14/2021,Vonage,VoIP Gateway,2,230
+6/14/2021,Haier,TV,8,21
+6/14/2021,TV,Smart Phone,6,29
+6/14/2021,Qardio,Smart Monitor,1,63
+6/14/2021,Feit,Light Bulb,1,6
+6/14/2021,BNT,Tablet,5,9
+6/14/2021,Platinum,Smart Phone,4,28
+6/14/2021,Clova,Speaker,1,58
+6/14/2021,Hismart,Set Top Box,1,2
+6/14/2021,Apache,TV,1,9
+6/14/2021,Mastv,Tablet,1,2
+6/14/2021,A7,Smart Phone,1,28
+6/14/2021,Hidptandroid,Smart Phone,3,27
+6/14/2021,KK,Tablet,1,2
+6/14/2021,Senwa,Smart Phone,1,27
+6/14/2021,Hydrawise,Smart Remote,1,24
+6/14/2021,Funai,Smart Phone,1,27
+6/14/2021,Cove,Dishwasher,1,2
+6/14/2021,Encored,Smart Monitor,1,2
+6/14/2021,Vizio,Speaker,1,176
+6/14/2021,Acura,Smart Phone,1,27
+6/14/2021,Stratus,Smart Phone,1,27
+6/14/2021,NW,Smart Phone,2,26
+6/14/2021,Dyson,Smart Appliance,2,421
+6/14/2021,Thermador,Smart Appliance,3,36
+6/14/2021,Xerox,Printer,6,3110
+6/14/2021,De'Longhi,Coffee Maker,1,3
+6/14/2021,Volvo,Car,1,53
+6/14/2021,Landvo,Smart Phone,1,26
+6/14/2021,FF,Smart Phone,1,26
+6/14/2021,Umidigi,Smart Phone,1,25
+6/14/2021,Vankyo,Smart Phone,1,25
+6/14/2021,A95X,Smart Phone,9,24
+6/14/2021,V-Tech,VoIP Gateway,1,5
+6/14/2021,Emmas,TV,1,1
+6/14/2021,Xgimi,Set Top Box,1,12
+6/14/2021,Cambium,Smart Appliance,1,4
+6/14/2021,Nokia,Router,2,3
+6/14/2021,KC,Smart Phone,3,24
+6/14/2021,Advance,Smart Phone,2,24
+6/14/2021,V8,Smart Phone,2,24
+6/14/2021,Nflxso,TV,1,1
+6/14/2021,N,Smart Phone,9,23
+6/14/2021,Yuntab,Tablet,1,15
+6/14/2021,Mpman,Smart Phone,9,23
+6/14/2021,Fiio,Smart Phone,5,23
+6/14/2021,Google,Camera,2,8732
+6/14/2021,OPSO,Plug,1,4
+6/14/2021,Lavie,Smart Phone,4,23
+6/14/2021,Google,Laptop & Computer,3,82582
+6/14/2021,Samsung,Smart Appliance,3,1045
+6/14/2021,Letv,Smart Phone,10,22
+6/14/2021,EUT110,Tablet,1,1
+6/14/2021,NS,Smart Phone,9,22
+6/14/2021,Ecovacs,Robot Vacuum Cleaner,1,960
+6/14/2021,Lavietab,Tablet,4,26
+6/14/2021,Affix,Tablet,1,1
+6/14/2021,ARRIS,TV,8,20
+6/14/2021,Winix,Air Purifier,1,308
+6/14/2021,Rock Space,Router,1,1
+6/14/2021,V2,Smart Phone,4,22
+6/14/2021,TS,Smart Phone,2,22
+6/14/2021,GLOBAL4K,Set Top Box,1,2
+6/14/2021,Blackview,Smart Phone,7,21
+6/14/2021,Lava,Smart Phone,6,21
+6/14/2021,HTV,Tablet,1,1
+6/14/2021,PC,Smart Phone,4,21
+6/14/2021,Cocoon,Camera,1,2
+6/14/2021,DP,Smart Phone,3,21
+6/14/2021,N106,Tablet,1,1
+6/14/2021,S20,Smart Phone,3,21
+6/14/2021,T96,Tablet,1,1
+6/14/2021,NUU Mobile,Smart Phone,2,21
+6/14/2021,Wehc,Smart Phone,1,21
+6/14/2021,Mycar,Car,1,215
+6/14/2021,SHV43,Smart Phone,1,20
+6/14/2021,JAY-Tech,Tablet,1,1
+6/14/2021,Kinhsiahh,TV,1,1
+6/14/2021,Hoobs,Hub,1,33
+6/14/2021,NOTE30,Smart Phone,1,20
+6/14/2021,A6L,Smart Phone,2,19
+6/14/2021,CSD,Smart Phone,1,19
+6/14/2021,SolarCity,Solar,1,68
+6/14/2021,Pat,TV,1,1
+6/14/2021,Vaio,Smart Phone,1,19
+6/14/2021,Denon,Set Top Box,1,1253
+6/14/2021,Airtv,Smart Phone,1,19
+6/14/2021,TMC800,Tablet,1,1
+6/14/2021,Vodafone,Smart Phone,13,18
+6/14/2021,Ting,Sensor,1,73
+6/14/2021,DophiGo,Baby Camera,1,2
+6/14/2021,Logic,Smart Phone,6,18
+6/14/2021,Huawei,Router,3,24
+6/14/2021,SimpliSafe,Camera,1,3333
+6/14/2021,Scotts,Sprinkler,1,13
+6/14/2021,YQ,Tablet,1,1
+6/14/2021,Qiuyu,Smart Phone,6,18
+6/14/2021,Amcrest,Home Security,2,73
+6/14/2021,TSB,Set Top Box,1,1
+6/14/2021,Elite,Smart Phone,4,18
+6/14/2021,Bluesound,Speaker,5,48
+6/14/2021,Sengled,Light Bulb,4,848
+6/14/2021,Bosch,Washer Dryer,2,13
+6/14/2021,Pixel,Smart Phone,1,18
+6/14/2021,NABI2,Smart Phone,1,18
+6/14/2021,Jetstream,Smart Phone,1,18
+6/14/2021,Russound,Speaker,2,17
+6/14/2021,Piper,Camera,1,49
+6/14/2021,Blossom,Sprinkler,1,16
+6/14/2021,Twinkly,Light Bulb,1,70
+6/14/2021,Kodak,Camera,3,17
+6/14/2021,Wyze,Doorlock,1,108
+6/14/2021,ecobee,Light Switch,1,79
+6/14/2021,Somfy,Smart Appliance,1,85
+6/14/2021,Smappee,Smart Appliance,1,3
+6/14/2021,Meural,Picture Frame,1,26
+6/14/2021,Belkin,Plug,3,5202
+6/14/2021,Sony,Smart Appliance,1,76
+6/14/2021,Buick,Car,2,28
+6/14/2021,Currant,Plug,1,7
+6/14/2021,SkyBell,Doorbell,1,2675
+6/14/2021,Tesla,Car,6,1954
+6/14/2021,Odroid,Game Console,1,1
+6/14/2021,Tonal,Fitness Trainer & Bike,1,80
+6/14/2021,iTel,Smart Phone,9,17
+6/14/2021,Valve,Set Top Box,1,105
+6/14/2021,Marshall,Speaker,3,24
+6/14/2021,Sensibo,Smart Remote,1,292
+6/14/2021,Polk Audio,Speaker,2,6
+6/14/2021,LG,Fridge,1,114
+6/14/2021,Shark,Smart Phone,5,17
+6/14/2021,ASK,Smart Phone,5,17
+6/14/2021,Mitel,VoIP Gateway,11,152
+6/14/2021,Arlo,Baby Camera,1,224
+6/14/2021,Microseven,Camera,1,6
+6/14/2021,MaiTai,Tablet,1,96
+6/14/2021,Western Digital,NAS Storage,3,911
+6/14/2021,ZN,Smart Phone,5,17
+6/14/2021,Grand,Smart Phone,4,17
+6/14/2021,CyberQ,Smart Remote,1,14
+6/14/2021,UMIDIGI,Smart Phone,2,17
+6/14/2021,Smart Life,Plug,1,30
+6/14/2021,T7K,Tablet,1,3
+6/14/2021,JuiceBox,Smart Appliance,1,17
+6/14/2021,Fujitsu,Laptop & Computer,2,57
+6/14/2021,Ruckus,Router,2,37
+6/14/2021,SCV43,Smart Phone,2,17
+6/14/2021,LGE,Smart Phone,2,17
+6/14/2021,MIXC,Smart Phone,2,17
+6/14/2021,Linksys,VoIP Gateway,1,11
+6/14/2021,rockspace,Router,1,2
+6/14/2021,Wansview,Camera,1,42
+6/14/2021,EVB3561SV,Tablet,1,1
+6/14/2021,Honeywell,Smart Phone,1,17
+6/14/2021,Mobvoi,Plug,1,4
+6/14/2021,Manjee,Tablet,1,24
+6/14/2021,Little Genius,Watch,1,7
+6/14/2021,G9,Smart Phone,1,17
+6/14/2021,Marantz,Media Player,1,48
+6/14/2021,Metro,Smart Phone,1,17
+6/14/2021,I11,Smart Phone,1,17
+6/14/2021,Nexx,Plug,1,14
+6/14/2021,Riva,Speaker,1,4
+6/14/2021,S5,Smart Phone,1,17
+6/14/2021,Mogo,Smart Phone,1,16
+6/14/2021,Ubiquiti,Router,6,42
+6/14/2021,AGP,Smart Phone,1,16
+6/14/2021,X96MAX,Smart Phone,5,15
+6/14/2021,Yinlishi,Media Player,1,39
+6/14/2021,Mitsubishi,Air Conditioner,1,1
+6/14/2021,LT,Smart Phone,3,15
+6/14/2021,Sprout Channel,Tablet,1,4
+6/14/2021,V,Smart Phone,3,15
+6/14/2021,Nooie,Baby Camera,1,10
+6/14/2021,Scepter,Smart Phone,1,15
+6/14/2021,G90,Smart Phone,1,15
+6/14/2021,FiGO,Smart Phone,1,15
+6/14/2021,Iplay,Smart Phone,4,14
+6/14/2021,Gateway,Laptop & Computer,2,8
+6/14/2021,Nanoleaf,Light Bulb,3,159
+6/14/2021,YY,Smart Phone,3,14
+6/14/2021,Momentum,Camera,3,245
+6/14/2021,A94GT,Smart Phone,2,14
+6/14/2021,Evbox,Smart Phone,2,14
+6/14/2021,DW,Smart Phone,1,14
+6/14/2021,Nubia,Smart Phone,1,14
+6/14/2021,PlainsTCL,TV,1,2
+6/14/2021,UBOX4,Smart Phone,1,14
+6/14/2021,G101,Smart Phone,1,14
+6/14/2021,Digiland,Tablet,2,10
+6/14/2021,M10,Tablet,2,2
+6/14/2021,Power,Smart Phone,1,14
+6/14/2021,Carlyle,Smart Phone,1,14
+6/14/2021,Kinetico,Sensor,1,8
+6/14/2021,X4,Smart Phone,6,13
+6/14/2021,Cals,TV,1,1
+6/14/2021,Cubot,Smart Phone,4,13
+6/14/2021,Super,Set Top Box,1,1
+6/14/2021,Octastream,Smart Phone,3,13
+6/14/2021,KTV,Smart Phone,2,13
+6/14/2021,Eight,Tablet,1,1
+6/14/2021,MT003,Smart Phone,2,13
+6/14/2021,Ainol,Tablet,1,1
+6/14/2021,Trio,Tablet,4,5
+6/14/2021,A8202,Smart Phone,1,13
+6/14/2021,SKW,Smart Phone,1,13
+6/14/2021,Samsung,Plug,2,2182
+6/14/2021,Octopus,Smart Phone,1,13
+6/14/2021,Realtek,Router,3,62
+6/14/2021,REAL6580,Smart Phone,1,13
+6/14/2021,RemoteLock,Doorlock,1,105
+6/14/2021,RK3326,Smart Phone,1,13
+6/14/2021,Trio,Smart Phone,6,12
+6/14/2021,LG,Laptop & Computer,5,70
+6/14/2021,Levoit,Air Purifier,1,115
+6/14/2021,Bmobile,Smart Phone,5,12
+6/14/2021,Android,Set Top Box,1,1
+6/14/2021,D-Link,Sensor,3,16
+6/14/2021,Mobvoi,Watch,5,75
+6/14/2021,TTBKB10,Tablet,1,1
+6/14/2021,AerynAmelia,TV,1,1
+6/14/2021,NEW,Tablet,1,1
+6/14/2021,Nebula,Smart Appliance,1,144
+6/14/2021,Orange Pi,Laptop & Computer,1,1
+6/14/2021,P80,Smart Phone,3,12
+6/14/2021,Skylink,Garage Opener,1,8
+6/14/2021,WD,Media Player,3,34
+6/14/2021,corega,Router,1,1
+6/14/2021,MAL,Smart Phone,1,12
+6/14/2021,JHT,Smart Phone,1,12
+6/14/2021,SunPower,Solar,1,68
+6/14/2021,iDevices,Plug,3,242
+6/14/2021,Xbmcmart,Smart Phone,1,12
+6/14/2021,ABB,Router,1,2
+6/14/2021,Bosch,Smart Appliance,3,7
+6/14/2021,LG,Washer Dryer,2,268
+6/14/2021,Note,Smart Phone,5,11
+6/14/2021,MitraStar,Router,1,2
+6/14/2021,Global,Smart Phone,3,11
+6/14/2021,Wifi,Smart Phone,2,11
+6/14/2021,Google,Game Console,1,228
+6/14/2021,JBL,Smart Phone,2,11
+6/14/2021,Nvidia,Set Top Box,2,1484
+6/14/2021,Juno,Light Bulb,1,16
+6/14/2021,Google,Thermostat,1,20385
+6/14/2021,Dlite,Smart Phone,2,11
+6/14/2021,Petcube,Camera,1,98
+6/14/2021,FreeStream,Smart Phone,2,11
+6/14/2021,Kurio,Tablet,1,193
+6/14/2021,Unknown System Builder,Laptop & Computer,1,1
+6/14/2021,Sony,Camera,1,23
+6/14/2021,Allied,Router,1,1
+6/14/2021,At&t,Set Top Box,1,425
+6/14/2021,Manta Multimedia,Tablet,1,1
+6/14/2021,Leeo,Sensor,1,9
+6/14/2021,Purpleair,Sensor,1,34
+6/14/2021,Baidu,Speaker,1,116
+6/14/2021,VOCOlinc,Plug,2,76
+6/14/2021,KYV44,Smart Phone,2,11
+6/14/2021,iFit,Tablet,1,16
+6/14/2021,JELLY2,Smart Phone,1,11
+6/14/2021,T8,Tablet,1,2
+6/14/2021,Ambarella,Camera,1,59
+6/14/2021,GMC,Car,2,138
+6/14/2021,Blackweb,Speaker,1,51
+6/14/2021,Androidapp,Smart Phone,1,11
+6/14/2021,S900,Smart Phone,1,11
+6/14/2021,Etekcity,Light Switch,1,31
+6/14/2021,Pitboss,Smart Appliance,1,254
+6/14/2021,WD,Tablet,1,1
+6/14/2021,Noon,Light Switch,1,5
+6/14/2021,AppUnique,Smart Appliance,1,45
+6/14/2021,Clover,Smart Appliance,1,72
+6/14/2021,Sevenhugs,Smart Remote,1,24
+6/14/2021,Suunto,Smart Phone,1,11
+6/14/2021,Slate,Tablet,1,31
+6/14/2021,Mediatek,Tablet,1,13
+6/14/2021,Level Sense,Sensor,1,8
+6/14/2021,MT,Smart Phone,1,11
+6/14/2021,Danew,Tablet,1,11
+6/14/2021,ADP,Smart Phone,7,10
+6/14/2021,Johnson Controls,Thermostat,1,22
+6/14/2021,NL,Smart Phone,5,10
+6/14/2021,ComTrade Tesla,Smart Phone,3,10
+6/14/2021,LG,Dishwasher,1,27
+6/14/2021,Ubiquiti,Plug,1,34
+6/14/2021,Fi,Smart Appliance,1,7
+6/14/2021,Airties,TV,1,3
+6/14/2021,Jiobit,WiFi Tracker,1,36
+6/14/2021,A9,Smart Phone,2,10
+6/14/2021,Polaroid,Speaker,1,2
+6/14/2021,HB,Smart Phone,2,10
+6/14/2021,Binatone,Baby Camera,1,329
+6/14/2021,KIDS705,Smart Phone,2,10
+6/14/2021,LIFX,Light Bulb,1,12
+6/14/2021,Nec,Printer,1,4
+6/14/2021,RainMachine,Sprinkler,1,95
+6/14/2021,Omnik,Solar,1,2
+6/14/2021,Z6,Smart Phone,2,10
+6/14/2021,VOO,Set Top Box,1,1
+6/14/2021,Velux,Hub,1,9
+6/14/2021,LaMetric,Clock,1,29
+6/14/2021,KAZ,Smart Phone,2,10
+6/14/2021,Dragon,Smart Phone,1,10
+6/14/2021,Nextbook,Smart Phone,1,10
+6/14/2021,August,Doorbell,1,33
+6/14/2021,Xiaomi,Smart Remote,1,3
+6/14/2021,ANS,Smart Phone,1,10
+6/14/2021,G101,Tablet,1,3
+6/14/2021,RealPad,Tablet,1,2
+6/14/2021,G5,Smart Phone,1,10
+6/14/2021,JCI,Smart Phone,1,10
+6/14/2021,Mygica,Smart Phone,4,9
+6/14/2021,Qere,Tablet,1,16
+6/14/2021,Smart,Smart Phone,4,9
+6/14/2021,Hubitat,Hub,1,1
+6/14/2021,MD,Smart Phone,3,9
+6/14/2021,Likebook,Tablet,2,2
+6/14/2021,H10,Tablet,1,5
+6/14/2021,LCD,Smart Phone,3,9
+6/14/2021,CM,Smart Phone,2,9
+6/14/2021,SCV46,Smart Phone,2,9
+6/14/2021,PicassoTab,Smart Phone,2,9
+6/14/2021,CnM,Tablet,1,1
+6/14/2021,Tenda,Mesh Router,1,1
+6/14/2021,NetGear,Router,2,4
+6/14/2021,Nexxt,Router,1,1
+6/14/2021,Loopj,Smart Phone,1,9
+6/14/2021,I12PRO,Smart Phone,1,9
+6/14/2021,Viessmann,Smart Appliance,1,1
+6/14/2021,Humax,TV,1,1
+6/14/2021,URC,Hub,1,1
+6/14/2021,Ihome,Smart Phone,1,9
+6/14/2021,Qseven,Smart Phone,1,9
+6/14/2021,Actiontec,Router,2,5
+6/14/2021,X92,Smart Phone,1,9
+6/14/2021,TP9,Tablet,1,1
+6/14/2021,AW,TV,1,1
+6/14/2021,RQ,Smart Phone,1,9
+6/14/2021,BNT,Smart Phone,6,8
+6/14/2021,Realtek,Set Top Box,1,4
+6/14/2021,Studio,Smart Phone,5,8
+6/14/2021,Skystream,Smart Phone,4,8
+6/14/2021,HK1,Smart Phone,4,8
+6/14/2021,HL,Tablet,1,1
+6/14/2021,Google,VoIP Gateway,1,2
+6/14/2021,Hibox,Tablet,1,1
+6/14/2021,Nitro,Smart Phone,3,8
+6/14/2021,Qilive,TV,1,1
+6/14/2021,Amazfit,Smart Phone,3,8
+6/14/2021,Mirabella Genio,Light Bulb,1,7
+6/14/2021,Fossil,Smart Phone,2,8
+6/14/2021,X96AIR,Smart Phone,2,8
+6/14/2021,Bluesound,Media Player,8,33
+6/14/2021,Intel,Router,1,1
+6/14/2021,DPT,Smart Phone,2,8
+6/14/2021,JT07,Tablet,1,1
+6/14/2021,Amazfit,Watch,3,3
+6/14/2021,S21,Smart Phone,2,8
+6/14/2021,Foxtel,Smart Phone,1,8
+6/14/2021,Raven,Smart Phone,1,8
+6/14/2021,T7K,Smart Phone,1,8
+6/14/2021,ChargePoint,Smart Appliance,1,112
+6/14/2021,Evans,TV,1,1
+6/14/2021,Yes,Smart Phone,1,8
+6/14/2021,MSM8916,Smart Phone,1,8
+6/14/2021,La Crosse,Weather Monitor,1,402
+6/14/2021,7DRK,Smart Phone,1,8
+6/14/2021,Samsung,Printer,2,510
+6/14/2021,Ask,Smart Phone,1,8
+6/14/2021,Comcast,Set Top Box,2,4510
+6/14/2021,SHARP,TV,1,1
+6/14/2021,MeganInsignia,TV,1,1
+6/14/2021,AI,Light Bulb,2,10
+6/14/2021,Mio,Smart Phone,1,8
+6/14/2021,XCI,Router,1,1
+6/14/2021,SDM,Smart Phone,1,8
+6/14/2021,Gionee,Smart Phone,7,7
+6/14/2021,Arlo,Doorbell,2,381
+6/14/2021,Mysa,Thermostat,1,530
+6/14/2021,ELO,Smart Phone,5,7
+6/14/2021,Tinno,Smart Phone,4,7
+6/14/2021,Sensibo,Air Conditioner,1,20
+6/14/2021,BeyondTV,Set Top Box,1,363
+6/14/2021,iRobot,Robot Vacuum Cleaner,1,14114
+6/14/2021,Mate,Smart Phone,4,7
+6/14/2021,Generac,Smart Monitor,1,22
+6/14/2021,M8S,Smart Phone,3,7
+6/14/2021,Circle,Smart Appliance,1,140
+6/14/2021,2K,Set Top Box,1,2
+6/14/2021,Remo+,Doorbell,1,53
+6/14/2021,U.S. Cellular,Smart Phone,3,7
+6/14/2021,Full,Smart Phone,3,7
+6/14/2021,HX,Tablet,1,1
+6/14/2021,Yutmart,Smart Phone,2,7
+6/14/2021,RCA,Tablet,1,6
+6/14/2021,IMSAI,Laptop & Computer,1,1
+6/14/2021,GoPro,Camera,2,74
+6/14/2021,Maximus,Smart Phone,2,7
+6/14/2021,JADOO5,Smart Phone,2,7
+6/14/2021,IO Data,NAS Storage,2,28
+6/14/2021,Belkin,Sensor,1,26
+6/14/2021,Wynd,Smart Monitor,1,7
+6/14/2021,FoxxD,Smart Phone,1,7
+6/14/2021,Soma,Smart Remote,1,11
+6/14/2021,GE,Smart Appliance,1,2678
+6/14/2021,GCN,Smart Phone,1,7
+6/14/2021,S80,Smart Phone,1,7
+6/14/2021,KYV42,Smart Phone,1,7
+6/14/2021,Tespo,Smart Appliance,1,7
+6/14/2021,EM,Tablet,1,1
+6/14/2021,T30,Tablet,1,1
+6/14/2021,KTE,Tablet,1,92
+6/14/2021,Reolink,Camera,5,285
+6/14/2021,Adams,TV,1,1
+6/14/2021,Sylvania,Tablet,1,8
+6/14/2021,Yamaha,Smart Phone,1,7
+6/14/2021,Fossil,Wearable & Virtual Reality,2,186
+6/14/2021,Moen,Smart Appliance,1,3
+6/14/2021,SHV40,Smart Phone,1,7
+6/14/2021,Nissan,Car,1,22
+6/14/2021,Petzi,Camera,1,18
+6/14/2021,Crestron,Router,1,4
+6/14/2021,Oplink,Tablet,1,8
+6/14/2021,Sprint,Smart Phone,1,7
+6/14/2021,Pomelo,Tablet,1,1
+6/14/2021,X4,Tablet,2,3
+6/14/2021,Karma,Smart Phone,1,7
+6/14/2021,Cubo,Baby Camera,1,28
+6/14/2021,Broadlink,Plug,1,15
+6/14/2021,Panasonic,Router,2,12
+6/14/2021,Solver,Smart Phone,1,7
+6/14/2021,ThermoWorks,Hub,1,7
+6/14/2021,APC,Plug,1,35
+6/14/2021,Apos,Smart Phone,1,7
+6/14/2021,CX,Tablet,1,1
+6/14/2021,C By GE,Hub,1,16
+6/14/2021,Toucan,Camera,1,33
+6/14/2021,X88PRO10,Smart Phone,3,6
+6/14/2021,Kef,Speaker,1,5
+6/14/2021,Invoxia,Speaker,1,5
+6/14/2021,Embedded,Laptop & Computer,1,3
+6/14/2021,Dons,TV,1,1
+6/14/2021,LZN,Smart Phone,3,6
+6/14/2021,GoHawk,Speaker,1,4
+6/14/2021,Kodi,Media Player,1,24
+6/14/2021,X,Smart Phone,3,6
+6/14/2021,OpenEVSE,Smart Appliance,1,7
+6/14/2021,ASUSTeK,Router,3,3
+6/14/2021,BloomSky,Weather Monitor,1,13
+6/14/2021,OBE,Tablet,1,1
+6/14/2021,TCT (Alcatel),Tablet,1,3
+6/14/2021,Casio,Smart Phone,3,6
+6/14/2021,Aluratek,Picture Frame,1,16
+6/14/2021,I12,Smart Phone,2,6
+6/14/2021,Yamaha,Media Player,1,23
+6/14/2021,Hisense,Smart Appliance,1,41
+6/14/2021,HTV,Smart Phone,2,6
+6/14/2021,XDP,Smart Phone,2,6
+6/14/2021,PRO,Smart Phone,2,6
+6/14/2021,WorldStarTv,Smart Phone,1,6
+6/14/2021,SP9853I,Smart Phone,1,6
+6/14/2021,BGS,Smart Phone,1,6
+6/14/2021,Manta,Tablet,1,3
+6/14/2021,Shidax,Smart Phone,1,6
+6/14/2021,Minut,Home Security,1,1
+6/14/2021,DSLIDE1018,Smart Phone,1,6
+6/14/2021,Logitech,Set Top Box,1,1
+6/14/2021,AirTV,Set Top Box,1,13
+6/14/2021,Tigre,Smart Phone,1,6
+6/14/2021,Google,Doorbell,1,3302
+6/14/2021,B1,Tablet,1,1
+6/14/2021,Logitech,Hub,3,2896
+6/14/2021,W55,Smart Phone,1,6
+6/14/2021,Konica Minolta,Printer,1,75
+6/14/2021,Rods,TV,1,1
+6/14/2021,MSM8953,Smart Phone,1,6
+6/14/2021,TCT,Tablet,1,6
+6/14/2021,NEC,Smart Phone,5,5
+6/14/2021,Lanix,Smart Phone,4,5
+6/14/2021,Antsle,NAS Storage,1,1
+6/14/2021,Cherry Mobile,Smart Phone,4,5
+6/14/2021,Ambient,Weather Monitor,1,241
+6/14/2021,LeapFrog,Tablet,2,228
+6/14/2021,Skystream,Tablet,1,1
+6/14/2021,V10,Smart Phone,3,5
+6/14/2021,Raspberry Pi,Game Console,1,59
+6/14/2021,MicroMax,Smart Phone,3,5
+6/14/2021,Nikon,Camera,1,1
+6/14/2021,MAX,Smart Phone,2,5
+6/14/2021,Yoto,Speaker,1,25
+6/14/2021,Sub-Zero Wolf,Smart Appliance,1,133
+6/14/2021,Cube,Tablet,2,2
+6/14/2021,HB,Tablet,1,13
+6/14/2021,Intel,Smart Phone,2,5
+6/14/2021,Rheem,Smart Appliance,1,438
+6/14/2021,Snom,VoIP Gateway,1,16
+6/14/2021,Mediatek,Smart Phone,2,5
+6/14/2021,Westgate,Tablet,1,1
+6/14/2021,Walabot,Smart Appliance,1,8
+6/14/2021,Bang & Olufsen,TV,2,3
+6/14/2021,Formuler,Smart Phone,2,5
+6/14/2021,Polaroid,TV,2,36
+6/14/2021,Buffalo,Router,1,153
+6/14/2021,Blade,Smart Phone,2,5
+6/14/2021,Nvidia,Smart Phone,2,5
+6/14/2021,Garmin,Smart Appliance,1,31
+6/14/2021,King,Smart Phone,2,5
+6/14/2021,Calix,Router,1,1
+6/14/2021,Nabijr,Smart Phone,2,5
+6/14/2021,TP-Link,Smart Appliance,1,10
+6/14/2021,Sylvania,Light Bulb,1,82
+6/14/2021,Comigo,Smart Phone,2,5
+6/14/2021,Koogeek,Light Switch,1,2
+6/14/2021,Pioneer,Tablet,1,5
+6/14/2021,Le Pan,Tablet,1,16
+6/14/2021,LZN,Tablet,1,1
+6/14/2021,Funai,TV,8,46
+6/14/2021,Belkin,Camera,1,6
+6/14/2021,Tizen,Laptop & Computer,1,2
+6/14/2021,Dolamee,Smart Phone,2,5
+6/14/2021,P80X,Smart Phone,2,5
+6/14/2021,Transpeed,Smart Phone,2,5
+6/14/2021,FreeBSD,Router,1,3
+6/14/2021,PTZOptics,Camera,1,2
+6/14/2021,Brother,Printer,1,21381
+6/14/2021,Alpine,Smart Appliance,1,7
+6/14/2021,Defender,Home Security,1,3
+6/14/2021,Q,Smart Phone,2,5
+6/14/2021,Anova Culinary,Smart Appliance,2,137
+6/14/2021,EM749,Smart Phone,1,5
+6/14/2021,Hunter Douglas,Hub,1,5
+6/14/2021,KI,Tablet,1,1
+6/14/2021,Samsung,Washer Dryer,2,1128
+6/14/2021,CBB,Tablet,1,1
+6/14/2021,JADOO4,Smart Phone,1,5
+6/14/2021,UMC-Sharp,TV,1,1
+6/14/2021,Amazon,Speaker,2,1019
+6/14/2021,CiborTv,Smart Phone,1,5
+6/14/2021,EVK,Smart Phone,1,5
+6/14/2021,Exigent,Smoke Alarm,1,50
+6/14/2021,SoftwinerEvb,Tablet,1,78
+6/14/2021,Dnetsmart,Smart Phone,1,5
+6/14/2021,Gigaset,VoIP Gateway,1,2
+6/14/2021,360,Robot Vacuum Cleaner,2,17
+6/14/2021,Wyze,Camera,2,17775
+6/14/2021,7DRK,Tablet,1,3
+6/14/2021,Oaxis,Smart Phone,1,5
+6/14/2021,Atvxperience,Smart Phone,1,5
+6/14/2021,Poynt,Smart Phone,1,5
+6/14/2021,Netatmo,Hub,1,4
+6/14/2021,Trendnet,Printer,1,15
+6/14/2021,Philips,Air Purifier,1,153
+6/14/2021,ONN,Tablet,1,1
+6/14/2021,XD,Smart Phone,1,5
+6/14/2021,Matco,Smart Phone,1,5
+6/14/2021,Sesame,Doorlock,1,72
+6/14/2021,Twifi,Smart Phone,1,5
+6/14/2021,JADOO5S,Smart Phone,1,5
+6/14/2021,Paetyns,TV,1,1
+6/14/2021,iHome,Smart Monitor,1,14
+6/14/2021,LH,Smart Phone,1,5
+6/14/2021,Yunmai mini,Scale,1,1
+6/14/2021,X96MAX,Tablet,3,6
+6/14/2021,Zmodo,Camera,1,498
+6/14/2021,Q1,Smart Phone,1,5
+6/14/2021,Dmtab,Smart Phone,1,5
+6/14/2021,Polk,Smart Phone,1,5
+6/14/2021,NuCam,Camera,1,13
+6/14/2021,RK322X,Smart Phone,1,5
+6/14/2021,Snbjr,Smart Phone,1,5
+6/14/2021,China Mobile,Smart Phone,1,5
+6/14/2021,Nexbox,Smart Phone,1,5
+6/14/2021,I-O Data,Camera,1,4
+6/14/2021,Avov,Smart Phone,1,5
+6/14/2021,MT6735M,Smart Phone,1,5
+6/14/2021,Pioneer,Smart Phone,4,4
+6/14/2021,Dahua,Smart Appliance,1,2
+6/14/2021,LCD,Tablet,1,2
+6/14/2021,Foren,Tablet,1,4
+6/14/2021,24PFD5022,Smart Phone,3,4
+6/14/2021,ASUS,Smart Phone,3,4
+6/14/2021,Amazon,Smart Monitor,1,6591
+6/14/2021,InFocus,TV,1,4
+6/14/2021,H6,Smart Phone,3,4
+6/14/2021,XDH,Smart Phone,3,4
+6/14/2021,Samsung,Oven,1,138
+6/14/2021,PFF,Smart Phone,2,4
+6/14/2021,HLQ,Smart Phone,2,4
+6/14/2021,MID,Smart Phone,2,4
+6/14/2021,M10,Smart Phone,2,4
+6/14/2021,X92,Set Top Box,1,4
+6/14/2021,LG,NAS Storage,1,1
+6/14/2021,SiriusXM,Media Player,1,21
+6/14/2021,iAquaLink,Smart Appliance,1,348
+6/14/2021,FZ,Smart Phone,2,4
+6/14/2021,Zebra,Printer,1,12
+6/14/2021,Bittium,Tablet,1,1
+6/14/2021,Life,Smart Phone,2,4
+6/14/2021,Narwal,Robot Vacuum Cleaner,1,5
+6/14/2021,ExpressLuck,TV,1,2
+6/14/2021,Allwinner,Tablet,2,2
+6/14/2021,Flume,Smart Monitor,1,103
+6/14/2021,Ray,Smart Remote,1,1
+6/14/2021,Lexis,TV,1,1
+6/14/2021,Flir,Camera,1,258
+6/14/2021,Ideal Sciences,Sensor,1,51
+6/14/2021,Crystals,TV,1,1
+6/14/2021,IO,Smart Phone,2,4
+6/14/2021,JBL,Voice Assistant,1,327
+6/14/2021,Litter-Robot,Smart Appliance,1,75
+6/14/2021,SC,Smart Phone,2,4
+6/14/2021,Thermador,Oven,1,19
+6/14/2021,Slate,Smart Phone,2,4
+6/14/2021,Gentoo,Laptop & Computer,1,1
+6/14/2021,Abox,Smart Phone,2,4
+6/14/2021,VMware,Network Controller,1,11
+6/14/2021,Sony,Speaker,1,129
+6/14/2021,Ambi Climate,Smart Remote,1,13
+6/14/2021,Softbank,Smart Phone,2,4
+6/14/2021,ECS,Tablet,2,2
+6/14/2021,100015685,Tablet,2,169
+6/14/2021,Toucan,Doorbell,1,16
+6/14/2021,KDW8G,Smart Phone,1,4
+6/14/2021,Control4,Media Player,2,21
+6/14/2021,ECO Plugs,Plug,1,261
+6/14/2021,Lenovo,NAS Storage,1,1
+6/14/2021,My,TV,1,1
+6/14/2021,Vestel,TV,1,1
+6/14/2021,Ecowater,Smart Monitor,1,61
+6/14/2021,Develco,Hub,1,3
+6/14/2021,ZTE,Router,1,1
+6/14/2021,IMS,Tablet,1,1
+6/14/2021,Hexa,Smart Phone,1,4
+6/14/2021,X55,Smart Phone,1,4
+6/14/2021,Philips,Baby Camera,1,1
+6/14/2021,EverLights,Hub,1,4
+6/14/2021,OpenWrt,Laptop & Computer,1,2
+6/14/2021,SLI,Smart Phone,1,4
+6/14/2021,P40,Smart Phone,1,4
+6/14/2021,Dohome,Smart Appliance,1,8
+6/14/2021,Tagital,Tablet,1,12
+6/14/2021,Jelly,Smart Phone,1,4
+6/14/2021,Netatmo,Weather Monitor,1,139
+6/14/2021,Zync,Tablet,1,1
+6/14/2021,Foren,Smart Phone,1,4
+6/14/2021,Hammerhead,WiFi Tracker,1,5
+6/14/2021,Debian,Laptop & Computer,1,44
+6/14/2021,Koral,Tablet,1,2
+6/14/2021,Creality,Printer,1,7
+6/14/2021,WIKO,Smart Phone,1,4
+6/14/2021,Xiaomi,Hub,1,38
+6/14/2021,TRENDNET,Router,1,1
+6/14/2021,LG,Speaker,1,77
+6/14/2021,Verizon,Range Extender,1,2
+6/14/2021,Shenzhen,Scale,1,94
+6/14/2021,KTV,Tablet,1,1
+6/14/2021,Qardio,Scale,1,5
+6/14/2021,Lyve,Smart Phone,1,4
+6/14/2021,Lovebox,Smart Appliance,1,30
+6/14/2021,Sky+,Set Top Box,1,1
+6/14/2021,VIPER3,Smart Phone,1,4
+6/14/2021,Z7,Smart Phone,1,4
+6/14/2021,IOTTY,Light Switch,1,117
+6/14/2021,F1,Smart Phone,1,4
+6/14/2021,X,Tablet,1,1
+6/14/2021,IBT,Smart Phone,1,4
+6/14/2021,Beat,Smart Phone,1,4
+6/14/2021,TCT Mobile Limited (Alcatel),Smart Phone,1,4
+6/14/2021,RK3128,Tablet,1,1
+6/14/2021,Yolandas,TV,1,1
+6/14/2021,Eyedro,Smart Monitor,1,11
+6/14/2021,Vivint,Home Security,1,2778
+6/14/2021,Angies,TV,1,1
+6/14/2021,X96MINI,Smart Phone,1,4
+6/14/2021,HX322X,Smart Phone,1,4
+6/14/2021,Hatch,Smart Appliance,1,656
+6/14/2021,Chef iQ,Smart Appliance,1,5
+6/14/2021,Tanoshi,Tablet,1,4
+6/14/2021,GreenWave Reality,Light Bulb,1,5
+6/14/2021,Kaon,Set Top Box,1,505
+6/14/2021,Nixplay,Smart Phone,1,4
+6/14/2021,Glbox,Tablet,1,3
+6/14/2021,Gecoo,Tablet,1,7
+6/14/2021,Ooma,VoIP Gateway,1,519
+6/14/2021,Lifefitnesscom,Smart Phone,1,4
+6/14/2021,Uranus,Smart Phone,1,4
+6/14/2021,Cosmo,Smart Phone,1,4
+6/14/2021,Whirlpool,Oven,1,284
+6/14/2021,RK3368,Smart Phone,1,4
+6/14/2021,A8202,Tablet,1,3
+6/14/2021,RMT8127,Smart Phone,1,4
+6/14/2021,Amino,Set Top Box,2,2607
+6/14/2021,Homey,Hub,1,4
+6/14/2021,Kidde,Smoke Alarm,1,4
+6/14/2021,B,Smart Phone,1,4
+6/14/2021,DPF,Smart Phone,1,4
+6/14/2021,FrontRow,Smart Phone,1,4
+6/14/2021,Neffos,Smart Phone,3,3
+6/14/2021,Mill,Smart Appliance,1,6
+6/14/2021,RK3128,Smart Phone,3,3
+6/14/2021,Letv,Tablet,1,3
+6/14/2021,A1,Smart Phone,3,3
+6/14/2021,M4tel,Smart Phone,3,3
+6/14/2021,TickTalk,Watch,1,9
+6/14/2021,X96S,Smart Phone,3,3
+6/14/2021,Naxa,Tablet,1,3
+6/14/2021,KEF,Speaker,1,3
+6/14/2021,Skyworth,Smart Phone,3,3
+6/14/2021,DLT,Smart Phone,2,3
+6/14/2021,Kobo,Smart Phone,2,3
+6/14/2021,KPD7BV4,Tablet,1,1
+6/14/2021,S9,Smart Phone,2,3
+6/14/2021,Kann,Smart Phone,2,3
+6/14/2021,JT10,Smart Phone,2,3
+6/14/2021,Sweeney,TV,1,1
+6/14/2021,Adtran,Router,1,9
+6/14/2021,Ultimaker,Printer,1,1
+6/14/2021,Teracube,Smart Phone,2,3
+6/14/2021,X88PRO,Smart Phone,2,3
+6/14/2021,Doorbird,Doorbell,1,30
+6/14/2021,Shark,Robot Vacuum Cleaner,1,1906
+6/14/2021,M8,Tablet,1,1
+6/14/2021,Neebo,Wearable & Virtual Reality,1,1
+6/14/2021,PULID,Smart Phone,2,3
+6/14/2021,Amazon,Home Security,1,2679
+6/14/2021,Anker,Speaker,1,23
+6/14/2021,Withings,Scale,2,868
+6/14/2021,Ultimaker 3D,Printer,1,3
+6/14/2021,Crema,Smart Phone,2,3
+6/14/2021,Aruba,Router,1,14
+6/14/2021,Microsoft,Laptop & Computer,169,602418
+6/14/2021,Maximus,Tablet,1,3
+6/14/2021,Kwikset,Doorlock,1,339
+6/14/2021,R2,Smart Phone,2,3
+6/14/2021,Etekcity,Plug,1,1799
+6/14/2021,Ailabs,Smart Phone,2,3
+6/14/2021,SolarEdge,Solar,1,149
+6/14/2021,G,Smart Phone,2,3
+6/14/2021,Xiaomi,Robot Vacuum Cleaner,6,386
+6/14/2021,TCC893X,Tablet,1,7
+6/14/2021,Google,Router,2,16
+6/14/2021,GoMobile,Smart Phone,2,3
+6/14/2021,Amazon,Plug,1,9088
+6/14/2021,Sony,Light Bulb,1,5
+6/14/2021,Friendship,Light Bulb,1,153
+6/14/2021,Smartab,Tablet,1,5
+6/14/2021,Broadlink,Hub,3,65
+6/14/2021,Kotas,TV,1,1
+6/14/2021,Pioneer,Set Top Box,1,73
+6/14/2021,Whistle,Wearable & Virtual Reality,1,81
+6/14/2021,ASUS,Router,2,326
+6/14/2021,Tvbox,Smart Phone,2,3
+6/14/2021,CUBOT,Smart Phone,2,3
+6/14/2021,MINIM8S,Tablet,1,1
+6/14/2021,Russound,Media Player,3,18
+6/14/2021,Troys,TV,1,1
+6/14/2021,Nightingale,Smart Appliance,1,7
+6/14/2021,EV,Smart Phone,2,3
+6/14/2021,Launch,Smart Phone,2,3
+6/14/2021,CTB,Smart Phone,2,3
+6/14/2021,R,TV,1,1
+6/14/2021,V1S,Smart Phone,1,3
+6/14/2021,A13,Smart Phone,1,3
+6/14/2021,MN4A2ZP,Smart Phone,1,3
+6/14/2021,EZ,Smart Phone,1,3
+6/14/2021,WP5,Smart Phone,1,3
+6/14/2021,Cintiq,Smart Phone,1,3
+6/14/2021,Onefinity,Smart Appliance,1,4
+6/14/2021,MJ,TV,1,1
+6/14/2021,Sangoma,Hub,1,2
+6/14/2021,Grace Digital,Media Player,1,17
+6/14/2021,Essential Products,Tablet,1,1
+6/14/2021,Eagle,Tablet,1,1
+6/14/2021,Crestron,Light Switch,1,1
+6/14/2021,PAD,Smart Phone,1,3
+6/14/2021,Magic TV,Media Player,2,13
+6/14/2021,Swtv,Smart Phone,1,3
+6/14/2021,??tv,Tablet,1,1
+6/14/2021,Asus,Tablet,33,1742
+6/14/2021,TV358,Smart Phone,1,3
+6/14/2021,Archos,Smart Phone,1,3
+6/14/2021,Aoyodkg,Smart Phone,1,3
+6/14/2021,X96H,Smart Phone,1,3
+6/14/2021,Mega,Smart Phone,1,3
+6/14/2021,RTD298X,Smart Phone,1,3
+6/14/2021,Y88X,Tablet,1,5
+6/14/2021,Kyocera,Tablet,5,4624
+6/14/2021,Tablo,Smart Phone,1,3
+6/14/2021,On,TV,1,1
+6/14/2021,U712HB2C,Smart Phone,1,3
+6/14/2021,Nexx,Garage Opener,1,211
+6/14/2021,Soyes,Smart Phone,1,3
+6/14/2021,SNB02,Smart Phone,1,3
+6/14/2021,P709,Tablet,1,1
+6/14/2021,T-Mobile,VoIP Gateway,1,25
+6/14/2021,AI,Smart Phone,1,3
+6/14/2021,Logitech,Speaker,5,116
+6/14/2021,Deako,Light Switch,1,1
+6/14/2021,Microsoft,Tablet,51,2477
+6/14/2021,August,Doorlock,1,40
+6/14/2021,Belkin,Hub,1,58
+6/14/2021,GWAT8,Smart Phone,1,3
+6/14/2021,Linux,Router,1,31
+6/14/2021,MAXIMUS2,Smart Phone,1,3
+6/14/2021,GWAT10,Smart Phone,1,3
+6/14/2021,T1,Smart Phone,1,3
+6/14/2021,Dling,Doorbell,1,2
+6/14/2021,Urbano,Smart Phone,1,3
+6/14/2021,Meross,Garage Opener,1,388
+6/14/2021,X1,Smart Phone,1,3
+6/14/2021,Maxisys,Smart Phone,1,3
+6/14/2021,Omoidebako,NAS Storage,1,135
+6/14/2021,Samsung,Fridge,1,1488
+6/14/2021,EAM,Smart Phone,1,3
+6/14/2021,Alcatel,Tablet,15,484
+6/14/2021,Multicraft,Laptop & Computer,1,2
+6/14/2021,Canon,Printer,141,36749
+6/14/2021,SUR,Smart Phone,1,3
+6/14/2021,Panasonic,Printer,1,160
+6/14/2021,Moen,Smart Remote,1,68
+6/14/2021,TCC897X,Smart Phone,1,3
+6/14/2021,Broadband,Router,1,2
+6/14/2021,TG,Smart Phone,1,3
+6/14/2021,Dell,Printer,1,250
+6/14/2021,360Eyes,Camera,1,753
+6/14/2021,TDP,Smart Phone,1,3
+6/14/2021,Canon,Camera,32,207
+6/14/2021,Youdao,Smart Appliance,1,6
+6/14/2021,WP8,Smart Phone,1,3
+6/14/2021,SD,Smart Phone,1,3
+6/14/2021,EyezOn,Home Security,1,58
+6/14/2021,Griffe,Smart Phone,1,3
+6/14/2021,Honda,Car,1,336
+6/14/2021,Intesis,Smart Appliance,1,1
+6/14/2021,8S89A,Smart Phone,1,3
+6/14/2021,Miku,Baby Camera,1,51
+6/14/2021,Meross,Plug,3,1493
+6/14/2021,Broadlink,Air Purifier,1,1
+6/14/2021,Tend Insights,Camera,1,62
+6/14/2021,Scram,Smart Monitor,1,31
+6/14/2021,Arlo,Hub,7,4506
+6/14/2021,Apple,Laptop & Computer,19,197625
+6/14/2021,BroadLink,Plug,1,16
+6/14/2021,Silicon Graphics,Laptop & Computer,1,7
+6/14/2021,Sercomm,Camera,1,367
+6/14/2021,Epson,Printer,130,34440
+6/14/2021,Likebook,Smart Phone,1,3
+6/14/2021,AWM,Smart Phone,1,3
+6/14/2021,Infomir,Set Top Box,8,445
+6/14/2021,LG,TV,9,41648
+6/14/2021,Evpad,Tablet,5,7
+6/14/2021,Foxconn,Smart Phone,1,3
+6/14/2021,D,Tablet,2,109
+6/14/2021,HL,Smart Phone,1,3
+6/14/2021,Polycom,VoIP Gateway,12,978
+6/14/2021,Nextbit,Smart Phone,1,3
+6/14/2021,SKR,Smart Phone,1,3
+6/14/2021,Roku,TV,1,10254
+6/14/2021,GLOBAL3,Smart Phone,1,3
+6/14/2021,PHONE12,Smart Phone,1,3
+6/14/2021,Energy,Smart Monitor,1,38
+6/14/2021,Roku,Speaker,1,99
+6/14/2021,Como Audio,Media Player,4,10
+6/14/2021,Shelly,Smart Monitor,1,3
+6/14/2021,Delta,Smart Appliance,1,49
+6/14/2021,Sony,TV,64,24764
+6/14/2021,VAR,Smart Phone,1,3
+6/14/2021,Remootio,Garage Opener,1,23
+6/14/2021,U2,Smart Phone,1,3
+6/14/2021,Freebit,Smart Phone,1,3
+6/14/2021,VLINE2,Smart Phone,1,3
+6/14/2021,PHH,Smart Phone,1,3
+6/14/2021,OK6000,Smart Phone,1,3
+6/14/2021,Sony,Tablet,26,2292
+6/14/2021,Aosp,Tablet,2,2
+6/14/2021,Fairphone,Smart Phone,2,2
+6/14/2021,P20,Smart Phone,2,2
+6/14/2021,Onn,Tablet,9,620
+6/14/2021,SnapAV,Router,2,2
+6/14/2021,Office,TV,1,1
+6/14/2021,Petkit,Smart Appliance,2,117
+6/14/2021,Cvte,Smart Phone,2,2
+6/14/2021,Y88X,Smart Phone,2,2
+6/14/2021,Shanling,Smart Phone,2,2
+6/14/2021,Xiaomi,Clock,2,12
+6/14/2021,Magnavox,TV,6,126
+6/14/2021,Keurig,Coffee Maker,1,5
+6/14/2021,MyPhone,Smart Phone,2,2
+6/14/2021,Hyrican,Laptop & Computer,1,10
+6/14/2021,Amazon,Mesh Router,1,202
+6/14/2021,AKAI,TV,1,1
+6/14/2021,Babies,TV,1,1
+6/14/2021,HV,Smart Appliance,2,10
+6/14/2021,RCA,TV,12,529
+6/14/2021,A1,Tablet,1,1
+6/14/2021,osewnn,TV,1,1
+6/14/2021,Barnes and Noble,Smart Appliance,9,465
+6/14/2021,Hitachi,TV,10,492
+6/14/2021,Mercedes-Benz,Car,1,1
+6/14/2021,Upad,Smart Phone,2,2
+6/14/2021,IOT,Tablet,1,15
+6/14/2021,Abode,Home Security,1,77
+6/14/2021,Langogo,Smart Phone,2,2
+6/14/2021,Kenwood,Smart Phone,2,2
+6/14/2021,Apple,TV,3,136
+6/14/2021,Icraig,Smart Phone,2,2
+6/14/2021,Creative,Speaker,1,4
+6/14/2021,Willfon,Smart Phone,2,2
+6/14/2021,HI10,Smart Phone,2,2
+6/14/2021,RCA Tablets,Tablet,70,1374
+6/14/2021,ZX,Smart Phone,2,2
+6/14/2021,TangoTab,Smart Phone,2,2
+6/14/2021,Veo,Camera,1,7
+6/14/2021,TomTom,WiFi Tracker,1,64
+6/14/2021,Legrand,Router,3,14
+6/14/2021,Brady,TV,1,1
+6/14/2021,GhostBox,Smart Phone,2,2
+6/14/2021,Epik,Tablet,1,19
+6/14/2021,Zeepad,Smart Phone,2,2
+6/14/2021,Porsche,Car,1,3
+6/14/2021,P20HD,Smart Phone,2,2
+6/14/2021,Meross,Light Switch,3,1281
+6/14/2021,JBL,Speaker,2,36
+6/14/2021,Sky,Smart Phone,2,2
+6/14/2021,Sagemcom,Router,5,71
+6/14/2021,PD,Smart Phone,2,2
+6/14/2021,K960N,Tablet,1,1
+6/14/2021,LYF,Smart Phone,2,2
+6/14/2021,Homtom,Smart Phone,2,2
+6/14/2021,Antminer,Smart Appliance,3,42
+6/14/2021,LightwaveRF,Hub,1,1
+6/14/2021,Den,TV,1,1
+6/14/2021,CX,Smart Phone,2,2
+6/14/2021,Lorex,Home Security,17,320
+6/14/2021,Janee,TV,1,1
+6/14/2021,Coway,Air Purifier,1,27
+6/14/2021,NID,Smart Phone,2,2
+6/14/2021,AMGOO,Smart Phone,2,2
+6/14/2021,Tesco,Tablet,1,1
+6/14/2021,Brilliant,Hub,1,447
+6/14/2021,WalkingPad,Fitness Trainer & Bike,1,3
+6/14/2021,Luxul,Router,1,17
+6/14/2021,ThinkEco,Plug,1,8
+6/14/2021,TCL,TV,17,42894
+6/14/2021,FUSION5,Smart Phone,2,2
+6/14/2021,Xiaomi,Smart Appliance,3,58
+6/14/2021,Innostream,Smart Phone,2,2
+6/14/2021,Xczx,Smart Phone,2,2
+6/14/2021,Control4,Doorbell,1,3
+6/14/2021,Tank Utility,Smart Monitor,1,7
+6/14/2021,Asus,Laptop & Computer,3,21
+6/14/2021,NOTE20,Smart Phone,2,2
+6/14/2021,Wolder,Tablet,1,2
+6/14/2021,JT,Smart Phone,2,2
+6/14/2021,BEC,Router,1,1
+6/14/2021,D-Link,Camera,2,646
+6/14/2021,Rand Mcnally,WiFi Tracker,1,5
+6/14/2021,Akai,Media Player,1,10
+6/14/2021,KK,Smart Phone,2,2
+6/14/2021,Acer,Laptop & Computer,7,728
+6/14/2021,Elecom,Router,8,22
+6/14/2021,Manta,Smart Phone,2,2
+6/14/2021,Attila,Smart Phone,1,2
+6/14/2021,ASUS,Laptop & Computer,6,299
+6/14/2021,Everlights,Light Bulb,1,4
+6/14/2021,Supernote,Smart Phone,1,2
+6/14/2021,TRENDnet,Router,6,9
+6/14/2021,Drcc,Smart Phone,1,2
+6/14/2021,Topcon,Smart Phone,1,2
+6/14/2021,SF,Smart Phone,1,2
+6/14/2021,Shelly,Plug,1,1
+6/14/2021,Onn,TV,10,3704
+6/14/2021,BUFFALO,Router,13,14
+6/14/2021,Dacor,Smart Phone,1,2
+6/14/2021,Shenzhen,Camera,1,1230
+6/14/2021,Bose,Speaker,18,3734
+6/14/2021,Active,Smart Phone,1,2
+6/14/2021,Notepad,Tablet,1,65
+6/14/2021,Bosch,Thermostat,2,29
+6/14/2021,Synology,NAS Storage,82,834
+6/14/2021,Eplay,Smart Phone,1,2
+6/14/2021,ST7150,Smart Phone,1,2
+6/14/2021,Super,Smart Phone,1,2
+6/14/2021,Connected Life Labs,Sensor,1,11
+6/14/2021,Yolanda,Scale,1,7
+6/14/2021,STANG5LITRE,Smart Phone,1,2
+6/14/2021,Guardian,Smart Monitor,1,6
+6/14/2021,Xstream,Smart Phone,1,2
+6/14/2021,T10N,Smart Phone,1,2
+6/14/2021,AZTCL,TV,1,1
+6/14/2021,Tesla,Smart Appliance,1,173
+6/14/2021,Cambridge Audio,Media Player,2,8
+6/14/2021,P30,Smart Phone,1,2
+6/14/2021,D-Link,Router,10,121
+6/14/2021,IDIS,Media Player,1,7
+6/14/2021,Huawei,Tablet,35,8796
+6/14/2021,MaxiCom,Smart Phone,1,2
+6/14/2021,Article,Smart Phone,1,2
+6/14/2021,P11,Smart Phone,1,2
+6/14/2021,Fitbit,Scale,3,168
+6/14/2021,QNAP,NAS Storage,31,71
+6/14/2021,Matsukiyo,Smart Phone,1,2
+6/14/2021,A64,Tablet,1,1
+6/14/2021,Igps,Smart Phone,1,2
+6/14/2021,Big Ass Fans,Smart Appliance,2,147
+6/14/2021,Toshiba,Tablet,7,41
+6/14/2021,PBS Kids,Tablet,1,65
+6/14/2021,M89,Smart Phone,1,2
+6/14/2021,8H94A,Tablet,1,1
+6/14/2021,Cisco,Router,7,110
+6/14/2021,Vizio,Laptop & Computer,1,31
+6/14/2021,Fitbit,Wearable & Virtual Reality,8,3064
+6/14/2021,XHD,Smart Phone,1,2
+6/14/2021,KKH,Smart Phone,1,2
+6/14/2021,Navien,Smart Appliance,1,28
+6/14/2021,Acer,Tablet,19,130
+6/14/2021,THE,Smart Phone,1,2
+6/14/2021,B2,Smart Phone,1,2
+6/14/2021,B1,Smart Phone,1,2
+6/14/2021,Toshiba,Laptop & Computer,3,147
+6/14/2021,PIX,Smart Phone,1,2
+6/14/2021,5S58,Smart Phone,1,2
+6/14/2021,JHV,Smart Phone,1,2
+6/14/2021,Doki,Watch,1,15
+6/14/2021,Jacks,TV,1,2
+6/14/2021,MaxiIm,Smart Phone,1,2
+6/14/2021,LeapFrog,TV,1,34
+6/14/2021,YF,Smart Phone,1,2
+6/14/2021,Odroid,Smart Phone,1,2
+6/14/2021,Apache,Smart Phone,1,2
+6/14/2021,LeEco,TV,1,2
+6/14/2021,Zebra,Tablet,1,8
+6/14/2021,Ainemo,Smart Phone,1,2
+6/14/2021,KingPad,Smart Phone,1,2
+6/14/2021,NOTE10,Smart Phone,1,2
+6/14/2021,Thermador,Dishwasher,1,36
+6/14/2021,Barrydrillercom,Smart Phone,1,2
+6/14/2021,Cxsd,Smart Phone,1,2
+6/14/2021,Pro1,Thermostat,1,60
+6/14/2021,Enphase,Solar,2,98
+6/14/2021,Free,Smart Phone,1,2
+6/14/2021,A95X,Set Top Box,1,1
+6/14/2021,Spice,Smart Phone,1,2
+6/14/2021,K65CA,Smart Phone,1,2
+6/14/2021,Generic,Router,1,3
+6/14/2021,X20,Smart Phone,1,2
+6/14/2021,SZJ,Tablet,3,51
+6/14/2021,TP-Link,Router,61,469
+6/14/2021,StrickerTCL,TV,1,1
+6/14/2021,K101,Smart Phone,1,2
+6/14/2021,GL.iNet,Router,3,10
+6/14/2021,Unspecified TV,TV,3,38
+6/14/2021,Koogeek,Plug,4,52
+6/14/2021,SP7731E,Smart Phone,1,2
+6/14/2021,Apps,Smart Phone,1,2
+6/14/2021,SmartRG,Router,1,19
+6/14/2021,HKE360,Smart Phone,1,2
+6/14/2021,Sams,TV,1,1
+6/14/2021,Teckin,Plug,1,9
+6/14/2021,Jooki,Media Player,1,7
+6/14/2021,TDC,Smart Phone,1,2
+6/14/2021,HP,Tablet,18,51
+6/14/2021,TablePc,Smart Phone,1,2
+6/14/2021,Multicraft,Smart Phone,1,2
+6/14/2021,S102X,Smart Phone,1,2
+6/14/2021,Zyxel,Router,4,5
+6/14/2021,Xiaomi,TV,1,3
+6/14/2021,G50,Smart Phone,1,2
+6/14/2021,Royale,Smart Phone,1,2
+6/14/2021,Atom,Smart Phone,1,2
+6/14/2021,Element,TV,10,1288
+6/14/2021,Sanyo,Tablet,2,4633
+6/14/2021,K7,Smart Phone,1,2
+6/14/2021,Photo,Smart Phone,1,2
+6/14/2021,Xiaomi,Air Conditioner,1,3
+6/14/2021,EcoFlow,Solar,1,21
+6/14/2021,Subaru,Car,3,226
+6/14/2021,Fly,Smart Phone,1,2
+6/14/2021,Sharper Image,Speaker,2,8
+6/14/2021,Amazon,TV,8,30909
+6/14/2021,MegatronsTCL,TV,1,1
+6/14/2021,JHT,Tablet,1,1
+6/14/2021,Coinmine,Smart Appliance,1,5
+6/14/2021,Intouch,Smart Phone,1,2
+6/14/2021,HKE360,Set Top Box,1,487
+6/14/2021,Amazon,Set Top Box,10,143145
+6/14/2021,B2,Tablet,1,1
+6/14/2021,Ezviz,Camera,4,25
+6/14/2021,Nwsnow,Smart Phone,1,2
+6/14/2021,Oculus,Wearable & Virtual Reality,3,7562
+6/14/2021,LeakSmart,Sensor,1,5
+6/14/2021,Xiaomi,Camera,4,498
+6/14/2021,Topwell,Camera,1,1343
+6/14/2021,Qolsys,Home Security,2,3677
+6/14/2021,Luma,Router,1,5
+6/14/2021,Hitron,Router,7,64
+6/14/2021,Amazon,VoIP Gateway,1,177
+6/14/2021,Ubuntu,Laptop & Computer,1,99
+6/14/2021,RK322X,Tablet,1,1
+6/14/2021,KI,Smart Phone,1,2
+6/14/2021,Canary,Camera,3,868
+6/14/2021,Toshiba,TV,7,14309
+6/14/2021,Element,Tablet,1,1
+6/14/2021,Ty,TV,1,1
+6/14/2021,Flo,Sensor,1,140
+6/14/2021,DIRECTV,Set Top Box,1,5414
+6/14/2021,CANON,Printer,2,2
+6/14/2021,Shelly,Sensor,3,10
+6/14/2021,Wolfgang Mobile,Smart Phone,1,2
+6/14/2021,Sleep Number,Smart Appliance,1,2799
+6/14/2021,CKK,Smart Phone,1,2
+6/14/2021,TCL,Tablet,1,14
+6/14/2021,ZTE,Tablet,4,304
+6/14/2021,Peloton,Fitness Trainer & Bike,2,4915
+6/14/2021,ZKT,Smart Phone,1,2
+6/14/2021,EVB3561SV,Smart Phone,1,2
+6/14/2021,Elgato,Light Bulb,1,31
+6/14/2021,Apple,Speaker,3,5303
+6/14/2021,Tanoshi,Smart Phone,1,2
+6/14/2021,Sub-Zero,Fridge,1,3
+6/14/2021,Binatone,Camera,1,68
+6/14/2021,Daikin,Air Conditioner,1,267
+6/14/2021,Somfy,Camera,2,2
+6/14/2021,Honeywell,Camera,2,22
+6/14/2021,Dyson,Robot Vacuum Cleaner,2,62
+6/14/2021,Verizon,Tablet,6,932
+6/14/2021,WSD,Smart Phone,1,2
+6/14/2021,E,Smart Phone,1,2
+6/14/2021,Grandstream,VoIP Gateway,2,154
+6/14/2021,Linksys,Router,25,576
+6/14/2021,A1000,Tablet,1,1
+6/14/2021,Meross,Light Bulb,3,355
+6/14/2021,LT,Tablet,1,13
+6/14/2021,Mirror,Fitness Trainer & Bike,1,266
+6/14/2021,ENT,Smart Phone,1,2
+6/14/2021,SLTDVD9220,Smart Phone,1,2
+6/14/2021,SharkRF,Smart Appliance,2,9
+6/14/2021,Quest,Smart Phone,1,2
+6/14/2021,S20PLUS,Smart Phone,1,2
+6/14/2021,KIDS,TV,1,1
+6/14/2021,Logitech,Camera,2,450
+6/14/2021,Yamaha,Speaker,1,312
+6/14/2021,Peplink,Router,2,3
+6/14/2021,Land,Smart Phone,1,2
+6/14/2021,AirTies,Mesh Router,2,17
+6/14/2021,Vivint,Camera,1,1
+6/14/2021,Ulifecam,Camera,1,1
+6/14/2021,Tvbox,Tablet,1,2
+6/14/2021,Samsung,WiFi Tracker,1,7
+6/14/2021,Zengge,Light Bulb,1,1233
+6/14/2021,Mitraveler,Tablet,1,1
+6/14/2021,Verizon Wireless,Tablet,1,3
+6/14/2021,N1,Smart Phone,1,2
+6/14/2021,Hive,Hub,1,20
+6/14/2021,GWAT8,Tablet,1,1
+6/14/2021,Fabriq,Speaker,1,7
+6/14/2021,IHO,Smart Phone,1,2
+6/14/2021,Panasonic,Doorbell,3,353
+6/14/2021,Teton,Smart Phone,1,2
+6/14/2021,UltraOcta,Smart Phone,1,2
+6/14/2021,DV,Smart Phone,1,2
+6/14/2021,Epson,Smart Appliance,1,51
+6/14/2021,Skyworth,TV,6,18
+6/14/2021,Dell,Laptop & Computer,33,222
+6/14/2021,Ricoh,Printer,2,76
+6/14/2021,Samsung,Laptop & Computer,12,904
+6/14/2021,MegaTec,Smart Appliance,1,5
+6/14/2021,JT07,Smart Phone,1,2
+6/14/2021,KDDI,Smart Phone,1,2
+6/14/2021,DLA,Smart Phone,1,2
+6/14/2021,Google,Range Extender,1,942
+6/14/2021,UpadPros,Smart Phone,1,2
+6/14/2021,Alco,Smart Phone,1,2
+6/14/2021,Davis Instruments,Weather Monitor,1,16
+6/14/2021,32PFD5022,Smart Phone,1,2
+6/14/2021,Jaxson,TV,1,1
+6/14/2021,Hbox,Smart Phone,1,2
+6/14/2021,Doogee,Smart Phone,1,2
+6/14/2021,MediaTek,Tablet,2,191
+6/14/2021,NotePad,Smart Phone,1,2
+6/14/2021,Netflis,Smart Phone,1,2
+6/14/2021,Pure,Smart Phone,1,2
+6/14/2021,Kangaroo,Sensor,1,136
+6/14/2021,HFR,Router,1,1
+6/14/2021,Synology,Router,1,6
+6/14/2021,H10,Smart Phone,1,2
+6/14/2021,Kangaroo,Doorbell,1,233
+6/14/2021,Yutmart,Tablet,2,3
+6/14/2021,Paper,Smart Phone,1,2
+6/14/2021,TP-Link,Hub,1,5
+6/14/2021,OpenWRT,Router,1,86
+6/14/2021,Epic,Smart Phone,1,1
+6/14/2021,Ojos,Smart Phone,1,1
+6/14/2021,HITACHI,TV,4,39
+6/14/2021,X96,Set Top Box,3,10
+6/14/2021,HP,Laptop & Computer,11,1447
+6/14/2021,BlackBerry,Tablet,6,49
+6/14/2021,SP9820E,Smart Phone,1,1
+6/14/2021,Roost,Sensor,1,53
+6/14/2021,16,Smart Phone,1,1
+6/14/2021,MS45S,Smart Phone,1,1
+6/14/2021,C49F4442,Tablet,1,4
+6/14/2021,Technicolor,Home Security,1,39
+6/14/2021,Itel,Tablet,1,1
+6/14/2021,XR,Smart Phone,1,1
+6/14/2021,Slingbox,Set Top Box,4,102
+6/14/2021,Radio,Thermostat,1,63
+6/14/2021,KT8001,Smart Phone,1,1
+6/14/2021,X431,Smart Phone,1,1
+6/14/2021,TR,Smart Phone,1,1
+6/14/2021,GE,Light Switch,2,428
+6/14/2021,Z12,Smart Phone,1,1
+6/14/2021,Vocolinc,Air Purifier,1,2
+6/14/2021,Iplay,Tablet,2,9
+6/14/2021,5S59H,Smart Phone,1,1
+6/14/2021,S2,Smart Phone,1,1
+6/14/2021,Y8,Smart Phone,1,1
+6/14/2021,X50,Smart Phone,1,1
+6/14/2021,Blueair,Air Purifier,1,94
+6/14/2021,CipherTv,Smart Phone,1,1
+6/14/2021,Meross,Network Controller,1,10
+6/14/2021,F,Tablet,3,9
+6/14/2021,TY,Smart Phone,1,1
+6/14/2021,Temy,TV,1,1
+6/14/2021,eufy,Robot Vacuum Cleaner,3,45
+6/14/2021,Bticino,Doorbell,1,3
+6/14/2021,Optoma,Smart Phone,1,1
+6/14/2021,I-O,Router,12,23
+6/14/2021,Motorola,Watch,1,1
+6/14/2021,A-Gold,Smart Phone,1,1
+6/14/2021,RCA,Smart Phone,1,1
+6/14/2021,Itravl,Smart Phone,1,1
+6/14/2021,Polaroid,Tablet,1,1
+6/14/2021,Magnavox,Clock,1,8
+6/14/2021,Vibeui,Smart Phone,1,1
+6/14/2021,NID,Tablet,4,12
+6/14/2021,TS,Tablet,1,2
+6/14/2021,Alxsy,Smart Phone,1,1
+6/14/2021,Sharp,Tablet,4,242
+6/14/2021,Nintendo,Game Console,9,156240
+6/14/2021,Vodafone,Set Top Box,1,8
+6/14/2021,Amazing,Smart Phone,1,1
+6/14/2021,C49F4442,Smart Phone,1,1
+6/14/2021,Google,Voice Assistant,5,46590
+6/14/2021,Meizu,Tablet,11,24
+6/14/2021,Internet,Set Top Box,1,6
+6/14/2021,Xbmc,Laptop & Computer,1,1
+6/14/2021,GE,Light Bulb,1,910
+6/14/2021,TBO,Smart Phone,1,1
+6/14/2021,Zappiti,Smart Phone,1,1
+6/14/2021,Worx,Smart Appliance,1,6
+6/14/2021,Wyze,Plug,1,2841
+6/14/2021,ZyXEL,Router,4,4
+6/14/2021,TP-Link,Range Extender,13,585
+6/14/2021,RK3368,Tablet,1,2
+6/14/2021,Buffalo,NAS Storage,1,677
+6/14/2021,Mclaren,Smart Phone,1,1
+6/14/2021,DStv,Media Player,2,6
+6/14/2021,Philips,Smart Appliance,1,2
+6/14/2021,Vivotek,Camera,1,1401
+6/14/2021,Live,Smart Phone,1,1
+6/14/2021,Pendoo,Tablet,4,8
+6/14/2021,Formlabs 3D,Printer,1,1
+6/14/2021,Orbit Irrigation,Sprinkler,1,1378
+6/14/2021,Mobiistar,Smart Phone,1,1
+6/14/2021,GW Security,Camera,1,6
+6/14/2021,Vocolinc,Smart Appliance,1,4
+6/14/2021,Barnes & Noble,Tablet,12,377
+6/14/2021,C800,Smart Phone,1,1
+6/14/2021,Twifi,Tablet,1,4
+6/14/2021,ATV,Smart Phone,1,1
+6/14/2021,Girlsfrontline,Smart Phone,1,1
+6/14/2021,Dylans,TV,1,1
+6/14/2021,PC,Tablet,3,9
+6/14/2021,Mocha,Smart Phone,1,1
+6/14/2021,12,Smart Phone,1,1
+6/14/2021,Aprilaire,Thermostat,5,78
+6/14/2021,K8,Tablet,1,1
+6/14/2021,KBE,Smart Phone,1,1
+6/14/2021,Avaya,VoIP Gateway,1,251
+6/14/2021,Magic TV,Set Top Box,1,3
+6/14/2021,Musio,Smart Phone,1,1
+6/14/2021,Arris,Range Extender,2,13
+6/14/2021,DG,Smart Phone,1,1
+6/14/2021,S10,Smart Phone,1,1
+6/14/2021,LG,Smart Appliance,1,3020
+6/14/2021,Petoneer,Smart Appliance,1,5
+6/14/2021,iSmart,Home Security,1,74
+6/14/2021,Yes,Tablet,1,1
+6/14/2021,Samsung,Hub,4,1736
+6/14/2021,MAX,Tablet,1,9
+6/14/2021,Mighty,Media Player,1,6
+6/14/2021,KON,Smart Phone,1,1
+6/14/2021,Westinghouse,TV,10,534
+6/14/2021,Heaven,Smart Phone,1,1
+6/14/2021,Himedia,Set Top Box,1,11
+6/14/2021,Magellan,Smart Phone,1,1
+6/14/2021,V501,Smart Phone,1,1
+6/14/2021,Cat,Smart Phone,1,1
+6/14/2021,Plume,Mesh Router,3,71
+6/14/2021,Frontrow,Smart Phone,1,1
+6/14/2021,Netatmo,Camera,2,8
+6/14/2021,Walton,Smart Phone,1,1
+6/14/2021,Cavalier,Speaker,2,13
+6/14/2021,Blink,Hub,1,5748
+6/14/2021,Google,Speaker,1,506
+6/14/2021,Q3,Smart Phone,1,1
+6/14/2021,Netatmo,Home Security,1,25
+6/14/2021,Mstar,Set Top Box,1,15
+6/14/2021,Chamberlain,Garage Opener,2,12580
+6/14/2021,HX,Smart Phone,1,1
+6/14/2021,Puri,Clock,1,2
+6/14/2021,NordicTrack,Fitness Trainer & Bike,3,1076
+6/14/2021,Camect,Hub,1,2
+6/14/2021,TangoTab,Tablet,1,2
+6/14/2021,Eternity,Smart Phone,1,1
+6/14/2021,Sense,Smart Monitor,1,277
+6/14/2021,Mikrotik,Router,1,77
+6/14/2021,UBOX4,Tablet,1,4
+6/14/2021,Alula,Home Security,1,18
+6/14/2021,Pax,Smart Appliance,1,22
+6/14/2021,Broadlink,Smart Remote,1,72
+6/14/2021,Benewtech,Smart Appliance,1,4
+6/14/2021,Sony,Laptop & Computer,8,474
+6/14/2021,DSC,Home Security,1,33
+6/14/2021,Ubiquiti,NAS Storage,1,3
+6/14/2021,Ematic,Laptop & Computer,1,2
+6/14/2021,Optimum,Set Top Box,2,19
+6/14/2021,MGV2002,Smart Phone,1,1
+6/14/2021,Netgear Orbi,Router,4,115
+6/14/2021,K20S,Smart Phone,1,1
+6/14/2021,Sara,Smart Phone,1,1
+6/14/2021,Visual Land,Tablet,2,31
+6/14/2021,Phyn,Smart Monitor,1,23
+6/14/2021,Azumi Mobile,Smart Phone,1,1
+6/14/2021,T95,Smart Phone,1,1
+6/14/2021,SC,Tablet,2,7
+6/14/2021,M,Smart Phone,1,1
+6/14/2021,X80HD,Smart Phone,1,1
+6/14/2021,Ambarella,Smart Phone,1,1
+6/14/2021,Nexbox,Tablet,1,1
+6/14/2021,HDT,Smart Phone,1,1
+6/14/2021,M9C,Tablet,1,1
+6/14/2021,ADP,Tablet,3,3
+6/14/2021,Knox,Smart Phone,1,1
+6/14/2021,Ematic,Tablet,2,57
+6/14/2021,Seagate,NAS Storage,3,66
+6/14/2021,RiansInsignia,TV,1,1
+6/14/2021,Whirlpool,Washer Dryer,2,22
+6/14/2021,Shelly,Light Switch,6,169
+6/14/2021,CN51,Smart Phone,1,1
+6/14/2021,Askey,Router,3,11
+6/14/2021,K960N,Smart Phone,1,1
+6/14/2021,Gigaset,Tablet,1,27
+6/14/2021,Wdpf,Smart Phone,1,1
+6/14/2021,EasyView,Set Top Box,1,1
+6/14/2021,Planet,Router,1,2
+6/14/2021,Yota,Smart Phone,1,1
+6/14/2021,V,Tablet,1,1
+6/14/2021,Magic,Smart Phone,1,1
+6/14/2021,FunguyPro,Smart Appliance,1,2
+6/14/2021,Doro,Smart Phone,1,1
+6/14/2021,K13,Smart Phone,1,1
+6/14/2021,U83,Smart Phone,1,1
+6/14/2021,XRS,Tablet,1,2
+6/14/2021,OEMA0,Smart Phone,1,1
+6/14/2021,ProForm,Fitness Trainer & Bike,1,242
+6/14/2021,Bold,Smart Phone,1,1
+6/14/2021,Evbox,Tablet,1,1
+6/14/2021,NEO,Smart Phone,1,1
+6/14/2021,Owlet,Baby Camera,3,1773
+6/14/2021,A95X,Tablet,3,4
+6/14/2021,AT7,Tablet,1,2
+6/14/2021,5V10,Smart Phone,1,1
+6/14/2021,MSI,Laptop & Computer,2,401
+6/14/2021,Graysons,TV,1,1
+6/14/2021,Bloomsky,Weather Monitor,1,7
+6/14/2021,Earle,TV,1,1
+6/14/2021,Philips,Light Bulb,2,156
+6/14/2021,43PFD5773,Smart Phone,1,1
+6/14/2021,Microsoft,Wearable & Virtual Reality,1,2
+6/14/2021,Onelink,Weather Monitor,1,1
+6/14/2021,Fitbit,Watch,1,374
+6/14/2021,P902,Smart Phone,1,1
+6/14/2021,With,Smart Phone,1,1
+6/14/2021,Marquis,Smart Phone,1,1
+6/14/2021,Vivint,NAS Storage,1,359
+6/14/2021,M40,Smart Phone,1,1
+6/14/2021,Vocolinc,Plug,4,37
+6/14/2021,Sonos,Hub,1,417
+6/14/2021,PX30,Smart Phone,1,1
+6/14/2021,T10,Smart Phone,1,1
+6/14/2021,ITV,Smart Phone,1,1
+6/14/2021,Waterguru,Smart Appliance,1,28
+6/14/2021,Andappstore-SOC,Smart Phone,1,1
+6/14/2021,Alba,Smart Phone,1,1
+6/14/2021,SY,Smart Phone,1,1
+6/14/2021,Brava,Oven,1,29
+6/14/2021,Red Sea,Light Bulb,1,28
+6/14/2021,Honeywell,Thermostat,1,8988
+6/14/2021,OPPO,Tablet,1,4
+6/14/2021,Xfinity,Camera,1,5
+6/14/2021,Xiaomi,Router,2,28
+6/14/2021,Amazon,Smart Appliance,2,2156
+6/14/2021,Tend,Camera,1,3
+6/14/2021,MAL,Tablet,1,13
+6/14/2021,A,Smart Phone,1,1
+6/14/2021,CruzeTv,Smart Phone,1,1
+6/14/2021,RT,Smart Phone,1,1
+6/14/2021,Cisco,VoIP Gateway,5,455
+6/14/2021,Z6,Tablet,1,5
+6/14/2021,360,Camera,1,159
+6/14/2021,bq,Tablet,1,1
+6/14/2021,NECAccessTechnica,Router,1,30
+6/14/2021,Samsung,Voice Assistant,2,131
+6/14/2021,WE,Smart Phone,1,1
+6/14/2021,TD,Smart Phone,1,1
+6/14/2021,MW22,Tablet,1,2
+6/14/2021,HI8,Smart Phone,1,1
+6/14/2021,Whistle,WiFi Tracker,1,205
+6/14/2021,Beelink,Set Top Box,1,1
+6/14/2021,Philips,Media Player,1,5
+6/14/2021,ZKT,Tablet,1,1
+6/14/2021,Unblock,Set Top Box,1,31
+6/14/2021,Drcc,Tablet,1,1
+6/14/2021,RWF,Smart Phone,1,1
+6/14/2021,N7,Smart Phone,1,1
+6/14/2021,NoiseAware,Sensor,1,106
+6/14/2021,Link,Set Top Box,1,1
+6/14/2021,SimplySmart Home,Picture Frame,1,10
+6/14/2021,PhotoSpring,Picture Frame,1,6
+6/14/2021,NEC,Router,4,21
+6/14/2021,Sabresd,Tablet,3,6
+6/14/2021,Tftc,Smart Phone,1,1
+6/14/2021,Availink,Set Top Box,1,4
+6/14/2021,JADOO4,Tablet,1,2
+6/14/2021,August,Hub,1,1391
+6/14/2021,Miui,Smart Phone,1,1
+6/14/2021,Oneplus,Tablet,1,2
+6/14/2021,QuadCore,Smart Phone,1,1
+6/14/2021,Skylight,Picture Frame,1,834
+6/14/2021,E1901,Smart Phone,1,1
+6/14/2021,Bosch,Oven,3,9
+6/14/2021,iDevices,Thermostat,1,37
+6/14/2021,Pix-Star,Picture Frame,1,223
+6/14/2021,Bell,Set Top Box,2,11
+6/14/2021,Bosstv,Tablet,2,5
+6/14/2021,Teclast,Tablet,1,2
+6/14/2021,Magic Hue,Light Bulb,1,156
+6/14/2021,Easytv,Smart Phone,1,1
+6/14/2021,Y7,Smart Phone,1,1
+6/14/2021,Astro,Smart Phone,1,1
+6/14/2021,YF,Tablet,1,14
+6/14/2021,TK,Smart Phone,1,1
+6/14/2021,Google Fiber,Router,1,1
+6/14/2021,PAX,Smart Appliance,3,43
+6/14/2021,Wink,Hub,2,267
+6/14/2021,Star,Smart Phone,1,1
+6/14/2021,HM,Smart Phone,1,1
+6/14/2021,NAD,Media Player,1,5
+6/14/2021,Multilaser,Smart Phone,1,1
+6/14/2021,Thermador,Coffee Maker,1,2
+6/14/2021,Planex,Router,1,1
+6/14/2021,Etekcity,Light Bulb,1,70
+6/14/2021,825X,Smart Phone,1,1
+6/14/2021,PIC8KS,Smart Phone,1,1
+6/14/2021,Client,Smart Phone,1,1
+6/14/2021,GK,Smart Phone,1,1
+6/14/2021,SuperBox,Tablet,2,6
+6/14/2021,Bosch,Coffee Maker,1,3
+6/14/2021,Atvxperience,Tablet,1,1
+6/14/2021,Verykool,Smart Phone,1,1
+6/14/2021,Flare,Smart Phone,1,1
+6/14/2021,P700,Smart Phone,1,1
+6/14/2021,Ted,Solar,1,1
+6/14/2021,Fuji-Xerox,Printer,1,13
+6/14/2021,Modern,Smart Phone,1,1
+6/14/2021,Ppbox,Smart Phone,1,1
+6/14/2021,AR101,Smart Phone,1,1
+6/14/2021,Alfa,Smart Phone,1,1
+6/14/2021,Helium,Mesh Router,1,29
+6/14/2021,D-Link,Media Player,1,5
+6/14/2021,Tool,Smart Phone,1,1
+6/14/2021,Ifive,Smart Phone,1,1
+6/14/2021,BIG,Smart Phone,1,1
+6/14/2021,T6,Tablet,1,1
+6/14/2021,Ralink,Router,1,2
+6/14/2021,FX Luminaire,Smart Remote,1,7
+6/14/2021,Atrust,Laptop & Computer,1,2
+6/14/2021,Panda,Smart Phone,1,1
+6/14/2021,A1X,Smart Phone,1,1
+6/14/2021,Livingroom,TV,1,1
+6/14/2021,Leak Alert,Sensor,1,12
+6/14/2021,CT,Smart Phone,1,1
+6/14/2021,Smartisan,Smart Phone,1,1
+6/14/2021,Kobo,Smart Appliance,2,334
+6/14/2021,TYD,Smart Phone,1,1
+6/14/2021,DCCTCL,TV,1,1
+6/14/2021,HiSense,TV,1,1
+6/14/2021,2,Smart Phone,1,1
+6/14/2021,NOWA5,Smart Phone,1,1
+6/14/2021,XB,Tablet,1,1
+6/14/2021,Mobile,TV,1,1
+6/14/2021,goCoax,Range Extender,1,3
+6/14/2021,HTC,Laptop & Computer,1,2
+6/14/2021,Holleys,TV,1,1
+6/14/2021,Pentair,Smart Appliance,1,105
+6/14/2021,EKO,Smart Phone,1,1
+6/14/2021,Audi,Smart Phone,1,1
+6/14/2021,MJOnn,TV,1,1
+6/14/2021,Samsung,Range Extender,1,738
+6/14/2021,P52,Smart Phone,1,1
+6/14/2021,NextBook,Tablet,4,28
+6/14/2021,Mstar,Smart Phone,1,1
+6/14/2021,Vankyo,Tablet,2,22
+6/14/2021,ClearPhone,Smart Phone,1,1
+6/14/2021,KIDS705,Tablet,1,1
+6/14/2021,JOY,Smart Phone,1,1
+6/14/2021,Zinwell,Network Controller,1,664
+6/14/2021,Napco,Hub,1,3
+6/14/2021,Vanzo,Smart Phone,1,1
+6/14/2021,V1,Smart Phone,1,1
+6/14/2021,Levoit,Smart Appliance,1,83
+6/14/2021,M702S,Smart Phone,1,1
+6/14/2021,DaJanays,TV,1,1
+6/14/2021,Craig,Tablet,2,22
+6/14/2021,Cisco,Set Top Box,5,327
+6/14/2021,KX20,Smart Phone,1,1
+6/14/2021,JAX,Smart Phone,1,1
+6/14/2021,Scallop,Smart Phone,1,1
+6/14/2021,Linux,Laptop & Computer,1,487
+6/14/2021,GX,Smart Phone,1,1
+6/14/2021,Silver,Smart Phone,1,1
+6/14/2021,NVidia,Tablet,1,2
+6/14/2021,Xiaomi,Air Purifier,1,250
+6/14/2021,BYT,Tablet,1,1
+6/14/2021,S11W,Smart Phone,1,1
+6/14/2021,Blaupunkt,Set Top Box,1,1
+6/14/2021,MakerBot,Printer,1,24
+6/14/2021,P88,Tablet,1,1
+6/14/2021,501,Smart Phone,1,1
+6/14/2021,TMM,TV,1,1
+6/14/2021,NABI,Tablet,1,15
+6/14/2021,Camfone,Smart Phone,1,1
+6/14/2021,Fivestars,Smart Phone,1,1
+6/14/2021,Withings,Camera,1,9
+6/14/2021,MID,Tablet,2,2
+6/14/2021,ET,Smart Phone,1,1
+6/14/2021,Ancel,Smart Phone,1,1
+6/14/2021,Amazon,Hub,1,754
+6/14/2021,SCISHION,Media Player,1,5
+6/14/2021,Venom,Smart Phone,1,1
+6/14/2021,MF0300,Tablet,1,1
+6/14/2021,Victure,Baby Camera,1,95
+6/14/2021,M101,Smart Phone,1,1
+6/14/2021,PhilipSB,TV,1,1
+6/14/2021,MSM8909,Smart Phone,1,1
+6/14/2021,Ikea,Hub,1,99
+6/14/2021,Atari,Game Console,1,2
+6/14/2021,Technicolor,Router,4,13
+6/14/2021,OND,Smart Phone,1,1
+6/14/2021,Gogogate,Garage Opener,1,29
+6/14/2021,HK1,Tablet,2,4
+6/14/2021,Samsung,Set Top Box,1,990
+6/14/2021,Thermador,Fridge,1,6
+6/14/2021,Arielle,TV,1,1
+6/14/2021,Huawei,Laptop & Computer,2,5
+6/14/2021,Neato,Robot Vacuum Cleaner,4,473
+6/14/2021,SureSoft-Browser-3.0,TV,2,2
+6/14/2021,Roberts,Speaker,2,2
+6/14/2021,Soniq,Smart Phone,1,1
+6/14/2021,UIT232B,Smart Phone,1,1
+6/14/2021,Podcast,Smart Phone,1,1
+6/14/2021,Leapfrog,Tablet,2,96
+6/14/2021,Aftron,Smart Phone,1,1
+6/14/2021,MagicHue,Hub,1,961
+6/14/2021,Dnetsmart,Tablet,1,1
+6/14/2021,Lux,Thermostat,1,26
+6/14/2021,Pendoo,Smart Phone,1,1
+6/14/2021,Flame Boss,Smart Appliance,1,31
+6/14/2021,Xgody,Smart Phone,1,1
+6/14/2021,X16,Smart Phone,1,1
+6/14/2021,Creston,Router,1,1
+6/14/2021,Netgear,NAS Storage,4,62
+6/14/2021,Evoo,Laptop & Computer,1,1
+6/14/2021,Q201,Tablet,1,6
+6/14/2021,GGMM,Speaker,1,2
+6/14/2021,I10,Smart Phone,1,1
+6/14/2021,FL,Smart Phone,1,1
+6/14/2021,Cadillac,Car,1,11
+6/14/2021,CELLON72,Smart Phone,1,1
+6/14/2021,MedaCube,Smart Appliance,1,2
+6/14/2021,Ubiquiti,Camera,3,36
+6/14/2021,MATE60,Smart Phone,1,1
+6/14/2021,Greenwave,Router,1,1
+6/14/2021,Nowa,Smart Phone,1,1
+6/14/2021,Tivo,Set Top Box,1,56142
+6/14/2021,InGrid,Home Security,1,4
+6/14/2021,P9,Smart Phone,1,1
+6/14/2021,Technicolor,Set Top Box,5,3654
+6/14/2021,LGE,Tablet,1,327
+6/14/2021,Meitu,Smart Phone,1,1
+6/14/2021,Konke,Smart Appliance,1,17
+6/14/2021,Aquascape,Hub,1,7
+6/14/2021,Notion,Hub,1,58
+6/14/2021,Leevi,Set Top Box,1,1
+6/14/2021,Arabic,Set Top Box,1,2
+6/14/2021,MXQ,Set Top Box,1,5
+6/14/2021,5008Y,Smart Phone,1,1
+6/14/2021,A10H,Smart Phone,1,1
+6/14/2021,Geochron,Clock,1,1
+6/14/2021,HiSilicon,Set Top Box,2,32
+6/14/2021,UPNP MANUFACTURER,Router,1,3
+6/14/2021,Nexsmart,Smart Phone,1,1
+6/14/2021,WooriKooli,Smart Phone,1,1
+6/14/2021,T3,Smart Phone,1,1
+6/14/2021,VOCOlinc,Light Bulb,2,17
+6/14/2021,EOS,Smart Phone,1,1
+6/14/2021,Samsung,Air Conditioner,1,4
+6/14/2021,Mobicel,Smart Phone,1,1
+6/14/2021,32PHD5773,Smart Phone,1,1
+6/14/2021,Model,Smart Phone,1,1
+6/14/2021,NS800,Smart Phone,1,1
+6/14/2021,WIKO,Tablet,1,10
+6/14/2021,LDT,Smart Phone,1,1
+6/14/2021,W801,Tablet,1,1
+6/14/2021,Jcom,TV,1,1
+6/14/2021,T95M,Smart Phone,1,1
+6/14/2021,KY,Smart Phone,1,1
+6/14/2021,Cubbit,NAS Storage,1,2
+6/14/2021,JADOO7,Smart Phone,1,1
+6/14/2021,X96Q,Smart Phone,1,1
+6/14/2021,Plum,Smart Phone,1,1
+6/14/2021,Netgem,Set Top Box,1,1
+6/14/2021,T702,Tablet,1,1
+6/14/2021,Stealth,Smart Phone,1,1
+6/14/2021,STUDIO6,Smart Phone,1,1
+6/14/2021,HRA920,Smart Phone,1,1
+6/14/2021,Z,Smart Phone,1,1
+6/14/2021,CDN,Tablet,1,1
+6/14/2021,IGEL,Laptop & Computer,1,2
+6/14/2021,sof,TV,1,1
+6/14/2021,P212,Tablet,1,1
+6/14/2021,Yuntab,Smart Phone,1,1
+6/14/2021,Plus 360,Robot Vacuum Cleaner,1,6
+6/14/2021,Escort,Sensor,1,8
+6/14/2021,Xiaomi,Tablet,2,17
+6/14/2021,P212,Smart Phone,1,1
+6/14/2021,GT1,Smart Phone,1,1
+6/14/2021,Agora,Smart Phone,1,1
+6/14/2021,49PUD6701,Smart Phone,1,1
+6/14/2021,GL,Tablet,1,2
+6/14/2021,VARO,Speaker,2,8
+6/14/2021,Tado,Hub,1,2
+6/14/2021,Oki,Printer,1,46
+6/14/2021,X92,Tablet,1,3
+6/14/2021,Quantum,Smart Phone,1,1
+6/14/2021,Hitachi,Media Player,1,3
+6/14/2021,iSmart,Camera,1,17
+6/14/2021,Mias,TV,1,1
+6/14/2021,VL,Tablet,2,2
+6/14/2021,BrailleNote,Smart Phone,1,1
+6/14/2021,iHome,Plug,1,278
+6/14/2021,Intex,Smart Phone,1,1
+6/14/2021,Mads,TV,1,1
+6/14/2021,Royal,Smart Phone,1,1
+6/14/2021,Kenworth,Smart Phone,1,1
+6/14/2021,Cortex,Tablet,1,1
+6/14/2021,Kerstins,TV,1,1
+6/14/2021,HW,Smart Phone,1,1
+6/14/2021,GE,Dishwasher,1,33
+6/14/2021,Nvidia,Tablet,2,4
+6/14/2021,ViaSat,Router,1,10
+6/14/2021,Geeni,Camera,1,2
+6/14/2021,Toniebox,Smart Appliance,1,77
+6/14/2021,8227L,Tablet,1,1
+6/14/2021,D000,Smart Phone,1,1
+6/14/2021,Rachio,Sprinkler,1,1681
+6/14/2021,Txcz,Smart Phone,1,1
+6/14/2021,Vido,Smart Phone,1,1
+6/14/2021,Hugoai,Camera,1,5
+6/14/2021,Thermomix,Smart Appliance,1,131
+6/14/2021,2GIG,Camera,1,6
+6/14/2021,IB,Smart Phone,1,1
+6/14/2021,Microsoft,Router,1,2
+6/14/2021,Ingenico,Smart Appliance,1,57
+6/14/2021,AT&T,Smoke Alarm,1,42
+6/14/2021,Tuya,Light Bulb,1,43876
+6/14/2021,M7600,Tablet,1,1
+6/14/2021,Echostar,Router,1,30
+6/14/2021,PSF,Smart Phone,1,1
+6/14/2021,Sling,Set Top Box,1,1017
+6/14/2021,Mitraveler,Smart Phone,1,1
+6/14/2021,SIO,Smart Phone,1,1
+6/14/2021,ConnectSense,Plug,2,5
+6/14/2021,Facebook,Set Top Box,1,21
+6/14/2021,Reader,Smart Phone,1,1
+6/14/2021,RK,Smart Phone,1,1
+6/14/2021,NABI2,Tablet,1,1
+6/14/2021,Sensi,Thermostat,1,1380
+6/14/2021,Philips,Hub,1,5020
+6/14/2021,Panasonic,Smart Monitor,2,70
+6/14/2021,Whirlpool,Fridge,1,7
+6/14/2021,iHome,Smart Appliance,1,65
+6/14/2021,Awair,Air Purifier,1,102
+6/14/2021,Emporia,Smart Appliance,1,95
+6/14/2021,1001,Smart Phone,1,1
+6/14/2021,Touch,Smart Phone,1,1
+6/14/2021,Formuler,Set Top Box,2,35
+6/14/2021,Skyworth,Tablet,2,2
+6/14/2021,P,Tablet,1,1
+6/14/2021,Marantz,Speaker,1,7
+6/14/2021,Aura,Picture Frame,1,152
+6/14/2021,Phillips,TV,2,4
+6/14/2021,Playbox,Game Console,1,2
+6/14/2021,Sandisk,NAS Storage,1,303
+6/14/2021,ITB,Smart Phone,1,1
+6/14/2021,Bosch,Dishwasher,1,14
+6/14/2021,Satechi,Plug,1,4
+6/14/2021,ADT,Hub,1,114
+6/14/2021,C by GE,Plug,1,79
+6/14/2021,Wyze,Light Bulb,1,76
+6/14/2021,HI10,Tablet,1,1
+6/14/2021,WeatherFlow,Weather Monitor,1,102
+6/14/2021,WorldMax,Set Top Box,1,3
+6/14/2021,OP0118,Smart Phone,1,1
+6/14/2021,BL5500,Smart Phone,1,1
+6/14/2021,Quad,Tablet,3,11
+6/14/2021,Axis,Camera,1,44
+6/14/2021,Neeo,Smart Remote,1,9
+6/14/2021,Wiko,Tablet,1,1
+6/14/2021,Blu,Tablet,1,29
+6/14/2021,Fedora,Laptop & Computer,1,10
+6/14/2021,myTouchSmart,Plug,1,3
+6/14/2021,Infinity,Smart Phone,1,1
+6/14/2021,Sujue,Smart Phone,1,1
+6/14/2021,Melrose,Smart Phone,1,1
+6/14/2021,Janies,TV,1,1
+6/14/2021,Mecool,Set Top Box,1,3
+6/14/2021,Leedarson,Hub,1,2
+6/14/2021,URC,Smart Remote,1,13
+6/14/2021,√∂wn,Smart Phone,1,1
+6/14/2021,Obi,Smart Phone,1,1
+6/14/2021,RK30SDK,Smart Phone,1,1
+6/14/2021,M8S,Tablet,1,1
+6/14/2021,Sky,Set Top Box,1,4
+6/14/2021,TM,Smart Phone,1,1
+6/14/2021,Media,Smart Phone,1,1
+6/14/2021,5.00E+02,Smart Phone,1,1
+6/14/2021,P900,Smart Phone,1,1
+6/14/2021,Microsoft,TV,1,3
+6/14/2021,Samsung,Light Bulb,1,9
+6/14/2021,Chevrolet,Car,2,344
+6/14/2021,Glowforge,Printer,1,6
+6/14/2021,WV8R,Smart Phone,1,1
+6/14/2021,Siemens,Smart Appliance,2,2
+6/14/2021,K6,Smart Phone,1,1
+6/14/2021,Exodus,Smart Phone,1,1
+6/14/2021,HXY,Smart Phone,1,1
+6/14/2021,Petra,Smart Phone,1,1
+6/14/2021,43PUD6701,Smart Phone,1,1
+6/14/2021,Airis,Smart Phone,1,1
+6/14/2021,ITV4A,Smart Phone,1,1
+6/14/2021,Victron Energy,Smart Monitor,1,4
+6/14/2021,Echtablet,Tablet,1,1
+6/14/2021,Sagem,Smart Phone,1,1
+6/14/2021,Sercomm,Router,1,2
+6/14/2021,I15,Smart Phone,1,1
+6/14/2021,ACT,Smart Phone,1,1
+6/14/2021,Icraig,Tablet,1,1
+6/14/2021,EVB3562V,Smart Phone,1,1
+6/14/2021,I96,Smart Phone,1,1
+6/14/2021,Asus,Router,1,2
+6/14/2021,X88PRO10,Tablet,1,1
+6/14/2021,Open,Smart Phone,1,1
+6/14/2021,SII,Smart Phone,1,1
+6/14/2021,Trendnet,Router,1,1
+6/14/2021,Razer,Smart Phone,1,1
+6/14/2021,KW88,Smart Phone,1,1
+6/14/2021,SuperStream,Tablet,1,1
+6/14/2021,Stream,Set Top Box,1,9
+6/14/2021,Hoozo,Tablet,1,1
+6/14/2021,HP,Printer,1,71445
+6/14/2021,B,Tablet,1,1
+6/14/2021,DeLonghi,Smart Appliance,1,2
+6/14/2021,Ienglish,Smart Phone,1,1
+6/14/2021,Chuwi,Tablet,1,80
+6/14/2021,Audio Pro,Speaker,1,2
+6/14/2021,ELECOM,Router,1,1
+6/14/2021,4G,Smart Phone,1,1
+6/14/2021,Nature,Hub,1,442
+6/14/2021,M11H,Smart Phone,1,1
+6/14/2021,HRD,Smart Phone,1,1
+6/14/2021,ecobee,Thermostat,1,8802
+6/14/2021,Anki,Smart Appliance,1,106
+6/14/2021,M4,Smart Phone,1,1
+6/14/2021,SDPF1095,Tablet,1,1
+6/14/2021,Konnected,Home Security,1,325
+6/14/2021,Night Owl,Camera,1,989
+6/14/2021,PocketBook,Smart Phone,1,1
+6/14/2021,Finney,Smart Phone,1,1
+6/14/2021,Schlage,Doorlock,1,1118
+6/14/2021,Samsung,Robot Vacuum Cleaner,1,291
+6/14/2021,AIO,Tablet,1,1
+6/14/2021,Danfoss Link,Thermostat,1,2
+6/14/2021,Cornys,TV,1,1
+6/14/2021,Iptv,Smart Phone,1,1
+6/14/2021,Bosch,Smart Phone,1,1
+6/14/2021,Bora,Smart Phone,1,1
+6/14/2021,Miele,Washer Dryer,1,73
+6/14/2021,eufy,Speaker,1,17
+6/14/2021,Blink,Camera,1,11237
+6/14/2021,Allwinner,Smart Phone,1,1
+6/14/2021,Atgames,Game Console,1,21
+6/14/2021,Merkury,Light Bulb,1,1
+6/14/2021,Pura,Smart Appliance,1,1357
+6/14/2021,Mobiprintpro,Smart Phone,1,1
+6/14/2021,Aera,Smart Appliance,1,95
+6/14/2021,UP,Smart Phone,1,1
+6/14/2021,Remarkable,Tablet,1,412
+6/14/2021,Sarah,TV,1,1
+6/14/2021,Kiii,Smart Phone,1,1
+6/14/2021,P9,Tablet,1,2
+6/14/2021,myTV,Set Top Box,1,873
+6/14/2021,Young,Smart Phone,1,1
+6/14/2021,MF0300,Smart Phone,1,1
+6/14/2021,QIN,Smart Phone,1,1
+6/14/2021,Easytrans,Smart Phone,1,1
+6/14/2021,Google,Home Security,1,309
+6/14/2021,Faleemi,Camera,1,22
+6/14/2021,5S62,Smart Phone,1,1
+6/14/2021,Inprocomm,Router,1,98
+6/14/2021,Caavo,Set Top Box,1,47
+6/14/2021,5S58H,Smart Phone,1,1
+6/14/2021,Denon DJ,Media Player,1,1
+6/14/2021,Rebel,Smart Phone,1,1
+6/14/2021,Hunter,Smart Appliance,1,247
+6/14/2021,Microsoft,Media Player,1,1
+6/14/2021,F9,Smart Phone,1,1
+6/14/2021,SP9853I,Tablet,1,3
+6/14/2021,Logitech,Media Player,1,1
+6/14/2021,IFP6550,Smart Phone,1,1
+6/14/2021,Nettalk,VoIP Gateway,1,3
+6/14/2021,Foxtel,Set Top Box,2,36
+6/14/2021,Cosori,Oven,1,25
+6/14/2021,TA2C,Tablet,1,12
+6/14/2021,Hyperlcd,Smart Phone,1,1
+6/14/2021,Jktv,Smart Phone,1,1
+6/14/2021,Rotimatic,Smart Appliance,1,31
+6/14/2021,Compulab,Laptop & Computer,1,1
+6/14/2021,Overkiz,Hub,1,2
+6/14/2021,Aila,Tablet,1,55
+6/14/2021,Skydrop,Sprinkler,1,30
+6/14/2021,Vegan,Smart Phone,1,1
+6/14/2021,XB,Smart Phone,1,1
+6/14/2021,Pioneer,WiFi Tracker,1,4
+6/14/2021,Monument,NAS Storage,1,20
+6/14/2021,Snap,Smart Phone,1,1
+6/14/2021,Benz,Smart Phone,1,1
+6/14/2021,WiOn,Plug,1,20
+6/14/2021,AK,Smart Phone,1,1
+6/14/2021,VL,Smart Phone,1,1
+6/14/2021,M40,Tablet,1,1
+6/14/2021,Iron,Smart Phone,1,1
+6/14/2021,X95,Smart Phone,1,1
+6/14/2021,X7,Tablet,1,1
+6/14/2021,Anova,Smart Appliance,1,1
+6/14/2021,Aquanta,Smart Appliance,1,19
+6/14/2021,T30,Smart Phone,1,1
+6/14/2021,DV,Tablet,1,2
+6/14/2021,Linsay,Tablet,1,1
+6/14/2021,Netflix,TV,1,4
+6/14/2021,OKAPI10,Smart Phone,1,1
+6/14/2021,Dynalink,Set Top Box,1,4
+6/14/2021,Wopad,Smart Phone,1,1
+6/14/2021,TV001,Smart Phone,1,1
+6/14/2021,RLTP5049C,Smart Phone,1,1
+6/14/2021,MATE45,Smart Phone,1,1
+6/14/2021,Avaya,Smart Phone,1,1
+6/14/2021,DA,Smart Phone,1,1
+6/14/2021,LG,Oven,1,7
+6/14/2021,FP Postbase Postage Meter,Printer,1,4
+6/14/2021,Kocaso,Tablet,2,2
+6/14/2021,VA,Smart Phone,1,1
+6/14/2021,I13,Smart Phone,1,1
+6/14/2021,FUSION5,Tablet,1,1
+6/14/2021,X96H,Tablet,1,1
+6/14/2021,Docomo,Smart Phone,1,1
+6/14/2021,XYO,Network Controller,1,4
+6/14/2021,PAD,Tablet,1,2
+6/14/2021,D43A214,Tablet,1,1
+6/14/2021,P11,Tablet,1,1
+6/14/2021,Stellar,Smart Phone,1,1
+6/14/2021,Ivpc,Smart Phone,1,1
+6/14/2021,RINO3,Smart Phone,1,1
+6/14/2021,Bethro,TV,1,1
+6/14/2021,ZY,Smart Phone,1,1
+6/14/2021,I,Tablet,1,1
+6/14/2021,HMD,Smart Phone,1,1
+6/14/2021,Control4,Speaker,1,5
+6/14/2021,EXOS,Router,1,8
+6/14/2021,S905X,Smart Phone,1,1
+6/14/2021,TimsHisense,TV,1,1
+6/14/2021,Sonoff,Light Switch,1,5
+6/14/2021,Lamzien,Smart Phone,1,1
+6/14/2021,Gogo,Smart Phone,1,1
+6/14/2021,Molekule,Air Purifier,1,195
+6/14/2021,Orange,Smart Phone,1,1
+6/14/2021,Amway,Air Purifier,1,8
+6/14/2021,H6,Tablet,1,1
+6/14/2021,Amcrest,Camera,1,797
+6/14/2021,UJ,Smart Phone,1,1
+6/14/2021,Haque,TV,1,1
+6/14/2021,Comcast,Camera,1,2861
+6/14/2021,SiliconDust,Set Top Box,1,218
+6/14/2021,Altice,Smart Phone,1,1
+6/14/2021,Olivers,TV,1,1
+6/14/2021,GD,Tablet,1,1
+6/14/2021,Yi,Camera,1,2707
+6/14/2021,Asustor,NAS Storage,2,5
+6/14/2021,Innosilicon,Smart Appliance,1,6
+6/14/2021,Sabreauto,Smart Phone,1,1
+6/14/2021,8H32A,Smart Phone,1,1
+6/14/2021,Blackberry,Tablet,1,1
+6/14/2021,TV638,Tablet,1,1
+6/14/2021,HikVision,Camera,1,628
+6/14/2021,Marshall,Camera,1,2
+6/14/2021,P98HD,Smart Phone,1,1
+6/14/2021,Kids,Smart Phone,1,1
+6/14/2021,Amcrest,Doorbell,1,33
+6/14/2021,Lenovo,Clock,1,138
+6/14/2021,Rokit,Smart Phone,1,1
+6/14/2021,Zyxel,NAS Storage,1,7
+6/14/2021,Mpman,Laptop & Computer,1,117
+6/14/2021,QZX,Smart Phone,1,1
+6/14/2021,Bradshaw,Smart Phone,1,1
+6/14/2021,Element,Smart Phone,1,1
+6/14/2021,Asus,Range Extender,1,1
+6/14/2021,Irulu,Smart Phone,1,1
+6/14/2021,Remix,Smart Phone,1,1
+6/14/2021,Grandpad,Smart Phone,1,1
+6/14/2021,SimpliSafe,Smart Appliance,1,33
+6/14/2021,Scepter,Tablet,1,12
+6/14/2021,TedsSharp,TV,1,1
+6/14/2021,D,TV,1,1
+6/14/2021,MT,Tablet,2,6
+6/14/2021,M20,Smart Phone,1,1
+6/14/2021,Annaboto,Smart Appliance,1,4
+6/14/2021,RIM,Tablet,1,1
+6/14/2021,Cowon,Media Player,1,1
+6/14/2021,June,Oven,1,46
+6/14/2021,MSM8660,Smart Phone,1,1
+6/14/2021,Betec,Smart Phone,1,1
+6/14/2021,LTB,Smart Phone,1,1
+6/14/2021,AVerMedia,Set Top Box,1,18
+6/14/2021,RF-Link,Camera,1,1
+6/14/2021,Marquis,Tablet,1,1
+6/14/2021,ECP,Smart Phone,1,1
+6/14/2021,Jeannas,TV,1,1
+6/14/2021,UMS512,Smart Phone,1,1
+6/14/2021,BG2Q4K,Smart Phone,1,1
+6/14/2021,Audiocast,Speaker,1,15
+6/14/2021,A,Tablet,1,1
+6/14/2021,ADT,Home Security,1,1985
+6/14/2021,Teclast,Smart Phone,1,1
+6/14/2021,Ubee,Router,1,1
+6/14/2021,Zonko,Tablet,1,7
+6/14/2021,Whirlpool,Dishwasher,1,32
+6/14/2021,Omega,Smart Phone,1,1
+6/14/2021,X27,Smart Phone,1,1
+6/14/2021,YA,Smart Phone,1,1
+6/14/2021,TAG,Smart Phone,1,1
+6/14/2021,ION,Smart Phone,1,1
+6/14/2021,Abox,Set Top Box,1,12
+6/14/2021,Pure,Media Player,1,1
+6/14/2021,TDP,Tablet,1,1
+6/14/2021,QT,Tablet,1,2
+6/14/2021,Eve,Range Extender,1,4
+6/14/2021,PVT,Smart Phone,1,1
+6/14/2021,Mevo,Camera,1,17
+6/14/2021,Lexmark,Printer,1,342
+6/14/2021,Vidaa,Set Top Box,1,4
+6/14/2021,Uconnect,Smart Appliance,1,2
+6/14/2021,P43,Smart Phone,1,1
+6/14/2021,Tmall,Speaker,1,54
+6/14/2021,Wireless,Router,1,3
+6/14/2021,bq,Smart Phone,1,1
+6/14/2021,HOPE10,Smart Phone,1,1
+6/14/2021,Smart,Set Top Box,1,26
+6/14/2021,MATE33,Smart Phone,1,1
+6/14/2021,Ainca,Smart Phone,1,1
+6/14/2021,DSB,Smart Phone,1,1
+6/14/2021,SDA,Smart Phone,1,1
+6/14/2021,CAT,Laptop & Computer,1,7
+6/14/2021,Sangoma,VoIP Gateway,1,6
+6/14/2021,roost,Smart Monitor,1,1
+6/14/2021,Toshiba,Printer,1,16
+6/14/2021,Camelio,Tablet,1,1
+6/14/2021,TSK,Smart Phone,1,1
+6/14/2021,SNB02,Tablet,1,2
+6/14/2021,Netgear,Picture Frame,1,19
+6/14/2021,SasatactGuam,TV,1,1
+6/14/2021,R,Smart Phone,1,1
+6/14/2021,Dune HD,TV,1,12
+6/14/2021,Altice,Speaker,1,5
+6/14/2021,8S89H,Tablet,1,1
+6/14/2021,Brinks,Home Security,1,1
+6/14/2021,Belkin,Speaker,1,4
+6/14/2021,Bowers&Wilkins,Speaker,1,3
+6/14/2021,CRP,Smart Phone,1,1
+6/14/2021,Entmate,Smart Phone,1,1
+6/14/2021,Leap,Smart Phone,1,1
+6/14/2021,TA2C,Smart Phone,1,1
+6/14/2021,M11,Smart Phone,1,1
+6/14/2021,Canvia,Picture Frame,1,2
+6/14/2021,Roadie,Smart Appliance,1,2
+6/14/2021,Vestel,Smart Phone,1,1
+6/14/2021,Falster,Smart Phone,1,1
+6/14/2021,Siemens,Coffee Maker,1,1
+6/14/2021,AT7,Smart Phone,1,1
+6/14/2021,G,Tablet,1,1
+6/14/2021,Bedroom,TV,1,1
+6/14/2021,UGC,Smart Phone,1,1
+6/14/2021,iView,Tablet,1,2
+6/14/2021,Golden Tee,Game Console,1,14
+6/14/2021,Equiso,Smart Phone,1,1
+6/14/2021,Mayumi,Smart Phone,1,1
+6/14/2021,GL,Smart Phone,1,1
+6/14/2021,YY,Tablet,1,1
+6/14/2021,Venue,Smart Phone,1,1
+6/14/2021,X60,Smart Phone,1,1
+6/14/2021,X3M,Smart Phone,1,1
+6/14/2021,MSM8953,Tablet,1,2
+6/14/2021,Shopee,Smart Phone,1,1
+6/14/2021,Freedom,Smart Phone,1,1
+6/14/2021,MasterBedroom,TV,1,1
+6/14/2021,MW15,Smart Phone,1,1
+6/14/2021,Lydias,TV,1,1
+6/14/2021,8S88H,Tablet,1,1
+6/14/2021,Ployer,Tablet,1,1
+6/14/2021,GWAT10,Tablet,1,6
+6/14/2021,GB150529,Smart Phone,1,1
+6/14/2021,ZyXEL,NAS Storage,1,1
+6/14/2021,Chrome OS,Laptop & Computer,1,2
+6/14/2021,Zonar,Smart Phone,1,1
+6/14/2021,X6,Smart Phone,1,1
+6/14/2021,MYXI1,Smart Phone,1,1
+6/14/2021,I10,Tablet,1,1
+6/14/2021,TV6586,Smart Phone,1,1
+6/14/2021,YQ,Smart Phone,1,1
+6/14/2021,MI9,Smart Phone,1,1
+6/14/2021,Ayine,Smart Phone,1,1
+6/14/2021,Gypsy,TV,1,1
+6/14/2021,Lexington,Smart Phone,1,1
+6/14/2021,Moaan,Smart Phone,1,1
+6/14/2021,Kaon,Router,1,1
+6/14/2021,Emdoor,Tablet,1,1
+6/14/2021,Kuna,Camera,1,435
+6/14/2021,S905,Smart Phone,1,1
+6/14/2021,AcuRite,Weather Monitor,1,114
+6/14/2021,C800,Tablet,1,1
+6/14/2021,D-Link,Range Extender,1,29
+6/14/2021,Tomato,Router,1,1
+6/14/2021,Camp Chef,Smart Appliance,1,46
+6/14/2021,Trimble,Tablet,1,11
+6/14/2021,EX,Smart Phone,1,1
+6/14/2021,Lollipop,Baby Camera,1,53
+6/14/2021,Leadtek,Laptop & Computer,1,37
+6/14/2021,Google,Mesh Router,1,260
+6/14/2021,M1016C,Smart Phone,1,1
+6/14/2021,Lockly,Hub,1,86
+6/14/2021,Broadcom,Router,1,3
+6/14/2021,SKY,Smart Phone,1,1
+6/14/2021,AGM,Smart Phone,1,1
+6/14/2021,Irulu,Tablet,1,1
+6/14/2021,Hybrid,Tablet,1,12
+6/14/2021,Y1,Smart Phone,1,1
+6/14/2021,TV,Tablet,1,7
+6/14/2021,V989,Smart Phone,1,1
+6/14/2021,22PFD5403,Smart Phone,1,1
+6/14/2021,TK,Tablet,1,1
+6/14/2021,R,Set Top Box,1,1
+6/14/2021,Kukele,Tablet,1,1
+6/14/2021,Riley,Smart Phone,1,1
+6/14/2021,T10,Tablet,1,2
+6/14/2021,Elecom,Mesh Router,1,1
+6/14/2021,T96,Smart Phone,1,1
+6/14/2021,LPT,Smart Phone,1,1
+6/14/2021,Intel,Laptop & Computer,1,1
+6/14/2021,JB,Smart Phone,1,1
