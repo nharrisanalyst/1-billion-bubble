@@ -43,18 +43,14 @@ class Data{
 		this._data =  this.roll_up(this.data, d=>d[grouping], d=>d.device_cummulative_cnts)
 	}
 	
-	get devicetypeLength(){
-		const distinct ={}
-		 const distinctArray =[]
+	get devicetypeValue(){
+		let value =0;
+		
 		 this._filtered_data.forEach(d=>{
-			 if(!distinct[d['idtype']]){
-				 distinct[d['idtype']] =true;
-				 distinctArray.push(d['idtype']);
-			 }
-		   }
-		 )
+			value += d.idtype_count;
+		 });
 		 
-		return distinctArray.length; 
+		return value; 
 	}
 	
 	get distinctBrands(){
@@ -100,34 +96,6 @@ class Data{
 	}
 	
 }
-
-const data = new Data({
-	rawdata:data_raw.map(d=>{
-		d.device_cummulative_cnts = parseInt(d.device_cummulative_cnts);
-		return d;
-	}),
-})
-
-
-
-const levels = ['brand', 'category']
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 class Bubble{
@@ -185,7 +153,6 @@ class Bubble{
 	_setOnClick(){
 		const self = this;
 		function onClick(event,d){
-			console.log('=======> here cdhjkafhd',self._level);
 			if(self._level === 'brand'){
 		     const brand = d.data.name;
 		     self.setLevel(1);
@@ -354,6 +321,7 @@ class Bubble{
 	
 	rerender(data){
 		this._data =data;
+		console.log('========>', this._data);
 		this.pack = this._makePack(); 
 		this._root =this.pack(this._data.data);
 		this.render()
@@ -423,12 +391,10 @@ class Selector{
 	//this._data.distinct('category')
 	
 	_renderSelectionMenu(){
-		console.log('====> here');
 		this._selectionMenu.render()
 		this._onChange();
 	}
 	_destroySelectionMenu(){
-		console.log('======> destroy');
 		this._selectionMenu.destroy();
 	}
 	
@@ -452,7 +418,7 @@ class Selector{
 								self.selection = value;
 								self._data.setData('brand');
 								self._selectionMenu.destroy();
-								self._chart.rerender(data);
+								self._chart.rerender(self._data);
 								self._menu.rerender();
 								self._back.render();
 								self.makeSelectionButton();
@@ -531,7 +497,7 @@ class Menu{
 	}
 		 _makeMenuData(){
 			return [{title:'Brands', value:d3.format(",")(this._data.distinctBrands)},
-			        {title:'Device Types', value:d3.format(",")(this._data.devicetypeLength)}]
+			        {title:'Device Types', value:d3.format(",")(this._data.devicetypeValue)}]
 		}
     _makeHeadlineStat(){
 		this._mainDiv = d3.select(this._el).append('div')
@@ -611,8 +577,6 @@ class ChartFull{
 	setOnClick(){
 		const self = this;
 		function onClick(){
-			console.log('we are here')
-			console.log('======> minutes',self);
 			self._data.filter(d=>true);
 			self._data.setData('brand');
 			self._chart.rerender(self._data);
@@ -629,7 +593,12 @@ class ChartFull{
 
 
 
-function main(){
+function main(raw_data){
+	
+	const data = new Data({
+		rawdata:raw_data
+	})
+	const levels = ['brand', 'category']
 	
 	const bubble = new Bubble({
 		data:data,
@@ -676,5 +645,17 @@ function main(){
 	menu.render();
 }
 
-main();
+
+
+d3.csv('/data/1B.csv', d=>{
+	return {
+		ts:d.ts,
+		brand:d.brand,
+		category:d.category,
+		device_cummulative_cnts:parseInt(d.device_cummulative_cnts),
+		idtype_count:parseInt(d.idtype_count),
+	}
+}).then(data=>{
+	main(data);
+});
 
