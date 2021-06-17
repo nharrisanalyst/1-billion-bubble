@@ -108,6 +108,7 @@ class Bubble{
 		this.pack = this._makePack() ;
 		this._root =this.pack(this._data.data)
 		this._level = 'brand';
+		this._levels = ['brand', 'category']
 	}
 	
 	set extraButton(button){
@@ -147,20 +148,22 @@ class Bubble{
 	}
 	
 	setLevel(index){
-		this._level = levels[index];
+		this._level = this._levels[index];
 	}
 	
 	_setOnClick(){
 		const self = this;
 		function onClick(event,d){
+			console.log(self._level)
 			if(self._level === 'brand'){
 		     const brand = d.data.name;
 		     self.setLevel(1);
 			 self._data.filter(e => e.brand === brand);
 			 self._data.setData(self._level);
 			 self.rerender(self._data);
-			 self._extraButton.setOnClick()
+			 //self._extraButton.setOnClick()
 			 self._back.render();
+			 self._menu.rerender();
 			}	
 		}
 		
@@ -174,6 +177,11 @@ class Bubble{
 		this._level = level;
 	}
 	
+	set menu (menu){
+		console.log('rub me the right way ======>', menu);
+		this._menu = menu;
+		console.log(this._menu)
+	}
 	_getRandomRingCoords = radius => {
 		const angle = Math.random() * Math.PI * 2;
 		const x = Math.cos(angle) * radius + window.innerWidth / 2;
@@ -432,7 +440,7 @@ class Selector{
 	allRender(){
 		this._data.filter(d=> true);
 		this._data.setData('brand');
-		this._chart.rerender(data);
+		this._chart.rerender(this._data);
 		this._chart.level = 'brand';
 		this._menu.rerender();
 		this._back.unrender();
@@ -602,9 +610,6 @@ function main(raw_data){
 		rawdata:raw_data
 	})
 	
-
-	const levels = ['brand', 'category']
-	
 	const bubble = new Bubble({
 		data:data,
 		el:document.querySelector('.d3-bubble-chart-right')
@@ -646,6 +651,7 @@ function main(raw_data){
 	
 	back.selector = selector;
 	bubble.back = back;
+	bubble.menu = menu;
 	selector.render();
 	menu.render();
 }
