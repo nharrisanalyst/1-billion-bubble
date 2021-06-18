@@ -154,7 +154,6 @@ class Bubble{
 	_setOnClick(){
 		const self = this;
 		function onClick(event,d){
-			console.log(self._level)
 			if(self._level === 'brand'){
 		     const brand = d.data.name;
 		     self.setLevel(1);
@@ -658,7 +657,7 @@ function main(raw_data){
 
 
 
-d3.csv('/data/1B.csv', d=>{
+d3.csv('data/1B.csv', d=>{
 	return {
 		ts:d.ts,
 		brand:d.brand,
