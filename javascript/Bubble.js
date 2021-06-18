@@ -278,8 +278,8 @@ class Bubble{
 	
 	_setOnHover(){
 		function mouseover(){
-			// d3.selectAll('.circle-element').transition(1000)
-			//           .attr("fill-opacity", 0.2)
+			d3.selectAll('.circle-element').transition(1000)
+			          .attr("fill-opacity", 0.3)
 					  
 		    d3.selectAll('.circle-text-text').transition(1000)
 			  .attr("opacity", 0.2);
@@ -305,7 +305,7 @@ class Bubble{
 			  
 			  d3.selectAll('.circle-text-text').style('display', 'block');
 			  d3.select(this.parentNode).selectAll('.circle-text-text').attr('clip-path', d => d.clipUid);
-			  d3.select(this.parentNode).selectAll('.circle-text-text').selectAll('tspan').transition(1000).attr('font-size',d =>d.r>40?'24px':'12px').text(d =>d.r>20? d.text: "");
+			  d3.select(this.parentNode).selectAll('.circle-text-text').selectAll('tspan').transition(1000).attr('font-size',d =>d.r>45?'24px':'12px').text(d =>d.r>20? d.text: "");
 			}
 			
 		    d3.selectAll('.circle-element').on('mouseover', mouseover);
