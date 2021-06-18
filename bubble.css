@@ -1,17 +1,17 @@
 
 @font-face {
 	font-family: OC-Rey;
-	src: url(/fonts/OC-Rey-Regular.otf);
+	src: url(fonts/OC-Rey-Regular.otf);
 }
 
 @font-face {
 	font-family: wig-med;
-	src: url(/fonts/wigrumweb-medium.woff);
+	src: url(fonts/wigrumweb-medium.woff);
 }
 
 @font-face {
 	font-family: wig-reg;
-	src: url(/fonts/wigrumweb-regular.woff);
+	src: url(fonts/wigrumweb-regular.woff);
 }
 
 body {
