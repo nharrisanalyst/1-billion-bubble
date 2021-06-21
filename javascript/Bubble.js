@@ -190,7 +190,9 @@ class Bubble{
 	  
 	  
 	_bubbleExit(exit){
-		return exit.remove();
+		return exit.call(exit => exit.transition(this._t)
+		                      .attr('cx',d=> this._getRandomRingCoords(3000)[0])
+			                  .attr('cy',d=> this._getRandomRingCoords(3000)[1]).remove());
 	}
 	
 	_bubbleEnter(enter){
@@ -199,8 +201,12 @@ class Bubble{
 							   .attr("fill", "url('#circleGradient')")
 							   .attr("fill-opacity", 1)
 		                       .attr("r", d => 0)
+							   .attr('cx',d=> this._getRandomRingCoords(3000)[0])
+							   .attr('cy',d=> this._getRandomRingCoords(3000)[1])
 							   .attr('class', 'circle-element')
-							   .call(enter=> enter.transition(this._t).attr('r', d=>d.r));
+							   .call(enter=> enter.transition(this._t).delay(500).attr('r', d=>d.r)
+						                                               .attr('cx',d=> 0)
+																	   .attr('cy',d=> 0));
 	}
 	
 	_bubbleUpdate(update){
@@ -209,7 +215,7 @@ class Bubble{
 	}
 	
 	_textUpdate(update){
-		return update.attr('font-size','0px').call(update=>update.transition(this._t).attr('font-size',d =>d.r>40?'24px':'12px')
+		return update.attr('font-size','0px').call(update=>update.transition(this._t).delay(500).attr('font-size',d =>d.r>40?'24px':'12px')
 																					  .text(d =>d.r>20? d.text: ""));
 	}
 	_textEnterTitle(enter){
@@ -237,15 +243,18 @@ class Bubble{
 	
 	
 	_transition(){
-		return d3.transition().duration(750);
+		return d3.transition().duration(1150);
 	}
 	
 	_makeBubbles(){
 		const total = this._data.total();
 		this.leaf = this.svg.selectAll("g")
 		               .data(this._root.leaves())
-		               .join("g")
-		               .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`);
+		               .join(enter => enter.append('g').attr("transform", d => `translate(${d.x + 1},${d.y + 1})`),
+				             update => update.attr("transform", d => `translate(${d.x + 1},${d.y + 1})`),
+							 exit => exit.call(exit =>exit.transition(d3.transition().duration(1150)).attr("transform", d => 
+							 `translate(${this._getRandomRingCoords(3000)[0] + 1},${this._getRandomRingCoords(3000)[1] + 1})`).remove())
+						 )
 		this._t = this._transition();
 	   this.leaf.selectAll("circle").data(d=>d).join(enter => this._bubbleEnter(enter),
 	                                                 update => this._bubbleUpdate(update),
