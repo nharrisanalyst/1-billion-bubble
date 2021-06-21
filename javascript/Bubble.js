@@ -177,9 +177,7 @@ class Bubble{
 	}
 	
 	set menu (menu){
-		console.log('rub me the right way ======>', menu);
 		this._menu = menu;
-		console.log(this._menu)
 	}
 	_getRandomRingCoords = radius => {
 		const angle = Math.random() * Math.PI * 2;
@@ -321,6 +319,33 @@ class Bubble{
 		    d3.selectAll('.circle-element').on('mouseout',mouseout);
 	    
 	}
+	_makeBubblesNoTransition(){
+		const total = this._data.total();
+		this.leaf = this.svg.selectAll("g")
+					   .data(this._root.leaves())
+					   .join("g")
+					   .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`);
+		
+	   this.leaf.append("circle")
+		  .attr('class', 'circle-element')
+		  .attr("id", (d,i) => (d.leafUid =i))
+		  .attr("r", d => d.r)
+		  .attr("fill-opacity", 1)
+		  .attr("fill", "url('#circleGradient')");
+		  
+		  this.leaf.append("text")
+			.attr('class', 'circle-text')
+			.style('pointer-events', 'none')
+			.attr('fill','rgb(250,250,250)')
+			.attr('font-size', '12px')
+			.attr("clip-path", d => d.clipUid)
+			.selectAll("tspan")
+			.data(d => [{text:d.data.name, r:d.r}, {text:d3.format('.2%')(d.data.value/total), r:d.r}])
+			.join("tspan")
+			.attr("x", 0)
+			.attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.8}em`)
+			.text(d =>d.r>20? d.text: "");
+	}
 	
 	set back(back){
 		this._back = back;
@@ -340,10 +365,27 @@ class Bubble{
 	
 	rerender(data){
 		this._data =data;
-		console.log('========>', this._data);
 		this.pack = this._makePack(); 
 		this._root =this.pack(this._data.data);
 		this.render()
+	}
+	
+	_renderNoTransition(){
+			  this._makeSVG();
+			  this._makeGradient(); 
+			  this._makePack()
+			  this._makeBubblesNoTransition();
+			  this._setOnClick();
+			  this._setOnHover();
+	}
+	
+	rerenderNoTransition(){
+		this.width = this._el.getBoundingClientRect().width;
+		this.height = this._el.getBoundingClientRect().height;
+		this.svg.remove();
+		this.pack = this._makePack(); 
+		this._root =this.pack(this._data.data);
+		this._renderNoTransition();
 	}
 }
 
@@ -662,6 +704,16 @@ function main(raw_data){
 	bubble.menu = menu;
 	selector.render();
 	menu.render();
+	
+	resize(bubble);
+}
+
+
+function resize(chart){
+	function resizeChart(){
+		chart.rerenderNoTransition();
+	}
+	window.addEventListener('resize', resizeChart);
 }
 
 
