@@ -323,7 +323,7 @@ class Bubble{
 		const total = this._data.total();
 		this.leaf = this.svg.selectAll("g")
 					   .data(this._root.leaves())
-					   .join("g")
+					   .join('g')
 					   .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`);
 		
 	   this.leaf.append("circle")
@@ -333,18 +333,33 @@ class Bubble{
 		  .attr("fill-opacity", 1)
 		  .attr("fill", "url('#circleGradient')");
 		  
-		  this.leaf.append("text")
-			.attr('class', 'circle-text')
-			.style('pointer-events', 'none')
-			.attr('fill','rgb(250,250,250)')
-			.attr('font-size', '12px')
-			.attr("clip-path", d => d.clipUid)
-			.selectAll("tspan")
-			.data(d => [{text:d.data.name, r:d.r}, {text:d3.format('.2%')(d.data.value/total), r:d.r}])
-			.join("tspan")
-			.attr("x", 0)
-			.attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.8}em`)
-			.text(d =>d.r>20? d.text: "");
+		  
+		  this.leaf.selectAll(".circle-text-name").data(d=>d).join("text")
+		  .attr('class', 'circle-text-text circle-text-name')
+		  .style('pointer-events', 'none')
+		  .attr('fill','rgb(250,250,250)')
+		  .attr("clip-path", d => d.clipUid)
+		  .selectAll("tspan")
+		  .data(d => [{text:d.data.name, r:d.r}] )
+		  .join("tspan")
+		  .attr('font-size', d =>d.r>40?'24px':'12px')
+		  .attr("x", 0)
+		  .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.4}em`)
+		  .text(d =>d.r>20? d.text: "");
+		 
+		 this.leaf.selectAll(".circle-text-text-perc").data(d=>d).join("text")
+		 .attr('class', 'circle-text-text circle-text-text-perc')
+		 .style('pointer-events', 'none')
+		 .attr('fill','rgb(250,250,250)')
+		 .attr("clip-path", d => d.clipUid)
+		 .selectAll("tspan")
+		 .data(d => [{text:d3.format('.2%')(d.data.value/total), r:d.r}])
+		 .join("tspan")
+		 .attr('font-size', d =>d.r>40?'24px':'12px')
+		 .attr("x", 0)
+		 .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 1.6}em`)
+		 .text(d =>d.r>20? d.text: "");
+		  
 	}
 	
 	set back(back){
