@@ -58,7 +58,7 @@ body {
 }
 
 .d3-bubble-chart-title{
-	height:50%;
+	height:calc(50% - 50px);
 	width:90%;
 	text-align:center;
 	color: white;
@@ -66,10 +66,18 @@ body {
 	text-align: left;
 	display: table;
 	padding-left:10%;
-	line-height: 90px;
+	line-height: 85px;
 	font-family: OC-Rey;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom:0px;
+}
 
+.d3-bubble-chart-copy{
+	color: white;
+	font-size:18px;
+	padding-left:10%;
+	text-align:left;
+	margin-bottom:10px;
 }
 
 .d3-bubble-chart-selector-menu{
