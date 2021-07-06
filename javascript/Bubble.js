@@ -573,7 +573,7 @@ class Menu{
 	}
 		 _makeMenuData(){
 			return [{title:'Brands', value:d3.format(",")(this._data.distinctBrands)},
-			        {title:'Device Types', value:d3.format(",")(this._data.devicetypeValue)}]
+			        {title:'Models', value:d3.format(",")(this._data.devicetypeValue)}]
 		}
     _makeHeadlineStat(){
 		this._mainDiv = d3.select(this._el).append('div')
@@ -633,7 +633,7 @@ class Back{
 	
 	render(){
 		d3.select(this._el).attr('class', 'd3-bubble-chart-selector-title title-active')
-		              .html(`<div>${svgBack} <span>${"Back to all devices"} </span> </div>`);
+		              .html(`<div>${svgBack} <span>${"Back to all brands"} </span> </div>`);
 		this._onClick();
 	}
 	unrender(){
