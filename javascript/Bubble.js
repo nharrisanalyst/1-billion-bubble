@@ -122,7 +122,7 @@ class Bubble{
 		this.pack = this._makePack() ;
 		this._root =this.pack(this._data.data)
 		this._level = 'brand';
-		this._levels = ['brand', 'category']
+		this._levels = ['brand','brand-filter','category']
 	}
 	
 	set extraButton(button){
@@ -170,7 +170,7 @@ class Bubble{
 		function onClick(event,d){
 			if(self._level === 'brand'){
 		     const brand = d.data.name;
-		     self.setLevel(1);
+		     self.setLevel(2);
 			 self._data.filter(e => e.brand === brand);
 			 self._data.setData(self._level);
 			 self.rerender(self._data);
@@ -501,6 +501,7 @@ class Selector{
 									self._selectionMenu.destroy();
 									self._menu.rerender();
 									self._back.unrender();
+									self._chart.setLevel(0);
 									self.makeSelectionButton();
 									return;
 								}
@@ -511,6 +512,7 @@ class Selector{
 								self._chart.rerender(self._data);
 								self._menu.rerender();
 								self._back.render();
+								self._chart.setLevel(1);
 								self.makeSelectionButton();
 							})
 		
@@ -591,7 +593,6 @@ class Menu{
 			this._brand_showing = this._data.distinctBrands === 1;
 			return [{title:'Brands', value:this._brand_showing?this._data.brandName:d3.format(",")(this._data.distinctBrands), style:this._brand_showing?{'font-size':'35px'}:{}},
 		     {title:'Models', value:d3.format(",")(this._data.devicetypeValue), style:this._brand_showing?{'font-size':'35px'}:{}}]
-
 		}
     _makeHeadlineStat(){
 		this._mainDiv = d3.select(this._el).append('div')
