@@ -591,6 +591,7 @@ class Menu{
 			this._brand_showing = this._data.distinctBrands === 1;
 			return [{title:'Brands', value:this._brand_showing?this._data.brandName:d3.format(",")(this._data.distinctBrands), style:this._brand_showing?{'font-size':'35px'}:{}},
 		     {title:'Models', value:d3.format(",")(this._data.devicetypeValue), style:this._brand_showing?{'font-size':'35px'}:{}}]
+
 		}
     _makeHeadlineStat(){
 		this._mainDiv = d3.select(this._el).append('div')
