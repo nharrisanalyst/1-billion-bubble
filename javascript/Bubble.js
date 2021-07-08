@@ -53,6 +53,20 @@ class Data{
 		return value; 
 	}
 	
+	get brandName(){
+		if(this._filtered_data.length === 0) return 'null';
+		const distinct ={}
+		 const distinctArray =[]
+		 this._filtered_data.forEach(d=>{
+			 if(!distinct[d['brand']]){
+				 distinct[d['brand']] =true;
+				 distinctArray.push(d['brand']);
+			 }
+		   }
+		)
+		return distinctArray[0];
+	}
+	
 	get distinctBrands(){
 		const distinct ={}
 		 const distinctArray =[]
@@ -570,10 +584,14 @@ class Menu{
 		this._data = data;
 		this._el = el;
 		this._menuData = this._makeMenuData();
+		this._brand_showing = false;
 	}
+	
 		 _makeMenuData(){
-			return [{title:'Brands', value:d3.format(",")(this._data.distinctBrands)},
-			        {title:'Models', value:d3.format(",")(this._data.devicetypeValue)}]
+			this._brand_showing = this._data.distinctBrands === 1;
+			return [{title:'Brands', value:this._brand_showing?this._data.brandName:d3.format(",")(this._data.distinctBrands), style:this._brand_showing?{'font-size':'35px'}:{}},
+		     {title:'Models', value:d3.format(",")(this._data.devicetypeValue), style:this._brand_showing?{'font-size':'35px'}:{}}]
+
 		}
     _makeHeadlineStat(){
 		this._mainDiv = d3.select(this._el).append('div')
@@ -588,8 +606,12 @@ class Menu{
 	}
 	
 	_makeStatHTML(d){
+		let style ='';
+		       Object.keys(d.style).forEach(key=>{
+				   style = style +` ${key}:${d.style[key]};`;
+			   })
 		return `<div class='stat-title'>${d.title}</div>
-		        <div class='stat-value'>${d.value}</div>
+		        <div style="${style}" class='stat-value'>${d.value}</div>
 		       `
 	}
 		
