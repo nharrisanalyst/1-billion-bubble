@@ -23,6 +23,7 @@ body {
 	margin: 0;
 	background: rgb(15,15,15);
 	font-family:wig-reg;
+	overflow: hidden
 }
 
 .d3-bubble-chart-wrapper{
