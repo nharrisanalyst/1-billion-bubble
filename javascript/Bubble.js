@@ -230,6 +230,12 @@ class Bubble{
 		return update.attr('font-size','0px').call(update=>update.transition(this._t).delay(500).attr('font-size',d =>d.r>40?'24px':'12px')
 																					  .text(d =>d.r>20? d.text: ""));
 	}
+	
+	_textUpdatePerc(update){
+		return update.attr('font-size','0px').call(update=>update.transition(this._t).delay(500).attr('font-size',d =>d.r>40?'20px':'8px')
+																					  .text(d =>d.r>20? d.text: ""));
+	}
+	
 	_textEnterTitle(enter){
 		return enter.append('tspan').attr('font-size', '0px')
 		                      .attr("x", 0)
@@ -244,7 +250,7 @@ class Bubble{
 							  .attr("x", 0)
 							  .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 1.6}em`)
 							  .call(enter => enter.transition(this._t)
-												   .attr('font-size', d =>d.r>40?'24px':'12px')
+												   .attr('font-size', d =>d.r>40?'20px':'8px')
 												   .text(d =>d.r>20? d.text: "")
 									  )
 	}
@@ -292,7 +298,7 @@ class Bubble{
 		   .selectAll("tspan")
 		   .data(d => [{text:d3.format('.2%')(d.data.value/total), r:d.r}])
 		   .join(enter => this._textEnterPerc(enter),
-	             update => this._textUpdate(update),
+	             update => this._textUpdatePerc(update),
 			     exit => this._textExit(exit))
 		   
 	}
@@ -326,7 +332,8 @@ class Bubble{
 			  
 			  d3.selectAll('.circle-text-text').style('display', 'block');
 			  d3.select(this.parentNode).selectAll('.circle-text-text').attr('clip-path', d => d.clipUid);
-			  d3.select(this.parentNode).selectAll('.circle-text-text').selectAll('tspan').transition(1000).attr('font-size',d =>d.r>45?'24px':'12px').text(d =>d.r>20? d.text: "");
+			  d3.select(this.parentNode).selectAll('.circle-text-text').selectAll('tspan').transition(1000).attr('font-size',d =>d.r>40?'24px':'12px').text(d =>d.r>20? d.text: "");
+			  d3.select(this.parentNode).selectAll('.circle-text-text-perc').selectAll('tspan').transition(1000).attr('font-size',d =>d.r>40?'20px':'8px').text(d =>d.r>20? d.text: "");
 			}
 			
 		    d3.selectAll('.circle-element').on('mouseover', mouseover);
