@@ -663,7 +663,7 @@ class Back{
 	
 	render(){
 		d3.select(this._el).attr('class', 'd3-bubble-chart-selector-title title-active')
-		              .html(`<div>${svgBack} <span>${"Back to all brands"} </span> </div>`);
+		              .html(`<div>${svgBack} <span>${"Back"} </span> </div>`);
 		this._onClick();
 	}
 	unrender(){
