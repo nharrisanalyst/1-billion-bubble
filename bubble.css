@@ -115,7 +115,7 @@ body {
 .d3-bubble-chart-selector{
 	height:33%;
 	width:90%;
-	padding-left:10%;
+	padding-left:118px;
 	color:white;
 	font-size:18px;
 	text-align: left;
@@ -145,7 +145,7 @@ body {
 .d3-bubble-chart-menu{
 	height:66%;
 	width:90%;
-	padding-left:10%;
+	padding-left:118px;
 }
 
 .d3-bubble-chart-menu{
