@@ -231,6 +231,13 @@ body {
   .d3-bubble-chart-selector-menu{
 	left:0px;	
 	 }
+	 .Brands-menu-stat{
+		 margin-right:0px;
+	 }
+	 
+	 .chart-menu-inner-wrapper{
+		 margin-top:10px;
+	 }
 }
 
 @media only screen and (max-width: 768px) {
@@ -238,7 +245,12 @@ body {
 		  margin-top:20px;
 		  width:100vw;
 	  }  
-	  
+	  .chart-menu-inner-wrapper{
+		   margin-top:0px;
+	   }
+	   .Brands-menu-stat{
+		   margin-right:95px;
+	   }
 	  .d3-bubble-chart-left{
 		  width:100%;
 		  display:block;
@@ -269,11 +281,12 @@ body {
 	  .d3-bubble-chart-right{
 		  width:100%;
 		  display:block;
-		  max-height: calc(100vw + 10px);
+		  max-height: 100vw;
 	  }
 	  .circle-element{
 		  pointer-events: none;
 	  }
+
 	  .d3-bubble-chart-menu-selector{
 		  
 	  }
