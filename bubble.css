@@ -265,6 +265,7 @@ body {
 	  .d3-bubble-chart-right{
 		  width:100%;
 		  display:block;
+		  max-height: calc(100vw + 10px);
 	  }
 	  
 	  .d3-bubble-chart-menu-selector{
@@ -273,6 +274,7 @@ body {
 	  .d3-bubble-chart-selector{
 		  text-align: left;
 		  margin-bottom: 35px;
+		  padding-left:10%;
 	  }
 	  .d3-bubble-chart-selector-selector{
 		  width:100%;
@@ -285,6 +287,7 @@ body {
 	  }
 	  .d3-bubble-chart-menu{
 		  margin-top:15px;
+		  padding-left:10%;
 	  }
 	  .menu-stat-wrapper{
 		  display:inline-block;
