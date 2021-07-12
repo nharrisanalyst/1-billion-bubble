@@ -271,7 +271,9 @@ body {
 		  display:block;
 		  max-height: calc(100vw + 10px);
 	  }
-	  
+	  .circle-element{
+		  pointer-events: none;
+	  }
 	  .d3-bubble-chart-menu-selector{
 		  
 	  }
