@@ -54,7 +54,7 @@ body {
 	height:100%;
 	width:calc(50% - 5px);
 	display:inline-block;
-	float:right;
+	
 }
 
 .d3-bubble-chart-title{
@@ -104,7 +104,7 @@ body {
 }
 
 .d3-bubble-chart-left-top-container{
-	height:50%;
+	height:0px;
 }
 
 .d3-bubble-chart-title-span{
@@ -249,6 +249,7 @@ body {
 		  width:100%;
 		  top: 0%;
 		  transform: translateY(0%);
+		  height:initial;
 	  }
 	  
 	  .d3-bubble-chart-title{
