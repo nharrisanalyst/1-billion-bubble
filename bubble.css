@@ -104,7 +104,7 @@ body {
 }
 
 .d3-bubble-chart-left-top-container{
-	height:0px;
+	height:50%;
 }
 
 .d3-bubble-chart-title-span{
@@ -115,7 +115,7 @@ body {
 .d3-bubble-chart-selector{
 	height:33%;
 	width:90%;
-	padding-left:118px;
+	padding-left:var(--page-horizontal-padding);
 	color:white;
 	font-size:18px;
 	text-align: left;
@@ -145,7 +145,7 @@ body {
 .d3-bubble-chart-menu{
 	height:66%;
 	width:90%;
-	padding-left:118px;
+	padding-left:var(--page-horizontal-padding);
 }
 
 .d3-bubble-chart-menu{
@@ -251,6 +251,9 @@ body {
 		  transform: translateY(0%);
 		  height:initial;
 	  }
+	  .d3-bubble-chart-left-top-container{
+		  height:initial;
+	  }
 	  
 	  .d3-bubble-chart-title{
 		  width:100%;
@@ -275,7 +278,6 @@ body {
 	  .d3-bubble-chart-selector{
 		  text-align: left;
 		  margin-bottom: 35px;
-		  padding-left:24px;
 	  }
 	  .d3-bubble-chart-selector-selector{
 		  width:100%;
@@ -288,7 +290,6 @@ body {
 	  }
 	  .d3-bubble-chart-menu{
 		  margin-top:15px;
-		  padding-left:24px;
 	  }
 	  .menu-stat-wrapper{
 		  display:inline-block;
@@ -309,3 +310,14 @@ body {
 	.display-none{
 		display: none;
 	}
+	
+	:root {
+		  --page-horizontal-padding: 118px;
+		}@media screen and (max-width: 1060px) {
+		  :root {
+			--page-horizontal-padding: 64px;
+		  }@media screen and (max-width: 768px) {
+				:root {
+				  --page-horizontal-padding: 24px;
+				}
+		}
