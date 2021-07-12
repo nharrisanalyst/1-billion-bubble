@@ -238,8 +238,8 @@ class Bubble{
 	
 	_textEnterTitle(enter){
 		return enter.append('tspan').attr('font-size', '0px')
-		                      .attr("x", 0)
-							  .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.4}em`)
+		                      .attr("x", '0px')
+							  .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.4}px`)
 							  .call(enter => enter.transition(this._t)
 							                       .attr('font-size', d =>d.r>40?'24px':'12px')
 												   .text(d =>d.r>20? d.text: "")
@@ -247,8 +247,12 @@ class Bubble{
 	}
 	_textEnterPerc(enter){
 		return enter.append('tspan').attr('font-size', '0px')
-							  .attr("x", 0)
-							  .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 1.6}em`)
+							  .attr("x", '0px')
+							  .attr("y", (d, i, nodes) => { 
+								   const yOffset = d.r>40?24:12;
+								  return  `${i - nodes.length / 2 + 1.6+ yOffset}px`;
+						   
+								 })
 							  .call(enter => enter.transition(this._t)
 												   .attr('font-size', d =>d.r>40?'20px':'8px')
 												   .text(d =>d.r>20? d.text: "")
@@ -364,8 +368,8 @@ class Bubble{
 		  .data(d => [{text:d.data.name, r:d.r}] )
 		  .join("tspan")
 		  .attr('font-size', d =>d.r>40?'24px':'12px')
-		  .attr("x", 0)
-		  .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.4}em`)
+		  .attr("x", '0px')
+		  .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.4}px`)
 		  .text(d =>d.r>20? d.text: "");
 		 
 		 this.leaf.selectAll(".circle-text-text-perc").data(d=>d).join("text")
@@ -377,8 +381,12 @@ class Bubble{
 		 .data(d => [{text:d3.format('.2%')(d.data.value/total), r:d.r}])
 		 .join("tspan")
 		 .attr('font-size', d =>d.r>40?'24px':'12px')
-		 .attr("x", 0)
-		 .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 1.6}em`)
+		 .attr("x", '0px')
+		 .attr("y", (d, i, nodes) =>{ 
+			 const yOffset = d.r>40?24:12;
+			return  `${i - nodes.length / 2 + 1.6+ yOffset}px`;
+	 
+	       })
 		 .text(d =>d.r>20? d.text: "");
 		  
 	}
