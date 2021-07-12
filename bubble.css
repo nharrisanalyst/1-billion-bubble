@@ -238,6 +238,11 @@ body {
 	 .chart-menu-inner-wrapper{
 		 margin-top:10px;
 	 }
+	 
+	 .d3-bubble-chart-right{
+		 height:100%;
+	 }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -286,7 +291,6 @@ body {
 	  .circle-element{
 		  pointer-events: none;
 	  }
-
 	  .d3-bubble-chart-menu-selector{
 		  
 	  }
