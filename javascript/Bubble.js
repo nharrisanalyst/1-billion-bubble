@@ -237,7 +237,7 @@ class Bubble{
 	}
 	
 	_textEnterTitle(enter){
-		return enter.append('tspan').attr('font-size', '0px')
+		return enter.append('tspan').attr('class','circle-tspan-title').attr('font-size', '0px')
 		                      .attr("x", '0px')
 							  .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.4}px`)
 							  .call(enter => enter.transition(this._t)
@@ -246,7 +246,7 @@ class Bubble{
 						              )
 	}
 	_textEnterPerc(enter){
-		return enter.append('tspan').attr('font-size', '0px')
+		return enter.append('tspan').attr('class','circle-tspan-perc').attr('font-size', '0px')
 							  .attr("x", '0px')
 							  .attr("y", (d, i, nodes) => { 
 								   const yOffset = d.r>40?24:12;
@@ -309,6 +309,7 @@ class Bubble{
 	
 	_setOnHover(){
 		function mouseover(){
+			const t_ = d3.transition(1000)
 			d3.selectAll('.circle-element').transition(1000)
 			          .attr("fill-opacity", 0.3)
 					  
@@ -325,9 +326,15 @@ class Bubble{
 			
 			d3.select(this.parentNode).selectAll('.circle-text-text').style('display', 'block');
 			d3.select(this.parentNode).selectAll('.circle-text-text').attr('clip-path', 'null');
-			d3.select(this.parentNode).selectAll('.circle-text-text').selectAll('tspan').transition(1000).attr('font-size','28px').text(d =>d.r>5? d.text: "");
+			d3.select(this.parentNode).selectAll('.circle-text-text').selectAll('tspan').transition(t_).attr('font-size','28px').text(d =>d.text);
+			d3.select(this.parentNode).selectAll('.circle-tspan-perc').transition(t_).attr("y", (d, i, nodes) => { 
+				  return  `${i - nodes.length / 2 + 1.6+ 28}px`;
+		   
+				 });
+		
 		 }
 		function mouseout(){
+			const t_ = d3.transition(1000)
 			d3.selectAll('.circle-element').transition(1000)
 			  .attr("fill-opacity", 1)
 			  
@@ -336,8 +343,14 @@ class Bubble{
 			  
 			  d3.selectAll('.circle-text-text').style('display', 'block');
 			  d3.select(this.parentNode).selectAll('.circle-text-text').attr('clip-path', d => d.clipUid);
-			  d3.select(this.parentNode).selectAll('.circle-text-text').selectAll('tspan').transition(1000).attr('font-size',d =>d.r>40?'24px':'12px').text(d =>d.r>20? d.text: "");
-			  d3.select(this.parentNode).selectAll('.circle-text-text-perc').selectAll('tspan').transition(1000).attr('font-size',d =>d.r>40?'20px':'8px').text(d =>d.r>20? d.text: "");
+			  d3.select(this.parentNode).selectAll('.circle-text-text').selectAll('tspan').transition(t_).attr('font-size',d =>d.r>40?'24px':'12px').text(d =>d.r>20? d.text: "");
+			  d3.select(this.parentNode).selectAll('.circle-text-text-perc').selectAll('tspan').transition(t_).attr('font-size',d =>d.r>40?'20px':'8px').text(d =>d.r>20? d.text: "");
+			  
+			  d3.select(this.parentNode).selectAll('.circle-tspan-perc').transition(t_).attr("y", (d, i, nodes) => { 
+					 const yOffset = d.r>40?24:12;
+					return  `${i - nodes.length / 2 + 1.6+ yOffset}px`;
+			 
+				   });;
 			}
 			
 		    d3.selectAll('.circle-element').on('mouseover', mouseover);
