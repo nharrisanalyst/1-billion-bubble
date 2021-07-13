@@ -693,7 +693,7 @@ class Back{
 	}
 	unrender(){
 		d3.select(this._el).attr('class', 'd3-bubble-chart-selector-title')
-		  .text('Take a closer look');
+		  .text('Explore a Snapshot');
         this._offClick();
 	}
 }
