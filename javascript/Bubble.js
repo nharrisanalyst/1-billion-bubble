@@ -193,7 +193,7 @@ class Bubble{
 	set menu (menu){
 		this._menu = menu;
 	}
-	_getRandomRingCoords = radius => {
+	_getRandomRingCoords(radius){
 		const angle = Math.random() * Math.PI * 2;
 		const x = Math.cos(angle) * radius + window.innerWidth / 2;
 		const y = Math.sin(angle) * radius + window.innerHeight / 2;
