@@ -335,7 +335,7 @@ body {
 		}@media screen and (max-width: 1060px) {
 		  :root {
 			--page-horizontal-padding: 64px;
-		  }@media screen and (max-width: 768px) {
+		  }@media screen and (max-width: 610px) {
 				:root {
 				  --page-horizontal-padding: 24px;
 				}
