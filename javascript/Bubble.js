@@ -330,7 +330,7 @@ class Bubble{
 			
 			d3.select(this.parentNode).selectAll('.circle-text-text').style('display', 'block');
 			d3.select(this.parentNode).selectAll('.circle-text-text').attr('clip-path', 'null');
-			d3.select(this.parentNode).selectAll('.circle-text-text').selectAll('tspan').transition(t_).attr('font-size','28px').text(d =>d.text);
+			d3.select(this.parentNode).selectAll('.circle-text-text').selectAll('tspan').transition(t_).attr('font-size','28px').text(d =>d.text !='0.00%'?d.text:'<0.01%');
 			d3.select(this.parentNode).selectAll('.circle-tspan-perc').transition(t_).attr("y", (d, i, nodes) => { 
 				  return  `${i - nodes.length / 2 + 1.6+ 28}px`;
 		   
