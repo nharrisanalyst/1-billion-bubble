@@ -232,8 +232,12 @@ class Bubble{
 	}
 	
 	_textUpdatePerc(update){
-		return update.attr('font-size','0px').call(update=>update.transition(this._t).delay(500).attr('font-size',d =>d.r>40?'20px':'8px')
-																					  .text(d =>d.r>20? d.text: ""));
+		return update.attr('font-size','0px').call(update=>update.transition(this._t).attr("y", (d, i, nodes) => { 
+																						  const yOffset = d.r>40?24:12;
+																						  return  `${i - nodes.length / 2 + 1.6+ yOffset}px`;
+																				   
+																						 }).delay(500).attr('font-size',d =>d.r>40?'20px':'8px')
+																					      .text(d =>d.r>20? d.text: ""));
 	}
 	
 	_textEnterTitle(enter){
@@ -249,7 +253,7 @@ class Bubble{
 		return enter.append('tspan').attr('class','circle-tspan-perc').attr('font-size', '0px')
 							  .attr("x", '0px')
 							  .attr("y", (d, i, nodes) => { 
-								   const yOffset = d.r>40?24:12;
+								  const yOffset = d.r>40?24:12;
 								  return  `${i - nodes.length / 2 + 1.6+ yOffset}px`;
 						   
 								 })
