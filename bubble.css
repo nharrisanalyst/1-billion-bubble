@@ -90,8 +90,8 @@ body {
 	height:0px;
 	width:0px;
 	position:relative;
-	left:228px;	
-	top:3px;
+	left:var(--select-left-left);	
+	top:6px;
 }
 
 .filterSelect-select-button{
@@ -222,7 +222,7 @@ body {
 .selection-menu-custom{
 	padding:8px;
 	border: 1px solid #8F9397;
-	width: 270px;
+	width: 280px;
 	height:275px;
 	overflow-y: scroll;
 	z-index: 1000;
@@ -234,9 +234,6 @@ body {
 }
 
 @media only screen and (max-width: 1232px) {
-  .d3-bubble-chart-selector-menu{
-	left:0px;	
-	 }
 	 .Brands-menu-stat{
 		 margin-right:0px;
 	 }
@@ -338,11 +335,14 @@ body {
 	
 	:root {
 		  --page-horizontal-padding: 118px;
+		  --select-left-left:248px
 		}@media screen and (max-width: 1060px) {
 		  :root {
 			--page-horizontal-padding: 64px;
+			--select-left-left:0px;
 		  }@media screen and (max-width: 610px) {
 				:root {
 				  --page-horizontal-padding: 24px;
+				  --select-left-left:0px;
 				}
 		}
