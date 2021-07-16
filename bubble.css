@@ -34,6 +34,7 @@ body {
 	height:100%;
 	width:calc(50% - 5px);
     display:inline-block;
+	vertical-align: top;	
 }
 .d3-bubble-chart-leftinner-wrapper{
 	width:100%;
@@ -43,7 +44,12 @@ body {
 	transform: translateY(-40%);
 	
 }
-
+.d3-bubble-left-sub-header{
+	color:white;
+	padding-left:var(--page-horizontal-padding);
+	position: absolute;
+	bottom: calc(50% + 10px);
+}
 .d3-bubble-chart-selector-title-svg{
 	margin-right:17px;
 	position: relative;
