@@ -407,7 +407,7 @@ class Bubble {
         .selectAll(".circle-tspan-perc")
         .transition(t_)
         .attr("y", (d, i, nodes) => {
-          return `${i - nodes.length / 2 + 1.6 + 28}px`;
+          return `${i - nodes.length / 2 + 1.6 + 38}px`;
         });
     }
     function mouseout() {
