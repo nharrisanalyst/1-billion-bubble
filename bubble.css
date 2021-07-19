@@ -48,7 +48,7 @@ body {
 	color:white;
 	padding-left:var(--page-horizontal-padding);
 	position: absolute;
-	bottom: calc(50% + 10px);
+	bottom: var(--bottom-sub-header);
 }
 .d3-bubble-chart-selector-title-svg{
 	margin-right:17px;
@@ -248,7 +248,7 @@ body {
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
 	  .d3-bubble-chart-wrapper{
 		  margin-top:20px;
 		  width:100vw;
@@ -335,14 +335,20 @@ body {
 	
 	:root {
 		  --page-horizontal-padding: 118px;
-		  --select-left-left:248px
+		  --select-left-left:248px;
+		  --bottom-sub-header:calc(50% + 10px);
 		}@media screen and (max-width: 1060px) {
 		  :root {
 			--page-horizontal-padding: 64px;
 			--select-left-left:0px;
-		  }@media screen and (max-width: 610px) {
+			--bottom-sub-header:calc(50% + 10px);
+		  }@media screen and (max-width: 769px) {
+			  :root {
+				--bottom-sub-header:calc(90% + 15px);
+			  }@media screen and (max-width: 610px) {
 				:root {
 				  --page-horizontal-padding: 24px;
 				  --select-left-left:0px;
+				  --bottom-sub-header:calc(90% + 15px);
 				}
 		}
